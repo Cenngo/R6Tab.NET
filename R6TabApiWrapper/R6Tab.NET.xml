@@ -343,11 +343,11 @@
             R6 Client to Handle Api Requests
             </summary>
         </member>
-        <member name="M:R6Api.R6Client.#ctor(System.String)">
+        <member name="M:R6Api.R6Client.#ctor(R6Api.R6Config)">
             <summary>
             
             </summary>
-            <param name="baseUri">Base Url of the Api(defaulted as: https://r6.apitab.com/) </param>
+            <param name="config"> Config of the Client </param>
         </member>
         <member name="M:R6Api.R6Client.ParseById(System.String,System.Nullable{System.DateTimeOffset})">
             <summary>
@@ -381,6 +381,16 @@
             <param name="region">Region of the Leaderboard</param>
             <param name="time">Optional Time Stamp to Avoid Caching</param>
             <returns></returns>
+        </member>
+        <member name="F:R6Api.R6Config.AutoCacheAvoidance">
+            <summary>
+            Auto Send Current Unix Epoch to Avoid Caching
+            </summary>
+        </member>
+        <member name="F:R6Api.R6Config.BaseUrl">
+            <summary>
+            Base Url of the Api(defaulted as: https://r6.apitab.com/)
+            </summary>
         </member>
         <member name="T:R6TabApiWrapper.Enums.Region">
             <summary>
