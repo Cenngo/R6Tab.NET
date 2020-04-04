@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using R6TabApiWrapper.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;

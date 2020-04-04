@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>R6Tab.NET</name>
+    </assembly>
+    <members>
+        <member name="T:R6Api.Enums.Platform">
+            <summary>
+            Game Platforms for Rainbow6
+            </summary>
+        </member>
+        <member name="T:R6Api.Interfaces.IGamemodeStats">
+            <summary>
+            Gamemode Stat Template for Rainbow6
+            </summary>
+        </member>
+        <member name="T:R6Api.Interfaces.IPlayer">
+            <summary>
+            Player Template With a User Id for Rainbow6
+            </summary>
+        </member>
+        <member name="T:R6Api.Interfaces.IRegionRanked">
+            <summary>
+            Regional Ranked Data Template for Rainbow6
+            </summary>
+        </member>
+        <member name="T:R6Api.Models.Alias">
+            <summary>
+            Alias Data of User
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Bases.PlayerBase.User">
+            <summary>
+            UserId of the Player
+            </summary>
+        </member>
+        <member name="M:R6Api.Models.Bases.PlayerBase.GetAvatar">
+            <summary>
+            Get Profile Picture of Player
+            </summary>
+            <returns>Url of User Avatar</returns>
+        </member>
+        <member name="T:R6Api.Models.Custom">
+            <summary>
+            Custom R6Tab Data
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorData.Wins">
+            <summary>
+            Operator Data as Sorted for Wins
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorData.Losses">
+            <summary>
+            Operator Data as Sorted for Losses
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorData.Kills">
+            <summary>
+            Operator Data as Sorted for Kills
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorData.Deaths">
+            <summary>
+            Operator Data as Sorted for Deaths
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorData.TimePLayed">
+            <summary>
+            Operator Data as Sorted for Time Played
+            </summary>
+        </member>
+        <member name="T:R6Api.Models.RankedAS">
+            <summary>
+            Ranked Data for AS Region for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.Champ">
+            <summary>
+            Champ Tier of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.Matches">
+            <summary>
+            Number of  Matches Played
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.WinLose">
+            <summary>
+            Win/Lose Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.KillDeath">
+            <summary>
+            Kill/Death Ratio as Percentage
+            </summary>
+        </member>
+        <member name="M:R6Api.Models.RankedAS.GetRankImg">
+            <summary>
+            Get Rank Banner for the Player's Current Rank
+            </summary>
+            <returns>Url of the Banner Img</returns>
+        </member>
+        <member name="T:R6Api.Models.RankedEU">
+            <summary>
+            Ranked Data for EU Region for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.Champ">
+            <summary>
+            Champ Tier of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.Matches">
+            <summary>
+            Number of  Matches Played
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.WinLose">
+            <summary>
+            Win/Lose Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.KillDeath">
+            <summary>
+            Kill/Death Ratio as Percentage
+            </summary>
+        </member>
+        <member name="M:R6Api.Models.RankedEU.GetRankImg">
+            <summary>
+            Get Rank Banner for the Player's Current Rank
+            </summary>
+            <returns>Url of the Banner Img</returns>
+        </member>
+        <member name="T:R6Api.Models.Ranked.RankedFromId">
+            <summary>
+            Detailed Ranked Info Parsed from Id Search for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.AS">
+            <summary>
+            Ranked Data for AS Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.EU">
+            <summary>
+            Ranked Data for EU Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.NA">
+            <summary>
+            Ranked Data for NA Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.AllKillDeath">
+            <summary>
+            Kill/Death Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.AllWinLose">
+            <summary>
+            Win/Lose Ratio as Percentage
+            </summary>
+        </member>
+        <member name="T:R6Api.Models.RankedNA">
+            <summary>
+            Ranked Data for NA Region for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.Champ">
+            <summary>
+            Champ Tier of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.Matches">
+            <summary>
+            Number of  Matches Played
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.WinLose">
+            <summary>
+            Win/Lose Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.KillDeath">
+            <summary>
+            Kill/Death Ratio as Percentage
+            </summary>
+        </member>
+        <member name="M:R6Api.Models.RankedNA.GetRankImg">
+            <summary>
+            Get Rank Banner for the Player's Current Rank
+            </summary>
+            <returns>Url of the Banner Img</returns>
+        </member>
+        <member name="T:R6Api.Models.SearchResults.DataById">
+            <summary>
+            Api Data, Parsed from Id Search for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Status">
+            <summary>
+            Http Status Code
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Player">
+            <summary>
+            Credentials of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Stats">
+            <summary>
+            Overall Stats of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Ranked">
+            <summary>
+            Ranked Stats of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Social">
+            <summary>
+            Social Network Information as Registered to R6Tab.
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Seasons">
+            <summary>
+            Seasonal Ranked Data
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.OperatorData">
+            <summary>
+            Operator Datas
+            </summary>
+        </member>
+        <member name="T:R6Api.Models.SearchResults.DataByName">
+            <summary>
+            Api Data, Parsed from Name Search for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataByName.Status">
+            <summary>
+            Http Status Code
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataByName.FoundPlayers">
+            <summary>
+            Found Matches for the Searched Name
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.CasualStats.KillDeath">
+            <summary>
+            Kill/Death Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.CasualStats.WinLose">
+            <summary>
+            Win/Lose Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.KillDeath">
+            <summary>
+            Kill/Death Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.WinLose">
+            <summary>
+            Win/Lose Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.HeadShotRate">
+            <summary>
+            Headshot Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.KillDeath">
+            <summary>
+            Kill/Death Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.WinLose">
+            <summary>
+            Win/Lose Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.HeadShotRate">
+            <summary>
+            Headshot Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.KillDeath">
+            <summary>
+            Kill/Death Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.WinLose">
+            <summary>
+            Win/Loses Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsBase.Level">
+            <summary>
+            Level of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.Casual">
+            <summary>
+            Casual Gamemode Stats of the  Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.Ranked">
+            <summary>
+            Ranked Gamemode Stats of the  Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.GeneralPvP">
+            <summary>
+            GeneralPvP Gamemode Stats of the  Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.GeneralPvE">
+            <summary>
+            GeneralPvE Gamemode Stats of the  Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.PlantBombMatchesWl">
+            <summary>
+            Win/Lose Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.SecureAreaMatchesWl">
+            <summary>
+            Win/Lose Ratio as Percentage
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.RescueHostageMatchesWl">
+            <summary>
+            Win/Lose Ratio as Percentage
+            </summary>
+        </member>
+        <member name="T:R6Api.R6Client">
+            <summary>
+            R6 Client to Handle Api Requests
+            </summary>
+        </member>
+        <member name="M:R6Api.R6Client.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="baseUri">Base Url of the Api(defaulted as: https://r6.apitab.com/) </param>
+        </member>
+        <member name="M:R6Api.R6Client.ParseById(System.String,System.Nullable{System.DateTimeOffset})">
+            <summary>
+            Parse Players by UserId
+            </summary>
+            <param name="userId">UserId of the Player</param>
+            <param name="time">Optional Time Stamp to Avoid Caching</param>
+            <returns></returns>
+        </member>
+        <member name="M:R6Api.R6Client.ParseByName(System.String,R6Api.Enums.Platform,System.Nullable{System.DateTimeOffset})">
+            <summary>
+            Search Players from a Given Name
+            </summary>
+            <param name="username">Username of the Player</param>
+            <param name="platform">Platform of the User</param>
+            <param name="time">Optional Time Stamp to Avoid Caching</param>
+            <returns></returns>
+        </member>
+        <member name="M:R6Api.R6Client.UpdatePlayer(System.String)">
+            <summary>
+            Get Updated Player Information
+            </summary>
+            <param name="userId">UserId of the Player</param>
+            <returns></returns>
+        </member>
+        <member name="M:R6Api.R6Client.GetLeaderboard(R6Api.Enums.Platform,R6TabApiWrapper.Enums.Region,System.Nullable{System.DateTimeOffset})">
+            <summary>
+            Get Leaderboard of a Region and Platform (updated every hour)
+            </summary>
+            <param name="platform">Platform of the Leaderboard</param>
+            <param name="region">Region of the Leaderboard</param>
+            <param name="time">Optional Time Stamp to Avoid Caching</param>
+            <returns></returns>
+        </member>
+        <member name="T:R6TabApiWrapper.Enums.Region">
+            <summary>
+            Leaderboard Regions for Rainbow6
+            </summary>
+        </member>
+        <member name="T:R6TabApiWrapper.Interfaces.IRankedData">
+            <summary>
+            Ranked Data Template that Contains Rank Info for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6TabApiWrapper.Models.SearchResults.LeaderboardData.Status">
+            <summary>
+            Http Status Code
+            </summary>
+        </member>
+        <member name="P:R6TabApiWrapper.Models.SearchResults.LeaderboardData.Region">
+            <summary>
+            Region of the Leaderboard
+            </summary>
+        </member>
+    </members>
+</doc>

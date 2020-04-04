@@ -5,11 +5,17 @@
     <Authors>Cenngo</Authors>
     <Description>.NET Wrapper for R6Tab Api</Description>
     <PackageLicenseExpression></PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/Cenngo/R6TabApiWrapper</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Cenngo/R6Tab.NET</PackageProjectUrl>
     <RepositoryType>Public</RepositoryType>
     <PackageReleaseNotes>Pre-Release Version</PackageReleaseNotes>
-    <Version>0.2</Version>
+    <Version>0.2.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>R6Tab.NET</AssemblyName>
+    <RootNamespace>R6Api</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\R6Tab.NET.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

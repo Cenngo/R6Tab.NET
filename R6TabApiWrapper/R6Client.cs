@@ -23,14 +23,14 @@ namespace R6Api
 	{
 
 		private readonly HttpClient _httpClient;
-		private readonly Uri _baseURi;
+		private readonly R6Config _config;
 		/// <summary>
 		/// 
 		/// </summary>
-		/// <param name="baseUri">Base Url of the Api(defaulted as: https://r6.apitab.com/) </param>
-		public R6Client ( string baseUri = null )
+		/// <param name="config"> Config of the Client </param>
+		public R6Client ( R6Config config = null )
 		{
-			_baseURi = new Uri(baseUri ?? " https://r6.apitab.com/");
+			_config = config ?? new R6Config();
 			_httpClient = new HttpClient();
 		}
 
@@ -42,10 +42,12 @@ namespace R6Api
 		/// <returns></returns>
 		public DataById ParseById ( string userId, DateTimeOffset? time = null )
 		{
-			var requestUri = new UriBuilder(_baseURi) { Path = $"player/{userId}" };
+			var requestUri = new UriBuilder(_config.BaseUrl) { Path = $"player/{userId}" };
 
 			if (time != null)
 				requestUri.Query = $"u={time?.ToUnixTimeSeconds()}";
+			else if (_config.AutoCacheAvoidance == true)
+				requestUri.Query = $"u={DateTimeOffset.UtcNow.ToUnixTimeSeconds()}";
 
 			var html = string.Empty;
 			var response = (_httpClient.GetAsync(requestUri.Uri)).Result;
@@ -64,10 +66,12 @@ namespace R6Api
 		/// <returns></returns>
 		public DataByName ParseByName ( string username, Platform platform, DateTimeOffset? time = null )
 		{
-			var requestUri = new UriBuilder(_baseURi) { Path = $"search/{platform.ToString().ToLower()}/{username}" };
+			var requestUri = new UriBuilder(_config.BaseUrl) { Path = $"search/{platform.ToString().ToLower()}/{username}" };
 
 			if (time != null)
 				requestUri.Query = $"u={time?.ToUnixTimeSeconds()}";
+			else if (_config.AutoCacheAvoidance == true)
+				requestUri.Query = $"u={DateTimeOffset.UtcNow.ToUnixTimeSeconds()}";
 
 			var html = string.Empty;
 			var response = _httpClient.GetAsync(requestUri.Uri).Result;
@@ -84,7 +88,7 @@ namespace R6Api
 		/// <returns></returns>
 		public DataById UpdatePlayer(string userId )
 		{
-			var requestUri = new UriBuilder(_baseURi) { Path = $"update/{userId}" };
+			var requestUri = new UriBuilder(_config.BaseUrl) { Path = $"update/{userId}" };
 
 			var html = string.Empty;
 			var response = (_httpClient.GetAsync(requestUri.Uri)).Result;
@@ -103,10 +107,12 @@ namespace R6Api
 		/// <returns></returns>
 		public LeaderboardData GetLeaderboard(Platform platform, Region region, DateTimeOffset? time = null)
 		{
-			var requestUri = new UriBuilder(_baseURi) { Path = $"leaderboard/{platform.ToString().ToLower()}/{region.ToString().ToLower()}" };
+			var requestUri = new UriBuilder(_config.BaseUrl) { Path = $"leaderboard/{platform.ToString().ToLower()}/{region.ToString().ToLower()}" };
 
 			if (time != null)
 				requestUri.Query = $"u={time?.ToUnixTimeSeconds()}";
+			else if (_config.AutoCacheAvoidance == true)
+				requestUri.Query = $"u={DateTimeOffset.UtcNow.ToUnixTimeSeconds()}";
 
 			var html = string.Empty;
 			var response = _httpClient.GetAsync(requestUri.Uri).Result;
