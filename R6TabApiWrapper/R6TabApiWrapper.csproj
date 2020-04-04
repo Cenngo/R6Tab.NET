@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Authors>Cenngo</Authors>
+    <Description>.NET Wrapper for R6Tab Api</Description>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Cenngo/R6TabApiWrapper</PackageProjectUrl>
+    <RepositoryType>Public</RepositoryType>
+    <PackageReleaseNotes>Pre-Release Version</PackageReleaseNotes>
+    <Version>0.2</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
