@@ -31,7 +31,8 @@ var result = client.UpdatePlayer(9bd44bde-9c48-48ae-9c2b-4e11e4b16083);
 ```
 
 ## In Progress
-- [ ] Decode Operator Ids
-- [ ] Get Top Operators in Each Category (Wins/Losses/Kills/Deaths/Play Time)
+- [x] Decode Operator Ids
+- [x] Get Top Operators in Each Category (Wins/Losses/Kills/Deaths/Play Time)
 - [ ] Get Color of the Rank Banner 
-- [ ] Auto Cache Avoidance
+- [x] Auto Cache Avoidance
+- [x] Get All Stats of Specific Operator
