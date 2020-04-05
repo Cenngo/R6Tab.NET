@@ -36,3 +36,6 @@ var result = client.UpdatePlayer(9bd44bde-9c48-48ae-9c2b-4e11e4b16083);
 - [ ] Get Color of the Rank Banner 
 - [x] Auto Cache Avoidance
 - [x] Get All Stats of Specific Operator
+
+## Operator Data
+Currently some of the operators cannot be decoded as they are retrieved from the R6Tab Api. I'm limited by the information that is provided by TabWire. Missing operator codes will be added as they are disclosed by TabWire on their GitHub Repo.
