@@ -57,5 +57,10 @@ namespace R6Api.Enums
 		Maverick,
 		Gridlock,
 		Mozzie,
+		Nokk,
+		Oryx,
+		Iana,
+		Amaru,
+		Wamai
 	}
 }

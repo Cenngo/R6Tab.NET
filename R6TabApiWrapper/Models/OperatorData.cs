@@ -115,7 +115,7 @@ namespace R6Api.Models
 
 		private IEnumerable<string> GetTopOps(IDictionary<string, int> collection)
 		{
-			var topOp = collection.Where(x => x.Value == TimePlayed.Values.Max());
+			var topOp = collection.Where(x => x.Value == collection.Values.Max());
 			IList<string> topOpDecoded = new List<string>();
 
 			foreach (var op in topOp)
@@ -178,8 +178,13 @@ namespace R6Api.Models
 			{"3:11", "Kaid" },
 			{"3:10", "Clash" },
 			{"2:10", "Maverick" },
-			{"2:12", "Gridlock" },
-			{"3:12", "Mozzie" }
+			{"2:12", "Mozzie" },
+			{"3:12", "Gridlock" },
+			{"2:13", "Nokk" },
+			{"2:18", "Oryx" },
+			{"2:19", "Iana" },
+			{"2:16", "Amaru" },
+			{"3:17", "Wamai" }
 		};
 	}
 }
