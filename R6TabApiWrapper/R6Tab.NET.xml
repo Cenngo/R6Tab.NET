@@ -65,10 +65,54 @@
             Operator Data as Sorted for Deaths
             </summary>
         </member>
-        <member name="P:R6Api.Models.OperatorData.TimePLayed">
+        <member name="P:R6Api.Models.OperatorData.TimePlayed">
             <summary>
             Operator Data as Sorted for Time Played
             </summary>
+        </member>
+        <member name="M:R6Api.Models.OperatorData.GetTopPlayed">
+            <summary>
+            Get a Collection Containing the Top Operator/Operators in Play-Time Category
+            </summary>
+            <returns>Collection of Operators With Most Play Time</returns>
+        </member>
+        <member name="M:R6Api.Models.OperatorData.GetTopWins">
+            <summary>
+            Get a Collection Containing the Top Operator/Operators in Wins Category
+            </summary>
+            <returns>Collection of Operators With Most Wins</returns>
+        </member>
+        <member name="M:R6Api.Models.OperatorData.GetTopLosses">
+            <summary>
+            Get a Collection Containing the Top Operator/Operators in Losses Category
+            </summary>
+            <returns>Collection of Operators With Most Losses</returns>
+        </member>
+        <member name="M:R6Api.Models.OperatorData.GetTopKills">
+            <summary>
+            Get a Collection Containing the Top Operator/Operators in Kills Category
+            </summary>
+            <returns>Collection of Operators With Most Kills</returns>
+        </member>
+        <member name="M:R6Api.Models.OperatorData.GetTopDeaths">
+            <summary>
+            Get a Collection Containing the Top Operator/Operators in Deaths Category
+            </summary>
+            <returns>Collection of Operators With Most Deaths</returns>
+        </member>
+        <member name="M:R6Api.Models.OperatorData.DecodeOperator(System.String)">
+            <summary>
+            Get a Decoded Version of the Operator Id
+            </summary>
+            <param name="opCode">Code Given to the Operator by R6Tab</param>
+            <returns>Name of the Operator</returns>
+        </member>
+        <member name="M:R6Api.Models.OperatorData.GetOperatorStats(R6Api.Enums.Operators)">
+            <summary>
+            Get Stats for a Specific Operator
+            </summary>
+            <param name="op">Operator</param>
+            <returns></returns>
         </member>
         <member name="T:R6Api.Models.RankedAS">
             <summary>
@@ -343,11 +387,11 @@
             R6 Client to Handle Api Requests
             </summary>
         </member>
-        <member name="M:R6Api.R6Client.#ctor(System.String)">
+        <member name="M:R6Api.R6Client.#ctor(R6Api.R6Config)">
             <summary>
             
             </summary>
-            <param name="baseUri">Base Url of the Api(defaulted as: https://r6.apitab.com/) </param>
+            <param name="config"> Config of the Client </param>
         </member>
         <member name="M:R6Api.R6Client.ParseById(System.String,System.Nullable{System.DateTimeOffset})">
             <summary>
@@ -381,6 +425,16 @@
             <param name="region">Region of the Leaderboard</param>
             <param name="time">Optional Time Stamp to Avoid Caching</param>
             <returns></returns>
+        </member>
+        <member name="F:R6Api.R6Config.AutoCacheAvoidance">
+            <summary>
+            Auto Send Current Unix Epoch to Avoid Caching
+            </summary>
+        </member>
+        <member name="F:R6Api.R6Config.BaseUrl">
+            <summary>
+            Base Url of the Api(defaulted as: https://r6.apitab.com/)
+            </summary>
         </member>
         <member name="T:R6TabApiWrapper.Enums.Region">
             <summary>
