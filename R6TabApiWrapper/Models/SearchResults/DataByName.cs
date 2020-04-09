@@ -23,7 +23,6 @@ namespace R6Api.Models.SearchResults
 		/// <summary>
 		/// Found Matches for the Searched Name
 		/// </summary>
-		[JsonProperty("players")]
 		public IDictionary<string, Player> FoundPlayers { get; internal set; }
 	}
 }

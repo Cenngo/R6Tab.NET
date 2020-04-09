@@ -7,8 +7,8 @@
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Cenngo/R6Tab.NET</PackageProjectUrl>
     <RepositoryType>Public</RepositoryType>
-    <PackageReleaseNotes>Added Auto Cache Avoidance</PackageReleaseNotes>
-    <Version>0.3</Version>
+    <PackageReleaseNotes>Bug Fixes</PackageReleaseNotes>
+    <Version>0.3.3</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyName>R6Tab.NET</AssemblyName>
     <RootNamespace>R6Api</RootNamespace>

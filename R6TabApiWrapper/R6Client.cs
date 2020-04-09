@@ -13,6 +13,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace R6Api
 {
@@ -78,7 +79,15 @@ namespace R6Api
 			using var sr = new StreamReader(response.Content.ReadAsStreamAsync().Result);
 			html = sr.ReadToEnd();
 
-			return JsonConvert.DeserializeObject<DataByName>(html);
+			var jObject = JObject.Parse(html);
+
+			var data = JsonConvert.DeserializeObject<DataByName>(html);
+			
+			if(jObject["players"].Children().Count() != 0)
+			{
+				data.FoundPlayers = jObject["players"].ToObject<Dictionary<string, Player>>();
+			}
+			return data;
 		}
 
 		/// <summary>
@@ -136,7 +145,10 @@ namespace R6Api
 			userData.Ranked.NA = jObject["ranked"].ToObject<RankedNA>();
 			userData.Ranked.EU = jObject["ranked"].ToObject<RankedEU>();
 
-			userData.Aliases = jObject["aliases"].ToObject<Dictionary<int, Alias>>().Values;
+			if(jObject["aliases"].Children().Count() != 0)
+			{
+				userData.Aliases = jObject["aliases"].ToObject<Dictionary<int, Alias>>().Values;
+			}
 
 			return userData;
 		}

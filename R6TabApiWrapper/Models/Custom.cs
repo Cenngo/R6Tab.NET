@@ -11,7 +11,7 @@ namespace R6Api.Models
 	public class Custom
 	{
 		[JsonProperty("customurl")]
-		public bool HasCustomUrl { get; internal set; }
+		public string CustomUrl { get; internal set; }
 		[JsonProperty("verified")]
 		public bool IsVerified { get; internal set; }
 		[JsonProperty("visitors")]
