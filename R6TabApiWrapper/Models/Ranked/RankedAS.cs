@@ -9,7 +9,7 @@ namespace R6Api.Models
 	/// <summary>
 	/// Ranked Data for AS Region for Rainbow6
 	/// </summary>
-	public class RankedAS 
+	public class RankedAS : IRegionRanked
 	{
 		[JsonProperty("AS_kills")]
 		public int Kills { get; internal set; }

@@ -4,6 +4,11 @@
         <name>R6Tab.NET</name>
     </assembly>
     <members>
+        <member name="T:R6Api.Enums.Operators">
+            <summary>
+            Rainbow 6 Siege Operators
+            </summary>
+        </member>
         <member name="T:R6Api.Enums.Platform">
             <summary>
             Game Platforms for Rainbow6
@@ -399,7 +404,7 @@
             </summary>
             <param name="userId">UserId of the Player</param>
             <param name="time">Optional Time Stamp to Avoid Caching</param>
-            <returns></returns>
+            <returns>Extensive Player Data</returns>
         </member>
         <member name="M:R6Api.R6Client.ParseByName(System.String,R6Api.Enums.Platform,System.Nullable{System.DateTimeOffset})">
             <summary>
@@ -408,7 +413,7 @@
             <param name="username">Username of the Player</param>
             <param name="platform">Platform of the User</param>
             <param name="time">Optional Time Stamp to Avoid Caching</param>
-            <returns></returns>
+            <returns>Collection of Username search Results</returns>
         </member>
         <member name="M:R6Api.R6Client.UpdatePlayer(System.String)">
             <summary>

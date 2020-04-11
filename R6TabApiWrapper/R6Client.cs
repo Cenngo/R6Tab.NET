@@ -136,18 +136,21 @@ namespace R6Api
 			var userData = JsonConvert.DeserializeObject<DataById>(json);
 			var jObject = JObject.Parse(json);
 
-			userData.Stats.Casual = jObject["stats"].ToObject<CasualStats>();
-			userData.Stats.Ranked = jObject["stats"].ToObject<RankedStats>();
-			userData.Stats.GeneralPvP = jObject["stats"].ToObject<GeneralStatsPvP>();
-			userData.Stats.GeneralPvE = jObject["stats"].ToObject<GeneralStatsPvE>();
-
-			userData.Ranked.AS = jObject["ranked"].ToObject<RankedAS>();
-			userData.Ranked.NA = jObject["ranked"].ToObject<RankedNA>();
-			userData.Ranked.EU = jObject["ranked"].ToObject<RankedEU>();
-
-			if(jObject["aliases"].Children().Count() != 0)
+			if(userData.Status == 200)
 			{
-				userData.Aliases = jObject["aliases"].ToObject<Dictionary<int, Alias>>().Values;
+				userData.Stats.Casual = jObject["stats"].ToObject<CasualStats>();
+				userData.Stats.Ranked = jObject["stats"].ToObject<RankedStats>();
+				userData.Stats.GeneralPvP = jObject["stats"].ToObject<GeneralStatsPvP>();
+				userData.Stats.GeneralPvE = jObject["stats"].ToObject<GeneralStatsPvE>();
+
+				userData.Ranked.AS = jObject["ranked"].ToObject<RankedAS>();
+				userData.Ranked.NA = jObject["ranked"].ToObject<RankedNA>();
+				userData.Ranked.EU = jObject["ranked"].ToObject<RankedEU>();
+
+				if (jObject["aliases"].Children().Count() != 0)
+				{
+					userData.Aliases = jObject["aliases"].ToObject<Dictionary<int, Alias>>().Values;
+				}
 			}
 
 			return userData;
