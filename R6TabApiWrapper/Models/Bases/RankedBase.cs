@@ -18,7 +18,7 @@ namespace R6Api.Models
 			}
 		}
 		[JsonProperty("mmr")]
-		public int Mmr { get; internal set; }
+		public int? Mmr { get; internal set; }
 		[JsonProperty("rank")]
 		public int Rank { get; internal set; }
 		[JsonProperty("champ")]

@@ -4,6 +4,9 @@ using System.Text;
 
 namespace R6Api.Enums
 {
+	/// <summary>
+	/// Rainbow 6 Siege Operators
+	/// </summary>
 	public enum Operators
 	{
 		Smoke,
