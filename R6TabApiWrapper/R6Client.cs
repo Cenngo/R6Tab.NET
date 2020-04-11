@@ -40,7 +40,7 @@ namespace R6Api
 		/// </summary>
 		/// <param name="userId">UserId of the Player</param>
 		/// <param name="time">Optional Time Stamp to Avoid Caching</param>
-		/// <returns></returns>
+		/// <returns>Extensive Player Data</returns>
 		public DataById ParseById ( string userId, DateTimeOffset? time = null )
 		{
 			var requestUri = new UriBuilder(_config.BaseUrl) { Path = $"player/{userId}" };
@@ -64,7 +64,7 @@ namespace R6Api
 		/// <param name="username">Username of the Player</param>
 		/// <param name="platform">Platform of the User</param>
 		/// <param name="time">Optional Time Stamp to Avoid Caching</param>
-		/// <returns></returns>
+		/// <returns>Collection of Username search Results</returns>
 		public DataByName ParseByName ( string username, Platform platform, DateTimeOffset? time = null )
 		{
 			var requestUri = new UriBuilder(_config.BaseUrl) { Path = $"search/{platform.ToString().ToLower()}/{username}" };
