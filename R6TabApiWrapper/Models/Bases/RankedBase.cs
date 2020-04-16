@@ -2,6 +2,7 @@
 using R6TabApiWrapper.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace R6Api.Models

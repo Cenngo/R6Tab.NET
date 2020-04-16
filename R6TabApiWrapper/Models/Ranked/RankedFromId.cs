@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace R6Api.Models.Ranked
@@ -77,5 +78,44 @@ namespace R6Api.Models.Ranked
 		public double KillPerMatch { get; internal set; }
 		[JsonProperty("deathspermatch")]
 		public double DeathPerMatch { get; internal set; }
+		public Color RankColor
+		{
+			get
+			{
+				var rankName = RankName.Split(" ")[0].ToLower();
+
+				Color color;
+
+				switch (rankName)
+				{
+					case "copper":
+						color = Color.FromArgb(144, 4, 11);
+						break;
+					case "bronze":
+						color = Color.FromArgb(116, 74, 29);
+						break;
+					case "silver":
+						color = Color.FromArgb(161, 161, 161);
+						break;
+					case "gold":
+						color = Color.FromArgb(227, 198, 30);
+						break;
+					case "platinum":
+						color = Color.FromArgb(37, 169, 162);
+						break;
+					case "diamond":
+						color = Color.FromArgb(154, 124, 244);
+						break;
+					case "champion":
+						color = Color.FromArgb(192, 15, 89);
+						break;
+					default:
+						color = Color.White;
+						break;
+				}
+
+				return color;
+			}
+		}
 	}
 }
