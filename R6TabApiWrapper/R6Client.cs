@@ -28,9 +28,9 @@ namespace R6Api
 		/// 
 		/// </summary>
 		/// <param name="config"> Config of the Client </param>
-		public R6Client ( R6Config config = null )
+		public R6Client ( R6Config config )
 		{
-			_config = config ?? new R6Config();
+			_config = config;
 			_httpClient = new HttpClient();
 		}
 
@@ -40,6 +40,11 @@ namespace R6Api
 		/// <param name="userId">UserId of the Player</param>
 		/// <param name="time">Optional Time Stamp to Avoid Caching</param>
 		/// <returns>DataById under normal operation OR Error Message</returns>
+		/// <example>
+		///	<code>
+		///		DataById result = client.ParseById(9bd44bde-9c48-48ae-9c2b-4e11e4b16083); 	
+		/// </code>
+		/// </example>
 		public DataById ParseById ( string userId, DateTimeOffset? time = null )
 		{
 			CheckToken();
@@ -70,6 +75,11 @@ namespace R6Api
 		/// <param name="platform">Platform of the User</param>
 		/// <param name="time">Optional Time Stamp to Avoid Caching</param>
 		/// <returns>DataByName under normal operation OR Error Message</returns>
+		/// <example>
+		/// <code>
+		///		DataByName result = client.ParseByName("baiier", Platform.Uplay);
+		/// </code>
+		/// </example>
 		public DataByName ParseByName ( string username, Platform platform, DateTimeOffset? time = null )
 		{
 			CheckToken();
@@ -97,7 +107,7 @@ namespace R6Api
 			if (data.Status != 200)
 				return data;
 
-			if (jObject["players"].Children().Count() != 0)
+			if (jObject["players"].Children().Any())
 			{
 				data.FoundPlayers = jObject["players"].ToObject<Dictionary<string, Player>>();
 			}
@@ -109,6 +119,11 @@ namespace R6Api
 		/// </summary>
 		/// <param name="userId">UserId of the Player</param>
 		/// <returns>DataById under normal operation OR Error Message</returns>
+		/// <example>
+		/// <code>
+		///		var result = client.UpdatePlayer(9bd44bde-9c48-48ae-9c2b-4e11e4b16083);
+		/// </code>
+		/// </example>
 		public DataById UpdatePlayer ( string userId )
 		{
 			CheckToken();
@@ -129,6 +144,11 @@ namespace R6Api
 		/// <param name="region">Region of the Leaderboard</param>
 		/// <param name="time">Optional Time Stamp to Avoid Caching</param>
 		/// <returns>LeaderboardData under normal operation OR Error Message</returns>
+		/// <example>
+		/// <code>
+		///		var leaderboard = client.GetLeaderboard(Platform.Uplay, Region.All);
+		/// </code>
+		/// </example>
 		public LeaderboardData GetLeaderboard ( Platform platform, Region region, DateTimeOffset? time = null )
 		{
 			CheckToken();
@@ -147,7 +167,7 @@ namespace R6Api
 			return JsonConvert.DeserializeObject<LeaderboardData>(html);
 		}
 
-		private DataById ParseIdData ( string json )
+		private static DataById ParseIdData ( string json )
 		{
 			var jObject = JObject.Parse(json);
 
@@ -155,7 +175,7 @@ namespace R6Api
 			if (userData.Status != 200)
 				return userData;
 
-			if (jObject["social"].Children().Count() != 0)
+			if (jObject["social"].Children().Any())
 				userData.Social = jObject["social"].ToObject<Social>();
 
 			userData.Stats.Casual = jObject["stats"].ToObject<CasualStats>();
@@ -170,7 +190,7 @@ namespace R6Api
 			userData.Operators = new Models.Operators();
 			userData.Operators.OpStats = jObject["operators"].ToObject<Dictionary<string, OperatorData>>();
 
-			if (jObject["aliases"].Children().Count() != 0)
+			if (jObject["aliases"].Children().Any())
 			{
 				userData.Aliases = jObject["aliases"].ToObject<Dictionary<int, Alias>>().Values;
 			}
@@ -181,7 +201,7 @@ namespace R6Api
 		private void CheckToken()
 		{
 			if (string.IsNullOrEmpty(_config.ApiKey))
-				throw new Exception("No Api Key Provided");
+				throw new InvalidOperationException("No Api Key Found!");
 		}
 	}
 }

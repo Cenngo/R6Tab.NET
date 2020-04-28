@@ -6,5 +6,6 @@ namespace R6Api.Interfaces
 {
 	public interface ISearchResult
 	{
+		int Status { get; }
 	}
 }

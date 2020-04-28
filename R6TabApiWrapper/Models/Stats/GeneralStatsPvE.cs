@@ -23,7 +23,7 @@ namespace R6Api.Models.Stats
 		[JsonProperty("generalpve_matches")]
 		public int MatchesPlayed { get; internal set; }
 		[JsonProperty("generalpve_kd")]
-		public string _kd { get; internal set; }
+		private string _kd { get; set; }
 		/// <summary>
 		/// Kill/Death Ratio as Percentage
 		/// </summary>
