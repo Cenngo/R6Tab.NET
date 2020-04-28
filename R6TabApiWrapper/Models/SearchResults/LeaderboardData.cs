@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using R6Api.Interfaces;
+using R6Api.Models.SearchResults;
 using R6TabApiWrapper.Enums;
 using System;
 using System.Collections.Generic;
@@ -7,13 +8,8 @@ using System.Text;
 
 namespace R6TabApiWrapper.Models.SearchResults
 {
-	public class LeaderboardData : ISearchResult
+	public class LeaderboardData : SearchResult
 	{
-		/// <summary>
-		/// Http Status Code
-		/// </summary>
-		[JsonProperty("status")]
-		public int Status { get; internal set; }
 		[JsonProperty("region")]
 		internal string _region { get; set; }
 		/// <summary>

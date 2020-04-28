@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using R6Api.Enums;
+using R6Api.Interfaces;
 using R6Api.Models;
 using R6Api.Models.SearchResults;
 using R6Api.Models.Stats;
@@ -11,9 +12,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
 namespace R6Api
 {
@@ -40,20 +39,26 @@ namespace R6Api
 		/// </summary>
 		/// <param name="userId">UserId of the Player</param>
 		/// <param name="time">Optional Time Stamp to Avoid Caching</param>
-		/// <returns>Extensive Player Data</returns>
+		/// <returns>DataById under normal operation OR Error Message</returns>
 		public DataById ParseById ( string userId, DateTimeOffset? time = null )
 		{
+			CheckToken();
 			var requestUri = new UriBuilder(_config.BaseUrl) { Path = $"player/{userId}" };
 
+			var query = HttpUtility.ParseQueryString(requestUri.Query);
+
 			if (time != null)
-				requestUri.Query = $"u={time?.ToUnixTimeSeconds()}";
+				query["u"] = time?.ToUnixTimeSeconds().ToString();
 			else if (_config.AutoCacheAvoidance == true)
-				requestUri.Query = $"u={DateTimeOffset.UtcNow.ToUnixTimeSeconds()}";
+				query["u"] = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
+
+			query["cid"] = _config.ApiKey;
+			requestUri.Query = query.ToString();
 
 			var html = string.Empty;
 			var response = (_httpClient.GetAsync(requestUri.Uri)).Result;
 			using var sr = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-				html = sr.ReadToEnd();
+			html = sr.ReadToEnd();
 
 			return ParseIdData(html);
 		}
@@ -64,15 +69,21 @@ namespace R6Api
 		/// <param name="username">Username of the Player</param>
 		/// <param name="platform">Platform of the User</param>
 		/// <param name="time">Optional Time Stamp to Avoid Caching</param>
-		/// <returns>Collection of Username search Results</returns>
+		/// <returns>DataByName under normal operation OR Error Message</returns>
 		public DataByName ParseByName ( string username, Platform platform, DateTimeOffset? time = null )
 		{
+			CheckToken();
 			var requestUri = new UriBuilder(_config.BaseUrl) { Path = $"search/{platform.ToString().ToLower()}/{username}" };
 
+			var query = HttpUtility.ParseQueryString(requestUri.Query);
+
 			if (time != null)
-				requestUri.Query = $"u={time?.ToUnixTimeSeconds()}";
+				query["u"] = time?.ToUnixTimeSeconds().ToString();
 			else if (_config.AutoCacheAvoidance == true)
-				requestUri.Query = $"u={DateTimeOffset.UtcNow.ToUnixTimeSeconds()}";
+				query["u"] = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
+
+			query["cid"] = _config.ApiKey;
+			requestUri.Query = query.ToString();
 
 			var html = string.Empty;
 			var response = _httpClient.GetAsync(requestUri.Uri).Result;
@@ -82,8 +93,11 @@ namespace R6Api
 			var jObject = JObject.Parse(html);
 
 			var data = JsonConvert.DeserializeObject<DataByName>(html);
-			
-			if(jObject["players"].Children().Count() != 0)
+
+			if (data.Status != 200)
+				return data;
+
+			if (jObject["players"].Children().Count() != 0)
 			{
 				data.FoundPlayers = jObject["players"].ToObject<Dictionary<string, Player>>();
 			}
@@ -94,9 +108,10 @@ namespace R6Api
 		/// Get Updated Player Information
 		/// </summary>
 		/// <param name="userId">UserId of the Player</param>
-		/// <returns></returns>
-		public DataById UpdatePlayer(string userId )
+		/// <returns>DataById under normal operation OR Error Message</returns>
+		public DataById UpdatePlayer ( string userId )
 		{
+			CheckToken();
 			var requestUri = new UriBuilder(_config.BaseUrl) { Path = $"update/{userId}" };
 
 			var html = string.Empty;
@@ -113,9 +128,10 @@ namespace R6Api
 		/// <param name="platform">Platform of the Leaderboard</param>
 		/// <param name="region">Region of the Leaderboard</param>
 		/// <param name="time">Optional Time Stamp to Avoid Caching</param>
-		/// <returns></returns>
-		public LeaderboardData GetLeaderboard(Platform platform, Region region, DateTimeOffset? time = null)
+		/// <returns>LeaderboardData under normal operation OR Error Message</returns>
+		public LeaderboardData GetLeaderboard ( Platform platform, Region region, DateTimeOffset? time = null )
 		{
+			CheckToken();
 			var requestUri = new UriBuilder(_config.BaseUrl) { Path = $"leaderboard/{platform.ToString().ToLower()}/{region.ToString().ToLower()}" };
 
 			if (time != null)
@@ -131,29 +147,41 @@ namespace R6Api
 			return JsonConvert.DeserializeObject<LeaderboardData>(html);
 		}
 
-		private DataById ParseIdData(string json )
+		private DataById ParseIdData ( string json )
 		{
-			var userData = JsonConvert.DeserializeObject<DataById>(json);
 			var jObject = JObject.Parse(json);
 
-			if(userData.Status == 200)
+			var userData = JsonConvert.DeserializeObject<DataById>(json);
+			if (userData.Status != 200)
+				return userData;
+
+			if (jObject["social"].Children().Count() != 0)
+				userData.Social = jObject["social"].ToObject<Social>();
+
+			userData.Stats.Casual = jObject["stats"].ToObject<CasualStats>();
+			userData.Stats.Ranked = jObject["stats"].ToObject<RankedStats>();
+			userData.Stats.GeneralPvP = jObject["stats"].ToObject<GeneralStatsPvP>();
+			userData.Stats.GeneralPvE = jObject["stats"].ToObject<GeneralStatsPvE>();
+
+			userData.Ranked.AS = jObject["ranked"].ToObject<RankedAS>();
+			userData.Ranked.NA = jObject["ranked"].ToObject<RankedNA>();
+			userData.Ranked.EU = jObject["ranked"].ToObject<RankedEU>();
+
+			userData.Operators = new Models.Operators();
+			userData.Operators.OpStats = jObject["operators"].ToObject<Dictionary<string, OperatorData>>();
+
+			if (jObject["aliases"].Children().Count() != 0)
 			{
-				userData.Stats.Casual = jObject["stats"].ToObject<CasualStats>();
-				userData.Stats.Ranked = jObject["stats"].ToObject<RankedStats>();
-				userData.Stats.GeneralPvP = jObject["stats"].ToObject<GeneralStatsPvP>();
-				userData.Stats.GeneralPvE = jObject["stats"].ToObject<GeneralStatsPvE>();
-
-				userData.Ranked.AS = jObject["ranked"].ToObject<RankedAS>();
-				userData.Ranked.NA = jObject["ranked"].ToObject<RankedNA>();
-				userData.Ranked.EU = jObject["ranked"].ToObject<RankedEU>();
-
-				if (jObject["aliases"].Children().Count() != 0)
-				{
-					userData.Aliases = jObject["aliases"].ToObject<Dictionary<int, Alias>>().Values;
-				}
+				userData.Aliases = jObject["aliases"].ToObject<Dictionary<int, Alias>>().Values;
 			}
 
 			return userData;
+		}
+
+		private void CheckToken()
+		{
+			if (string.IsNullOrEmpty(_config.ApiKey))
+				throw new Exception("No Api Key Provided");
 		}
 	}
 }
