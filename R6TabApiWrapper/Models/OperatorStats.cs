@@ -24,6 +24,9 @@ namespace R6Api.Models
 			{
 				return Convert.ToDouble(_kd);
 			} }
+		/// <summary>
+		/// Win Rate as Percentage
+		/// </summary>
 		[JsonProperty("winrate")]
 		public int WinRate { get; internal set; }
 	}

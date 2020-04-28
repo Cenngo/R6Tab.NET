@@ -16,7 +16,7 @@ namespace R6Api.Models.SearchResults
         [JsonProperty("API")]
         public Api Api { get; internal set; }
         /// <summary>
-        /// Http Request Response
+        /// Http Request Status Code
         /// </summary>
         [JsonProperty("status")]
         public int Status { get; internal set; }
