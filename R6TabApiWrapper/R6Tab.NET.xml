@@ -45,79 +45,125 @@
             </summary>
             <returns>Url of User Avatar</returns>
         </member>
+        <member name="P:R6Api.Models.SearchResults.SearchResult.Authorized">
+            <summary>
+            Is the Used Request Token Authorized
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.SearchResult.Status">
+            <summary>
+            Http Request Response
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.SearchResult.ErrorMessage">
+            <summary>
+            Error Message
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.SearchResult.Message">
+            <summary>
+            Further Information About Request
+            </summary>
+        </member>
+        <member name="T:R6Api.Models.SearchResults.DataById">
+            <summary>
+            Api Data, Parsed from Id Search for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Player">
+            <summary>
+            Credentials of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Stats">
+            <summary>
+            Overall Stats of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Ranked">
+            <summary>
+            Ranked Stats of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Social">
+            <summary>
+            Social Network Information as Registered to R6Tab.
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Seasons">
+            <summary>
+            Seasonal Ranked Data
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataById.Operators">
+            <summary>
+            Operator Datas
+            </summary>
+        </member>
+        <member name="T:R6Api.Models.SearchResults.DataByName">
+            <summary>
+            Api Data, Parsed from Name Search for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.DataByName.FoundPlayers">
+            <summary>
+            Found Matches for the Searched Name
+            </summary>
+        </member>
         <member name="T:R6Api.Models.Custom">
             <summary>
             Custom R6Tab Data
             </summary>
         </member>
-        <member name="P:R6Api.Models.OperatorData.Wins">
+        <member name="P:R6Api.Models.Operators.TopPlayedOverall">
             <summary>
-            Operator Data as Sorted for Wins
+            Operators with Most Play Time Overall
             </summary>
         </member>
-        <member name="P:R6Api.Models.OperatorData.Losses">
+        <member name="P:R6Api.Models.Operators.TopWinsOverall">
             <summary>
-            Operator Data as Sorted for Losses
+            Operators with Most Wins Overall
             </summary>
         </member>
-        <member name="P:R6Api.Models.OperatorData.Kills">
+        <member name="P:R6Api.Models.Operators.TopLossesOverall">
             <summary>
-            Operator Data as Sorted for Kills
+            Operators with Most Losses Overall
             </summary>
         </member>
-        <member name="P:R6Api.Models.OperatorData.Deaths">
+        <member name="P:R6Api.Models.Operators.TopKillsOverall">
             <summary>
-            Operator Data as Sorted for Deaths
+            Operators with Most Kills Overall
             </summary>
         </member>
-        <member name="P:R6Api.Models.OperatorData.TimePlayed">
+        <member name="P:R6Api.Models.Operators.TopDeathsOverall">
             <summary>
-            Operator Data as Sorted for Time Played
+            Operators with Most Deaths Overall
             </summary>
         </member>
-        <member name="M:R6Api.Models.OperatorData.GetTopPlayed">
+        <member name="P:R6Api.Models.Operators.TopPlayedSeasonal">
             <summary>
-            Get a Collection Containing the Top Operator/Operators in Play-Time Category
+            Operators with Most Play Time Seasonal
             </summary>
-            <returns>Collection of Operators With Most Play Time</returns>
         </member>
-        <member name="M:R6Api.Models.OperatorData.GetTopWins">
+        <member name="P:R6Api.Models.Operators.TopWinsSeasonal">
             <summary>
-            Get a Collection Containing the Top Operator/Operators in Wins Category
+            Operators with Most Wins Seasonal
             </summary>
-            <returns>Collection of Operators With Most Wins</returns>
         </member>
-        <member name="M:R6Api.Models.OperatorData.GetTopLosses">
+        <member name="P:R6Api.Models.Operators.TopLossesSeasonal">
             <summary>
-            Get a Collection Containing the Top Operator/Operators in Losses Category
+            Operators with Most Losses Seasonal
             </summary>
-            <returns>Collection of Operators With Most Losses</returns>
         </member>
-        <member name="M:R6Api.Models.OperatorData.GetTopKills">
+        <member name="P:R6Api.Models.Operators.TopKillsSeasonal">
             <summary>
-            Get a Collection Containing the Top Operator/Operators in Kills Category
+            Operators with Most Kills Seasonal
             </summary>
-            <returns>Collection of Operators With Most Kills</returns>
         </member>
-        <member name="M:R6Api.Models.OperatorData.GetTopDeaths">
+        <member name="P:R6Api.Models.Operators.TopDeathsSeasonal">
             <summary>
-            Get a Collection Containing the Top Operator/Operators in Deaths Category
+            Operators with Most Deaths Seasonal
             </summary>
-            <returns>Collection of Operators With Most Deaths</returns>
-        </member>
-        <member name="M:R6Api.Models.OperatorData.DecodeOperator(System.String)">
-            <summary>
-            Get a Decoded Version of the Operator Id
-            </summary>
-            <param name="opCode">Code Given to the Operator by R6Tab</param>
-            <returns>Name of the Operator</returns>
-        </member>
-        <member name="M:R6Api.Models.OperatorData.GetOperatorStats(R6Api.Enums.Operators)">
-            <summary>
-            Get Stats for a Specific Operator
-            </summary>
-            <param name="op">Operator</param>
-            <returns></returns>
         </member>
         <member name="T:R6Api.Models.RankedAS">
             <summary>
@@ -242,61 +288,6 @@
             </summary>
             <returns>Url of the Banner Img</returns>
         </member>
-        <member name="T:R6Api.Models.SearchResults.DataById">
-            <summary>
-            Api Data, Parsed from Id Search for Rainbow6
-            </summary>
-        </member>
-        <member name="P:R6Api.Models.SearchResults.DataById.Status">
-            <summary>
-            Http Status Code
-            </summary>
-        </member>
-        <member name="P:R6Api.Models.SearchResults.DataById.Player">
-            <summary>
-            Credentials of the Player
-            </summary>
-        </member>
-        <member name="P:R6Api.Models.SearchResults.DataById.Stats">
-            <summary>
-            Overall Stats of the Player
-            </summary>
-        </member>
-        <member name="P:R6Api.Models.SearchResults.DataById.Ranked">
-            <summary>
-            Ranked Stats of the Player
-            </summary>
-        </member>
-        <member name="P:R6Api.Models.SearchResults.DataById.Social">
-            <summary>
-            Social Network Information as Registered to R6Tab.
-            </summary>
-        </member>
-        <member name="P:R6Api.Models.SearchResults.DataById.Seasons">
-            <summary>
-            Seasonal Ranked Data
-            </summary>
-        </member>
-        <member name="P:R6Api.Models.SearchResults.DataById.OperatorData">
-            <summary>
-            Operator Datas
-            </summary>
-        </member>
-        <member name="T:R6Api.Models.SearchResults.DataByName">
-            <summary>
-            Api Data, Parsed from Name Search for Rainbow6
-            </summary>
-        </member>
-        <member name="P:R6Api.Models.SearchResults.DataByName.Status">
-            <summary>
-            Http Status Code
-            </summary>
-        </member>
-        <member name="P:R6Api.Models.SearchResults.DataByName.FoundPlayers">
-            <summary>
-            Found Matches for the Searched Name
-            </summary>
-        </member>
         <member name="P:R6Api.Models.Stats.CasualStats.KillDeath">
             <summary>
             Kill/Death Ratio as Percentage
@@ -404,7 +395,7 @@
             </summary>
             <param name="userId">UserId of the Player</param>
             <param name="time">Optional Time Stamp to Avoid Caching</param>
-            <returns>Extensive Player Data</returns>
+            <returns>DataById under normal operation OR Error Message</returns>
         </member>
         <member name="M:R6Api.R6Client.ParseByName(System.String,R6Api.Enums.Platform,System.Nullable{System.DateTimeOffset})">
             <summary>
@@ -413,14 +404,14 @@
             <param name="username">Username of the Player</param>
             <param name="platform">Platform of the User</param>
             <param name="time">Optional Time Stamp to Avoid Caching</param>
-            <returns>Collection of Username search Results</returns>
+            <returns>DataByName under normal operation OR Error Message</returns>
         </member>
         <member name="M:R6Api.R6Client.UpdatePlayer(System.String)">
             <summary>
             Get Updated Player Information
             </summary>
             <param name="userId">UserId of the Player</param>
-            <returns></returns>
+            <returns>DataById under normal operation OR Error Message</returns>
         </member>
         <member name="M:R6Api.R6Client.GetLeaderboard(R6Api.Enums.Platform,R6TabApiWrapper.Enums.Region,System.Nullable{System.DateTimeOffset})">
             <summary>
@@ -429,7 +420,7 @@
             <param name="platform">Platform of the Leaderboard</param>
             <param name="region">Region of the Leaderboard</param>
             <param name="time">Optional Time Stamp to Avoid Caching</param>
-            <returns></returns>
+            <returns>LeaderboardData under normal operation OR Error Message</returns>
         </member>
         <member name="F:R6Api.R6Config.AutoCacheAvoidance">
             <summary>
@@ -441,6 +432,11 @@
             Base Url of the Api(defaulted as: https://r6.apitab.com/)
             </summary>
         </member>
+        <member name="F:R6Api.R6Config.ApiKey">
+            <summary>
+            Api Key from Tabwire. Contact https://tabstats.com/contact for a key.
+            </summary>
+        </member>
         <member name="T:R6TabApiWrapper.Enums.Region">
             <summary>
             Leaderboard Regions for Rainbow6
@@ -449,11 +445,6 @@
         <member name="T:R6TabApiWrapper.Interfaces.IRankedData">
             <summary>
             Ranked Data Template that Contains Rank Info for Rainbow6
-            </summary>
-        </member>
-        <member name="P:R6TabApiWrapper.Models.SearchResults.LeaderboardData.Status">
-            <summary>
-            Http Status Code
             </summary>
         </member>
         <member name="P:R6TabApiWrapper.Models.SearchResults.LeaderboardData.Region">

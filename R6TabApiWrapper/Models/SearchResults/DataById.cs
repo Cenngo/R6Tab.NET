@@ -13,13 +13,8 @@ namespace R6Api.Models.SearchResults
 	/// <summary>
 	/// Api Data, Parsed from Id Search for Rainbow6
 	/// </summary>
-	public class DataById : ISearchResult
+	public class DataById : SearchResult
 	{
-		/// <summary>
-		/// Http Status Code
-		/// </summary>
-		[JsonProperty("status")]
-		public int Status { get; internal set; }
 		[JsonProperty("found")]
 		public bool MatchFound { get; internal set; }
 		/// <summary>
@@ -46,7 +41,7 @@ namespace R6Api.Models.SearchResults
 		/// <summary>
 		/// Social Network Information as Registered to R6Tab.
 		/// </summary>
-		[JsonProperty("social")]
+		[JsonIgnore]
 		public Social Social { get; internal set; }
 		/// <summary>
 		/// Seasonal Ranked Data
@@ -56,7 +51,7 @@ namespace R6Api.Models.SearchResults
 		/// <summary>
 		/// Operator Datas
 		/// </summary>
-		[JsonProperty("operators_old")]
-		public OperatorData OperatorData { get; internal set; }
+		[JsonIgnore]
+		public Operators Operators { get; internal set; }
 	}
 }

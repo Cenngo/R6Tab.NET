@@ -9,13 +9,8 @@ namespace R6Api.Models.SearchResults
 	/// <summary>
 	/// Api Data, Parsed from Name Search for Rainbow6
 	/// </summary>
-	public class DataByName : ISearchResult
+	public class DataByName : SearchResult
 	{
-		/// <summary>
-		/// Http Status Code
-		/// </summary>
-		[JsonProperty("status")]
-		public int Status { get; internal set; }
 		[JsonProperty("foundmatch")]
 		public bool FoundMatch { get; internal set; }
 		[JsonProperty("requested")]
