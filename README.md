@@ -13,9 +13,15 @@ Api Wrapper for R6Tab Api
 * Get Rank Banners
 * Get User Avatars
 
+Api Keys are provided by TabWire. For further information about getting one please refer to https://github.com/Tabwire/R6Tab-API
+
 ## Getting Started
 ```csharp
-var client = new R6Client();
+var config = new R6Config()
+{
+   ApiKey = "xxxx-xxxx-xxxx-xxxx"
+};
+var client = new R6Client(config);
 
 //Parsing By Name
 var result = client.ParseByName("baiier", Platform.Uplay);
