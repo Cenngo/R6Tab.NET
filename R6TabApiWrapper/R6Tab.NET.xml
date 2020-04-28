@@ -4,11 +4,6 @@
         <name>R6Tab.NET</name>
     </assembly>
     <members>
-        <member name="T:R6Api.Enums.Operators">
-            <summary>
-            Rainbow 6 Siege Operators
-            </summary>
-        </member>
         <member name="T:R6Api.Enums.Platform">
             <summary>
             Game Platforms for Rainbow6
@@ -52,7 +47,7 @@
         </member>
         <member name="P:R6Api.Models.SearchResults.SearchResult.Status">
             <summary>
-            Http Request Response
+            Http Request Status Code
             </summary>
         </member>
         <member name="P:R6Api.Models.SearchResults.SearchResult.ErrorMessage">
@@ -163,6 +158,11 @@
         <member name="P:R6Api.Models.Operators.TopDeathsSeasonal">
             <summary>
             Operators with Most Deaths Seasonal
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorStats.WinRate">
+            <summary>
+            Win Rate as Percentage
             </summary>
         </member>
         <member name="T:R6Api.Models.RankedAS">
