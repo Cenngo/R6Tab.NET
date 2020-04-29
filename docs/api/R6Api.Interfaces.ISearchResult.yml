@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Interfaces.ISearchResult
+  commentId: T:R6Api.Interfaces.ISearchResult
+  id: ISearchResult
+  parent: R6Api.Interfaces
+  children:
+  - R6Api.Interfaces.ISearchResult.Status
+  langs:
+  - csharp
+  - vb
+  name: ISearchResult
+  nameWithType: ISearchResult
+  fullName: R6Api.Interfaces.ISearchResult
+  type: Interface
+  source:
+    id: ISearchResult
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\ISearchResult.cs
+    startLine: 6
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: public interface ISearchResult
+    content.vb: Public Interface ISearchResult
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R6Api.Interfaces.ISearchResult.Status
+  commentId: P:R6Api.Interfaces.ISearchResult.Status
+  id: Status
+  parent: R6Api.Interfaces.ISearchResult
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: ISearchResult.Status
+  fullName: R6Api.Interfaces.ISearchResult.Status
+  type: Property
+  source:
+    id: Status
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\ISearchResult.cs
+    startLine: 8
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int Status { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Status As Integer
+  overload: R6Api.Interfaces.ISearchResult.Status*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: R6Api.Interfaces
+  commentId: N:R6Api.Interfaces
+  name: R6Api.Interfaces
+  nameWithType: R6Api.Interfaces
+  fullName: R6Api.Interfaces
+- uid: R6Api.Interfaces.ISearchResult.Status*
+  commentId: Overload:R6Api.Interfaces.ISearchResult.Status
+  name: Status
+  nameWithType: ISearchResult.Status
+  fullName: R6Api.Interfaces.ISearchResult.Status
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

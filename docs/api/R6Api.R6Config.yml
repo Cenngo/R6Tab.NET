@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.R6Config
+  commentId: T:R6Api.R6Config
+  id: R6Config
+  parent: R6Api
+  children:
+  - R6Api.R6Config.#ctor
+  - R6Api.R6Config.ApiKey
+  - R6Api.R6Config.AutoCacheAvoidance
+  - R6Api.R6Config.BaseUrl
+  langs:
+  - csharp
+  - vb
+  name: R6Config
+  nameWithType: R6Config
+  fullName: R6Api.R6Config
+  type: Class
+  source:
+    id: R6Config
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\R6Config.cs
+    startLine: 2
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api
+  syntax:
+    content: public class R6Config
+    content.vb: Public Class R6Config
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R6Api.R6Config.#ctor
+  commentId: M:R6Api.R6Config.#ctor
+  id: '#ctor'
+  parent: R6Api.R6Config
+  langs:
+  - csharp
+  - vb
+  name: R6Config()
+  nameWithType: R6Config.R6Config()
+  fullName: R6Api.R6Config.R6Config()
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\R6Config.cs
+    startLine: 4
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api
+  syntax:
+    content: public R6Config()
+    content.vb: Public Sub New
+  overload: R6Api.R6Config.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R6Api.R6Config.AutoCacheAvoidance
+  commentId: F:R6Api.R6Config.AutoCacheAvoidance
+  id: AutoCacheAvoidance
+  parent: R6Api.R6Config
+  langs:
+  - csharp
+  - vb
+  name: AutoCacheAvoidance
+  nameWithType: R6Config.AutoCacheAvoidance
+  fullName: R6Api.R6Config.AutoCacheAvoidance
+  type: Field
+  source:
+    id: AutoCacheAvoidance
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\R6Config.cs
+    startLine: 11
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api
+  summary: "\nAuto Send Current Unix Epoch to Avoid Caching\n"
+  example: []
+  syntax:
+    content: public bool AutoCacheAvoidance
+    return:
+      type: System.Boolean
+    content.vb: Public AutoCacheAvoidance As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R6Api.R6Config.BaseUrl
+  commentId: F:R6Api.R6Config.BaseUrl
+  id: BaseUrl
+  parent: R6Api.R6Config
+  langs:
+  - csharp
+  - vb
+  name: BaseUrl
+  nameWithType: R6Config.BaseUrl
+  fullName: R6Api.R6Config.BaseUrl
+  type: Field
+  source:
+    id: BaseUrl
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\R6Config.cs
+    startLine: 15
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api
+  summary: "\nBase Url of the Api(defaulted as: https://r6.apitab.com/)\n"
+  example: []
+  syntax:
+    content: public string BaseUrl
+    return:
+      type: System.String
+    content.vb: Public BaseUrl As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: R6Api.R6Config.ApiKey
+  commentId: F:R6Api.R6Config.ApiKey
+  id: ApiKey
+  parent: R6Api.R6Config
+  langs:
+  - csharp
+  - vb
+  name: ApiKey
+  nameWithType: R6Config.ApiKey
+  fullName: R6Api.R6Config.ApiKey
+  type: Field
+  source:
+    id: ApiKey
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\R6Config.cs
+    startLine: 19
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api
+  summary: "\nApi Key from Tabwire. Contact https://tabstats.com/contact for a key.\n"
+  example: []
+  syntax:
+    content: public string ApiKey
+    return:
+      type: System.String
+    content.vb: Public ApiKey As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R6Api
+  commentId: N:R6Api
+  name: R6Api
+  nameWithType: R6Api
+  fullName: R6Api
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R6Api.R6Config.#ctor*
+  commentId: Overload:R6Api.R6Config.#ctor
+  name: R6Config
+  nameWithType: R6Config.R6Config
+  fullName: R6Api.R6Config.R6Config
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

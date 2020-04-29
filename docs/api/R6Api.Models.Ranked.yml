@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Models.Ranked
+  commentId: N:R6Api.Models.Ranked
+  id: R6Api.Models.Ranked
+  children:
+  - R6Api.Models.Ranked.RankedFromId
+  langs:
+  - csharp
+  - vb
+  name: R6Api.Models.Ranked
+  nameWithType: R6Api.Models.Ranked
+  fullName: R6Api.Models.Ranked
+  type: Namespace
+  assemblies:
+  - R6Tab.NET
+references:
+- uid: R6Api.Models.Ranked.RankedFromId
+  commentId: T:R6Api.Models.Ranked.RankedFromId
+  parent: R6Api.Models.Ranked
+  name: RankedFromId
+  nameWithType: RankedFromId
+  fullName: R6Api.Models.Ranked.RankedFromId
+- uid: R6Api.Models.Ranked
+  commentId: N:R6Api.Models.Ranked
+  name: R6Api.Models.Ranked
+  nameWithType: R6Api.Models.Ranked
+  fullName: R6Api.Models.Ranked

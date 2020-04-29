@@ -1,0 +1,160 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6TabApiWrapper.Enums.Region
+  commentId: T:R6TabApiWrapper.Enums.Region
+  id: Region
+  parent: R6TabApiWrapper.Enums
+  children:
+  - R6TabApiWrapper.Enums.Region.All
+  - R6TabApiWrapper.Enums.Region.America
+  - R6TabApiWrapper.Enums.Region.Asia
+  - R6TabApiWrapper.Enums.Region.Europe
+  langs:
+  - csharp
+  - vb
+  name: Region
+  nameWithType: Region
+  fullName: R6TabApiWrapper.Enums.Region
+  type: Enum
+  source:
+    id: Region
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Enums\Region.cs
+    startLine: 9
+  assemblies:
+  - R6Tab.NET
+  namespace: R6TabApiWrapper.Enums
+  summary: "\nLeaderboard Regions for Rainbow6\n"
+  example: []
+  syntax:
+    content: public enum Region
+    content.vb: Public Enum Region
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R6TabApiWrapper.Enums.Region.America
+  commentId: F:R6TabApiWrapper.Enums.Region.America
+  id: America
+  parent: R6TabApiWrapper.Enums.Region
+  langs:
+  - csharp
+  - vb
+  name: America
+  nameWithType: Region.America
+  fullName: R6TabApiWrapper.Enums.Region.America
+  type: Field
+  source:
+    id: America
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Enums\Region.cs
+    startLine: 11
+  assemblies:
+  - R6Tab.NET
+  namespace: R6TabApiWrapper.Enums
+  syntax:
+    content: America = 0
+    return:
+      type: R6TabApiWrapper.Enums.Region
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R6TabApiWrapper.Enums.Region.Europe
+  commentId: F:R6TabApiWrapper.Enums.Region.Europe
+  id: Europe
+  parent: R6TabApiWrapper.Enums.Region
+  langs:
+  - csharp
+  - vb
+  name: Europe
+  nameWithType: Region.Europe
+  fullName: R6TabApiWrapper.Enums.Region.Europe
+  type: Field
+  source:
+    id: Europe
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Enums\Region.cs
+    startLine: 12
+  assemblies:
+  - R6Tab.NET
+  namespace: R6TabApiWrapper.Enums
+  syntax:
+    content: Europe = 1
+    return:
+      type: R6TabApiWrapper.Enums.Region
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R6TabApiWrapper.Enums.Region.Asia
+  commentId: F:R6TabApiWrapper.Enums.Region.Asia
+  id: Asia
+  parent: R6TabApiWrapper.Enums.Region
+  langs:
+  - csharp
+  - vb
+  name: Asia
+  nameWithType: Region.Asia
+  fullName: R6TabApiWrapper.Enums.Region.Asia
+  type: Field
+  source:
+    id: Asia
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Enums\Region.cs
+    startLine: 13
+  assemblies:
+  - R6Tab.NET
+  namespace: R6TabApiWrapper.Enums
+  syntax:
+    content: Asia = 2
+    return:
+      type: R6TabApiWrapper.Enums.Region
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R6TabApiWrapper.Enums.Region.All
+  commentId: F:R6TabApiWrapper.Enums.Region.All
+  id: All
+  parent: R6TabApiWrapper.Enums.Region
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: Region.All
+  fullName: R6TabApiWrapper.Enums.Region.All
+  type: Field
+  source:
+    id: All
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Enums\Region.cs
+    startLine: 14
+  assemblies:
+  - R6Tab.NET
+  namespace: R6TabApiWrapper.Enums
+  syntax:
+    content: All = 3
+    return:
+      type: R6TabApiWrapper.Enums.Region
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R6TabApiWrapper.Enums
+  commentId: N:R6TabApiWrapper.Enums
+  name: R6TabApiWrapper.Enums
+  nameWithType: R6TabApiWrapper.Enums
+  fullName: R6TabApiWrapper.Enums
+- uid: R6TabApiWrapper.Enums.Region
+  commentId: T:R6TabApiWrapper.Enums.Region
+  parent: R6TabApiWrapper.Enums
+  name: Region
+  nameWithType: Region
+  fullName: R6TabApiWrapper.Enums.Region

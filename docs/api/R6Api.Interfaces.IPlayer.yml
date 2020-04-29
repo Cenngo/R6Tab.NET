@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Interfaces.IPlayer
+  commentId: T:R6Api.Interfaces.IPlayer
+  id: IPlayer
+  parent: R6Api.Interfaces
+  children:
+  - R6Api.Interfaces.IPlayer.GetAvatar
+  - R6Api.Interfaces.IPlayer.User
+  langs:
+  - csharp
+  - vb
+  name: IPlayer
+  nameWithType: IPlayer
+  fullName: R6Api.Interfaces.IPlayer
+  type: Interface
+  source:
+    id: IPlayer
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IPlayer.cs
+    startLine: 9
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  summary: "\nPlayer Template With a User Id for Rainbow6\n"
+  example: []
+  syntax:
+    content: public interface IPlayer
+    content.vb: Public Interface IPlayer
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R6Api.Interfaces.IPlayer.User
+  commentId: P:R6Api.Interfaces.IPlayer.User
+  id: User
+  parent: R6Api.Interfaces.IPlayer
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: IPlayer.User
+  fullName: R6Api.Interfaces.IPlayer.User
+  type: Property
+  source:
+    id: User
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IPlayer.cs
+    startLine: 11
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: string User { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property User As String
+  overload: R6Api.Interfaces.IPlayer.User*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IPlayer.GetAvatar
+  commentId: M:R6Api.Interfaces.IPlayer.GetAvatar
+  id: GetAvatar
+  parent: R6Api.Interfaces.IPlayer
+  langs:
+  - csharp
+  - vb
+  name: GetAvatar()
+  nameWithType: IPlayer.GetAvatar()
+  fullName: R6Api.Interfaces.IPlayer.GetAvatar()
+  type: Method
+  source:
+    id: GetAvatar
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IPlayer.cs
+    startLine: 12
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: string GetAvatar()
+    return:
+      type: System.String
+    content.vb: Function GetAvatar As String
+  overload: R6Api.Interfaces.IPlayer.GetAvatar*
+references:
+- uid: R6Api.Interfaces
+  commentId: N:R6Api.Interfaces
+  name: R6Api.Interfaces
+  nameWithType: R6Api.Interfaces
+  fullName: R6Api.Interfaces
+- uid: R6Api.Interfaces.IPlayer.User*
+  commentId: Overload:R6Api.Interfaces.IPlayer.User
+  name: User
+  nameWithType: IPlayer.User
+  fullName: R6Api.Interfaces.IPlayer.User
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R6Api.Interfaces.IPlayer.GetAvatar*
+  commentId: Overload:R6Api.Interfaces.IPlayer.GetAvatar
+  name: GetAvatar
+  nameWithType: IPlayer.GetAvatar
+  fullName: R6Api.Interfaces.IPlayer.GetAvatar

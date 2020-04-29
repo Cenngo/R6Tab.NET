@@ -1,0 +1,710 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Interfaces.IRegionRanked
+  commentId: T:R6Api.Interfaces.IRegionRanked
+  id: IRegionRanked
+  parent: R6Api.Interfaces
+  children:
+  - R6Api.Interfaces.IRegionRanked.Abandons
+  - R6Api.Interfaces.IRegionRanked.ActualMmr
+  - R6Api.Interfaces.IRegionRanked.Champ
+  - R6Api.Interfaces.IRegionRanked.DeathPerMatch
+  - R6Api.Interfaces.IRegionRanked.Deaths
+  - R6Api.Interfaces.IRegionRanked.KillDeath
+  - R6Api.Interfaces.IRegionRanked.KillPerMatch
+  - R6Api.Interfaces.IRegionRanked.Kills
+  - R6Api.Interfaces.IRegionRanked.Losses
+  - R6Api.Interfaces.IRegionRanked.Matches
+  - R6Api.Interfaces.IRegionRanked.MaxMmr
+  - R6Api.Interfaces.IRegionRanked.MaxRank
+  - R6Api.Interfaces.IRegionRanked.MaxRankName
+  - R6Api.Interfaces.IRegionRanked.MmrChange
+  - R6Api.Interfaces.IRegionRanked.RankName
+  - R6Api.Interfaces.IRegionRanked.WinLose
+  - R6Api.Interfaces.IRegionRanked.Wins
+  langs:
+  - csharp
+  - vb
+  name: IRegionRanked
+  nameWithType: IRegionRanked
+  fullName: R6Api.Interfaces.IRegionRanked
+  type: Interface
+  source:
+    id: IRegionRanked
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 11
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  summary: "\nRegional Ranked Data Template for Rainbow6\n"
+  example: []
+  syntax:
+    content: 'public interface IRegionRanked : IRankedData'
+    content.vb: >-
+      Public Interface IRegionRanked
+          Inherits IRankedData
+  inheritedMembers:
+  - R6TabApiWrapper.Interfaces.IRankedData.Rank
+  - R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R6Api.Interfaces.IRegionRanked.Kills
+  commentId: P:R6Api.Interfaces.IRegionRanked.Kills
+  id: Kills
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: Kills
+  nameWithType: IRegionRanked.Kills
+  fullName: R6Api.Interfaces.IRegionRanked.Kills
+  type: Property
+  source:
+    id: Kills
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 13
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int Kills { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Kills As Integer
+  overload: R6Api.Interfaces.IRegionRanked.Kills*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.Deaths
+  commentId: P:R6Api.Interfaces.IRegionRanked.Deaths
+  id: Deaths
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: Deaths
+  nameWithType: IRegionRanked.Deaths
+  fullName: R6Api.Interfaces.IRegionRanked.Deaths
+  type: Property
+  source:
+    id: Deaths
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 14
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int Deaths { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Deaths As Integer
+  overload: R6Api.Interfaces.IRegionRanked.Deaths*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.Wins
+  commentId: P:R6Api.Interfaces.IRegionRanked.Wins
+  id: Wins
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: Wins
+  nameWithType: IRegionRanked.Wins
+  fullName: R6Api.Interfaces.IRegionRanked.Wins
+  type: Property
+  source:
+    id: Wins
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 15
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int Wins { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Wins As Integer
+  overload: R6Api.Interfaces.IRegionRanked.Wins*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.Losses
+  commentId: P:R6Api.Interfaces.IRegionRanked.Losses
+  id: Losses
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: Losses
+  nameWithType: IRegionRanked.Losses
+  fullName: R6Api.Interfaces.IRegionRanked.Losses
+  type: Property
+  source:
+    id: Losses
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 16
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int Losses { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Losses As Integer
+  overload: R6Api.Interfaces.IRegionRanked.Losses*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.Abandons
+  commentId: P:R6Api.Interfaces.IRegionRanked.Abandons
+  id: Abandons
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: Abandons
+  nameWithType: IRegionRanked.Abandons
+  fullName: R6Api.Interfaces.IRegionRanked.Abandons
+  type: Property
+  source:
+    id: Abandons
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 17
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int Abandons { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Abandons As Integer
+  overload: R6Api.Interfaces.IRegionRanked.Abandons*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.MaxMmr
+  commentId: P:R6Api.Interfaces.IRegionRanked.MaxMmr
+  id: MaxMmr
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: MaxMmr
+  nameWithType: IRegionRanked.MaxMmr
+  fullName: R6Api.Interfaces.IRegionRanked.MaxMmr
+  type: Property
+  source:
+    id: MaxMmr
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 18
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int MaxMmr { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaxMmr As Integer
+  overload: R6Api.Interfaces.IRegionRanked.MaxMmr*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.Champ
+  commentId: P:R6Api.Interfaces.IRegionRanked.Champ
+  id: Champ
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: Champ
+  nameWithType: IRegionRanked.Champ
+  fullName: R6Api.Interfaces.IRegionRanked.Champ
+  type: Property
+  source:
+    id: Champ
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 19
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int Champ { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Champ As Integer
+  overload: R6Api.Interfaces.IRegionRanked.Champ*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.MmrChange
+  commentId: P:R6Api.Interfaces.IRegionRanked.MmrChange
+  id: MmrChange
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: MmrChange
+  nameWithType: IRegionRanked.MmrChange
+  fullName: R6Api.Interfaces.IRegionRanked.MmrChange
+  type: Property
+  source:
+    id: MmrChange
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 20
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int MmrChange { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MmrChange As Integer
+  overload: R6Api.Interfaces.IRegionRanked.MmrChange*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.ActualMmr
+  commentId: P:R6Api.Interfaces.IRegionRanked.ActualMmr
+  id: ActualMmr
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: ActualMmr
+  nameWithType: IRegionRanked.ActualMmr
+  fullName: R6Api.Interfaces.IRegionRanked.ActualMmr
+  type: Property
+  source:
+    id: ActualMmr
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 21
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int ActualMmr { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ActualMmr As Integer
+  overload: R6Api.Interfaces.IRegionRanked.ActualMmr*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.Matches
+  commentId: P:R6Api.Interfaces.IRegionRanked.Matches
+  id: Matches
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: Matches
+  nameWithType: IRegionRanked.Matches
+  fullName: R6Api.Interfaces.IRegionRanked.Matches
+  type: Property
+  source:
+    id: Matches
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 22
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int Matches { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Matches As Integer
+  overload: R6Api.Interfaces.IRegionRanked.Matches*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.WinLose
+  commentId: P:R6Api.Interfaces.IRegionRanked.WinLose
+  id: WinLose
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: WinLose
+  nameWithType: IRegionRanked.WinLose
+  fullName: R6Api.Interfaces.IRegionRanked.WinLose
+  type: Property
+  source:
+    id: WinLose
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 23
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: double WinLose { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property WinLose As Double
+  overload: R6Api.Interfaces.IRegionRanked.WinLose*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.KillDeath
+  commentId: P:R6Api.Interfaces.IRegionRanked.KillDeath
+  id: KillDeath
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: KillDeath
+  nameWithType: IRegionRanked.KillDeath
+  fullName: R6Api.Interfaces.IRegionRanked.KillDeath
+  type: Property
+  source:
+    id: KillDeath
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 24
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: double KillDeath { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property KillDeath As Double
+  overload: R6Api.Interfaces.IRegionRanked.KillDeath*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.RankName
+  commentId: P:R6Api.Interfaces.IRegionRanked.RankName
+  id: RankName
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: RankName
+  nameWithType: IRegionRanked.RankName
+  fullName: R6Api.Interfaces.IRegionRanked.RankName
+  type: Property
+  source:
+    id: RankName
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 25
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: string RankName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property RankName As String
+  overload: R6Api.Interfaces.IRegionRanked.RankName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.MaxRank
+  commentId: P:R6Api.Interfaces.IRegionRanked.MaxRank
+  id: MaxRank
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: MaxRank
+  nameWithType: IRegionRanked.MaxRank
+  fullName: R6Api.Interfaces.IRegionRanked.MaxRank
+  type: Property
+  source:
+    id: MaxRank
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 26
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int MaxRank { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaxRank As Integer
+  overload: R6Api.Interfaces.IRegionRanked.MaxRank*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.MaxRankName
+  commentId: P:R6Api.Interfaces.IRegionRanked.MaxRankName
+  id: MaxRankName
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: MaxRankName
+  nameWithType: IRegionRanked.MaxRankName
+  fullName: R6Api.Interfaces.IRegionRanked.MaxRankName
+  type: Property
+  source:
+    id: MaxRankName
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 27
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: string MaxRankName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property MaxRankName As String
+  overload: R6Api.Interfaces.IRegionRanked.MaxRankName*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.KillPerMatch
+  commentId: P:R6Api.Interfaces.IRegionRanked.KillPerMatch
+  id: KillPerMatch
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: KillPerMatch
+  nameWithType: IRegionRanked.KillPerMatch
+  fullName: R6Api.Interfaces.IRegionRanked.KillPerMatch
+  type: Property
+  source:
+    id: KillPerMatch
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 28
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: double KillPerMatch { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property KillPerMatch As Double
+  overload: R6Api.Interfaces.IRegionRanked.KillPerMatch*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IRegionRanked.DeathPerMatch
+  commentId: P:R6Api.Interfaces.IRegionRanked.DeathPerMatch
+  id: DeathPerMatch
+  parent: R6Api.Interfaces.IRegionRanked
+  langs:
+  - csharp
+  - vb
+  name: DeathPerMatch
+  nameWithType: IRegionRanked.DeathPerMatch
+  fullName: R6Api.Interfaces.IRegionRanked.DeathPerMatch
+  type: Property
+  source:
+    id: DeathPerMatch
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRegionRanked.cs
+    startLine: 29
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: double DeathPerMatch { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property DeathPerMatch As Double
+  overload: R6Api.Interfaces.IRegionRanked.DeathPerMatch*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: R6Api.Interfaces
+  commentId: N:R6Api.Interfaces
+  name: R6Api.Interfaces
+  nameWithType: R6Api.Interfaces
+  fullName: R6Api.Interfaces
+- uid: R6TabApiWrapper.Interfaces.IRankedData.Rank
+  commentId: P:R6TabApiWrapper.Interfaces.IRankedData.Rank
+  parent: R6TabApiWrapper.Interfaces.IRankedData
+  name: Rank
+  nameWithType: IRankedData.Rank
+  fullName: R6TabApiWrapper.Interfaces.IRankedData.Rank
+- uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  commentId: M:R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  parent: R6TabApiWrapper.Interfaces.IRankedData
+  name: GetRankImg()
+  nameWithType: IRankedData.GetRankImg()
+  fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg()
+  spec.csharp:
+  - uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+    name: GetRankImg
+    nameWithType: IRankedData.GetRankImg
+    fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+    name: GetRankImg
+    nameWithType: IRankedData.GetRankImg
+    fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R6TabApiWrapper.Interfaces.IRankedData
+  commentId: T:R6TabApiWrapper.Interfaces.IRankedData
+  parent: R6TabApiWrapper.Interfaces
+  name: IRankedData
+  nameWithType: IRankedData
+  fullName: R6TabApiWrapper.Interfaces.IRankedData
+- uid: R6TabApiWrapper.Interfaces
+  commentId: N:R6TabApiWrapper.Interfaces
+  name: R6TabApiWrapper.Interfaces
+  nameWithType: R6TabApiWrapper.Interfaces
+  fullName: R6TabApiWrapper.Interfaces
+- uid: R6Api.Interfaces.IRegionRanked.Kills*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.Kills
+  name: Kills
+  nameWithType: IRegionRanked.Kills
+  fullName: R6Api.Interfaces.IRegionRanked.Kills
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R6Api.Interfaces.IRegionRanked.Deaths*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.Deaths
+  name: Deaths
+  nameWithType: IRegionRanked.Deaths
+  fullName: R6Api.Interfaces.IRegionRanked.Deaths
+- uid: R6Api.Interfaces.IRegionRanked.Wins*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.Wins
+  name: Wins
+  nameWithType: IRegionRanked.Wins
+  fullName: R6Api.Interfaces.IRegionRanked.Wins
+- uid: R6Api.Interfaces.IRegionRanked.Losses*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.Losses
+  name: Losses
+  nameWithType: IRegionRanked.Losses
+  fullName: R6Api.Interfaces.IRegionRanked.Losses
+- uid: R6Api.Interfaces.IRegionRanked.Abandons*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.Abandons
+  name: Abandons
+  nameWithType: IRegionRanked.Abandons
+  fullName: R6Api.Interfaces.IRegionRanked.Abandons
+- uid: R6Api.Interfaces.IRegionRanked.MaxMmr*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.MaxMmr
+  name: MaxMmr
+  nameWithType: IRegionRanked.MaxMmr
+  fullName: R6Api.Interfaces.IRegionRanked.MaxMmr
+- uid: R6Api.Interfaces.IRegionRanked.Champ*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.Champ
+  name: Champ
+  nameWithType: IRegionRanked.Champ
+  fullName: R6Api.Interfaces.IRegionRanked.Champ
+- uid: R6Api.Interfaces.IRegionRanked.MmrChange*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.MmrChange
+  name: MmrChange
+  nameWithType: IRegionRanked.MmrChange
+  fullName: R6Api.Interfaces.IRegionRanked.MmrChange
+- uid: R6Api.Interfaces.IRegionRanked.ActualMmr*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.ActualMmr
+  name: ActualMmr
+  nameWithType: IRegionRanked.ActualMmr
+  fullName: R6Api.Interfaces.IRegionRanked.ActualMmr
+- uid: R6Api.Interfaces.IRegionRanked.Matches*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.Matches
+  name: Matches
+  nameWithType: IRegionRanked.Matches
+  fullName: R6Api.Interfaces.IRegionRanked.Matches
+- uid: R6Api.Interfaces.IRegionRanked.WinLose*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.WinLose
+  name: WinLose
+  nameWithType: IRegionRanked.WinLose
+  fullName: R6Api.Interfaces.IRegionRanked.WinLose
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: R6Api.Interfaces.IRegionRanked.KillDeath*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.KillDeath
+  name: KillDeath
+  nameWithType: IRegionRanked.KillDeath
+  fullName: R6Api.Interfaces.IRegionRanked.KillDeath
+- uid: R6Api.Interfaces.IRegionRanked.RankName*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.RankName
+  name: RankName
+  nameWithType: IRegionRanked.RankName
+  fullName: R6Api.Interfaces.IRegionRanked.RankName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R6Api.Interfaces.IRegionRanked.MaxRank*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.MaxRank
+  name: MaxRank
+  nameWithType: IRegionRanked.MaxRank
+  fullName: R6Api.Interfaces.IRegionRanked.MaxRank
+- uid: R6Api.Interfaces.IRegionRanked.MaxRankName*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.MaxRankName
+  name: MaxRankName
+  nameWithType: IRegionRanked.MaxRankName
+  fullName: R6Api.Interfaces.IRegionRanked.MaxRankName
+- uid: R6Api.Interfaces.IRegionRanked.KillPerMatch*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.KillPerMatch
+  name: KillPerMatch
+  nameWithType: IRegionRanked.KillPerMatch
+  fullName: R6Api.Interfaces.IRegionRanked.KillPerMatch
+- uid: R6Api.Interfaces.IRegionRanked.DeathPerMatch*
+  commentId: Overload:R6Api.Interfaces.IRegionRanked.DeathPerMatch
+  name: DeathPerMatch
+  nameWithType: IRegionRanked.DeathPerMatch
+  fullName: R6Api.Interfaces.IRegionRanked.DeathPerMatch

@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Interfaces
+  commentId: N:R6Api.Interfaces
+  id: R6Api.Interfaces
+  children:
+  - R6Api.Interfaces.IGamemodeStats
+  - R6Api.Interfaces.IPlayer
+  - R6Api.Interfaces.IRegionRanked
+  - R6Api.Interfaces.ISearchResult
+  langs:
+  - csharp
+  - vb
+  name: R6Api.Interfaces
+  nameWithType: R6Api.Interfaces
+  fullName: R6Api.Interfaces
+  type: Namespace
+  assemblies:
+  - R6Tab.NET
+references:
+- uid: R6Api.Interfaces.IGamemodeStats
+  commentId: T:R6Api.Interfaces.IGamemodeStats
+  parent: R6Api.Interfaces
+  name: IGamemodeStats
+  nameWithType: IGamemodeStats
+  fullName: R6Api.Interfaces.IGamemodeStats
+- uid: R6Api.Interfaces.IPlayer
+  commentId: T:R6Api.Interfaces.IPlayer
+  parent: R6Api.Interfaces
+  name: IPlayer
+  nameWithType: IPlayer
+  fullName: R6Api.Interfaces.IPlayer
+- uid: R6Api.Interfaces.IRegionRanked
+  commentId: T:R6Api.Interfaces.IRegionRanked
+  parent: R6Api.Interfaces
+  name: IRegionRanked
+  nameWithType: IRegionRanked
+  fullName: R6Api.Interfaces.IRegionRanked
+- uid: R6Api.Interfaces.ISearchResult
+  commentId: T:R6Api.Interfaces.ISearchResult
+  parent: R6Api.Interfaces
+  name: ISearchResult
+  nameWithType: ISearchResult
+  fullName: R6Api.Interfaces.ISearchResult
+- uid: R6Api.Interfaces
+  commentId: N:R6Api.Interfaces
+  name: R6Api.Interfaces
+  nameWithType: R6Api.Interfaces
+  fullName: R6Api.Interfaces

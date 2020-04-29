@@ -1,0 +1,597 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Models.RefreshDetailed
+  commentId: T:R6Api.Models.RefreshDetailed
+  id: RefreshDetailed
+  parent: R6Api.Models
+  children:
+  - R6Api.Models.RefreshDetailed.IsQueued
+  - R6Api.Models.RefreshDetailed.Possible
+  - R6Api.Models.RefreshDetailed.QTime
+  - R6Api.Models.RefreshDetailed.Status
+  - R6Api.Models.RefreshDetailed.UTime
+  langs:
+  - csharp
+  - vb
+  name: RefreshDetailed
+  nameWithType: RefreshDetailed
+  fullName: R6Api.Models.RefreshDetailed
+  type: Class
+  source:
+    id: RefreshDetailed
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\RefreshDetailed.cs
+    startLine: 7
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: public class RefreshDetailed
+    content.vb: Public Class RefreshDetailed
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R6Api.Models.RefreshDetailed.IsQueued
+  commentId: P:R6Api.Models.RefreshDetailed.IsQueued
+  id: IsQueued
+  parent: R6Api.Models.RefreshDetailed
+  langs:
+  - csharp
+  - vb
+  name: IsQueued
+  nameWithType: RefreshDetailed.IsQueued
+  fullName: R6Api.Models.RefreshDetailed.IsQueued
+  type: Property
+  source:
+    id: IsQueued
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\RefreshDetailed.cs
+    startLine: 9
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("queued")]
+
+      public bool IsQueued { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("queued")>
+
+      Public ReadOnly Property IsQueued As Boolean
+  overload: R6Api.Models.RefreshDetailed.IsQueued*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: queued
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RefreshDetailed.Possible
+  commentId: P:R6Api.Models.RefreshDetailed.Possible
+  id: Possible
+  parent: R6Api.Models.RefreshDetailed
+  langs:
+  - csharp
+  - vb
+  name: Possible
+  nameWithType: RefreshDetailed.Possible
+  fullName: R6Api.Models.RefreshDetailed.Possible
+  type: Property
+  source:
+    id: Possible
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\RefreshDetailed.cs
+    startLine: 11
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("possible")]
+
+      public bool Possible { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("possible")>
+
+      Public ReadOnly Property Possible As Boolean
+  overload: R6Api.Models.RefreshDetailed.Possible*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: possible
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RefreshDetailed.QTime
+  commentId: P:R6Api.Models.RefreshDetailed.QTime
+  id: QTime
+  parent: R6Api.Models.RefreshDetailed
+  langs:
+  - csharp
+  - vb
+  name: QTime
+  nameWithType: RefreshDetailed.QTime
+  fullName: R6Api.Models.RefreshDetailed.QTime
+  type: Property
+  source:
+    id: QTime
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\RefreshDetailed.cs
+    startLine: 13
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("qtime")]
+
+      public int QTime { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("qtime")>
+
+      Public ReadOnly Property QTime As Integer
+  overload: R6Api.Models.RefreshDetailed.QTime*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: qtime
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RefreshDetailed.UTime
+  commentId: P:R6Api.Models.RefreshDetailed.UTime
+  id: UTime
+  parent: R6Api.Models.RefreshDetailed
+  langs:
+  - csharp
+  - vb
+  name: UTime
+  nameWithType: RefreshDetailed.UTime
+  fullName: R6Api.Models.RefreshDetailed.UTime
+  type: Property
+  source:
+    id: UTime
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\RefreshDetailed.cs
+    startLine: 15
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("utime")]
+
+      public int UTime { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("utime")>
+
+      Public ReadOnly Property UTime As Integer
+  overload: R6Api.Models.RefreshDetailed.UTime*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: utime
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RefreshDetailed.Status
+  commentId: P:R6Api.Models.RefreshDetailed.Status
+  id: Status
+  parent: R6Api.Models.RefreshDetailed
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: RefreshDetailed.Status
+  fullName: R6Api.Models.RefreshDetailed.Status
+  type: Property
+  source:
+    id: Status
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\RefreshDetailed.cs
+    startLine: 17
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("status")]
+
+      public int Status { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("status")>
+
+      Public ReadOnly Property Status As Integer
+  overload: R6Api.Models.RefreshDetailed.Status*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: status
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: R6Api.Models
+  commentId: N:R6Api.Models
+  name: R6Api.Models
+  nameWithType: R6Api.Models
+  fullName: R6Api.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R6Api.Models.RefreshDetailed.IsQueued*
+  commentId: Overload:R6Api.Models.RefreshDetailed.IsQueued
+  name: IsQueued
+  nameWithType: RefreshDetailed.IsQueued
+  fullName: R6Api.Models.RefreshDetailed.IsQueued
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: R6Api.Models.RefreshDetailed.Possible*
+  commentId: Overload:R6Api.Models.RefreshDetailed.Possible
+  name: Possible
+  nameWithType: RefreshDetailed.Possible
+  fullName: R6Api.Models.RefreshDetailed.Possible
+- uid: R6Api.Models.RefreshDetailed.QTime*
+  commentId: Overload:R6Api.Models.RefreshDetailed.QTime
+  name: QTime
+  nameWithType: RefreshDetailed.QTime
+  fullName: R6Api.Models.RefreshDetailed.QTime
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R6Api.Models.RefreshDetailed.UTime*
+  commentId: Overload:R6Api.Models.RefreshDetailed.UTime
+  name: UTime
+  nameWithType: RefreshDetailed.UTime
+  fullName: R6Api.Models.RefreshDetailed.UTime
+- uid: R6Api.Models.RefreshDetailed.Status*
+  commentId: Overload:R6Api.Models.RefreshDetailed.Status
+  name: Status
+  nameWithType: RefreshDetailed.Status
+  fullName: R6Api.Models.RefreshDetailed.Status

@@ -1,0 +1,880 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Models.Operators
+  commentId: T:R6Api.Models.Operators
+  id: Operators
+  parent: R6Api.Models
+  children:
+  - R6Api.Models.Operators.OpStats
+  - R6Api.Models.Operators.TopDeathsOverall
+  - R6Api.Models.Operators.TopDeathsSeasonal
+  - R6Api.Models.Operators.TopKillsOverall
+  - R6Api.Models.Operators.TopKillsSeasonal
+  - R6Api.Models.Operators.TopLossesOverall
+  - R6Api.Models.Operators.TopLossesSeasonal
+  - R6Api.Models.Operators.TopPlayedOverall
+  - R6Api.Models.Operators.TopPlayedSeasonal
+  - R6Api.Models.Operators.TopWinsOverall
+  - R6Api.Models.Operators.TopWinsSeasonal
+  langs:
+  - csharp
+  - vb
+  name: Operators
+  nameWithType: Operators
+  fullName: R6Api.Models.Operators
+  type: Class
+  source:
+    id: Operators
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 8
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: public class Operators
+    content.vb: Public Class Operators
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R6Api.Models.Operators.OpStats
+  commentId: P:R6Api.Models.Operators.OpStats
+  id: OpStats
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: OpStats
+  nameWithType: Operators.OpStats
+  fullName: R6Api.Models.Operators.OpStats
+  type: Property
+  source:
+    id: OpStats
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 10
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: public Dictionary<string, OperatorData> OpStats { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property OpStats As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.OpStats*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.Operators.TopPlayedOverall
+  commentId: P:R6Api.Models.Operators.TopPlayedOverall
+  id: TopPlayedOverall
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: TopPlayedOverall
+  nameWithType: Operators.TopPlayedOverall
+  fullName: R6Api.Models.Operators.TopPlayedOverall
+  type: Property
+  source:
+    id: TopPlayedOverall
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 14
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nOperators with Most Play Time Overall\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, OperatorData> TopPlayedOverall { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property TopPlayedOverall As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.TopPlayedOverall*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.Operators.TopWinsOverall
+  commentId: P:R6Api.Models.Operators.TopWinsOverall
+  id: TopWinsOverall
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: TopWinsOverall
+  nameWithType: Operators.TopWinsOverall
+  fullName: R6Api.Models.Operators.TopWinsOverall
+  type: Property
+  source:
+    id: TopWinsOverall
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 34
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nOperators with Most Wins Overall\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, OperatorData> TopWinsOverall { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property TopWinsOverall As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.TopWinsOverall*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.Operators.TopLossesOverall
+  commentId: P:R6Api.Models.Operators.TopLossesOverall
+  id: TopLossesOverall
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: TopLossesOverall
+  nameWithType: Operators.TopLossesOverall
+  fullName: R6Api.Models.Operators.TopLossesOverall
+  type: Property
+  source:
+    id: TopLossesOverall
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 54
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nOperators with Most Losses Overall\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, OperatorData> TopLossesOverall { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property TopLossesOverall As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.TopLossesOverall*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.Operators.TopKillsOverall
+  commentId: P:R6Api.Models.Operators.TopKillsOverall
+  id: TopKillsOverall
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: TopKillsOverall
+  nameWithType: Operators.TopKillsOverall
+  fullName: R6Api.Models.Operators.TopKillsOverall
+  type: Property
+  source:
+    id: TopKillsOverall
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 74
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nOperators with Most Kills Overall\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, OperatorData> TopKillsOverall { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property TopKillsOverall As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.TopKillsOverall*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.Operators.TopDeathsOverall
+  commentId: P:R6Api.Models.Operators.TopDeathsOverall
+  id: TopDeathsOverall
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: TopDeathsOverall
+  nameWithType: Operators.TopDeathsOverall
+  fullName: R6Api.Models.Operators.TopDeathsOverall
+  type: Property
+  source:
+    id: TopDeathsOverall
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 94
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nOperators with Most Deaths Overall\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, OperatorData> TopDeathsOverall { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property TopDeathsOverall As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.TopDeathsOverall*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.Operators.TopPlayedSeasonal
+  commentId: P:R6Api.Models.Operators.TopPlayedSeasonal
+  id: TopPlayedSeasonal
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: TopPlayedSeasonal
+  nameWithType: Operators.TopPlayedSeasonal
+  fullName: R6Api.Models.Operators.TopPlayedSeasonal
+  type: Property
+  source:
+    id: TopPlayedSeasonal
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 114
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nOperators with Most Play Time Seasonal\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, OperatorData> TopPlayedSeasonal { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property TopPlayedSeasonal As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.TopPlayedSeasonal*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.Operators.TopWinsSeasonal
+  commentId: P:R6Api.Models.Operators.TopWinsSeasonal
+  id: TopWinsSeasonal
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: TopWinsSeasonal
+  nameWithType: Operators.TopWinsSeasonal
+  fullName: R6Api.Models.Operators.TopWinsSeasonal
+  type: Property
+  source:
+    id: TopWinsSeasonal
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 134
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nOperators with Most Wins Seasonal\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, OperatorData> TopWinsSeasonal { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property TopWinsSeasonal As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.TopWinsSeasonal*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.Operators.TopLossesSeasonal
+  commentId: P:R6Api.Models.Operators.TopLossesSeasonal
+  id: TopLossesSeasonal
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: TopLossesSeasonal
+  nameWithType: Operators.TopLossesSeasonal
+  fullName: R6Api.Models.Operators.TopLossesSeasonal
+  type: Property
+  source:
+    id: TopLossesSeasonal
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 154
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nOperators with Most Losses Seasonal\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, OperatorData> TopLossesSeasonal { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property TopLossesSeasonal As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.TopLossesSeasonal*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.Operators.TopKillsSeasonal
+  commentId: P:R6Api.Models.Operators.TopKillsSeasonal
+  id: TopKillsSeasonal
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: TopKillsSeasonal
+  nameWithType: Operators.TopKillsSeasonal
+  fullName: R6Api.Models.Operators.TopKillsSeasonal
+  type: Property
+  source:
+    id: TopKillsSeasonal
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 174
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nOperators with Most Kills Seasonal\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, OperatorData> TopKillsSeasonal { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property TopKillsSeasonal As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.TopKillsSeasonal*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.Operators.TopDeathsSeasonal
+  commentId: P:R6Api.Models.Operators.TopDeathsSeasonal
+  id: TopDeathsSeasonal
+  parent: R6Api.Models.Operators
+  langs:
+  - csharp
+  - vb
+  name: TopDeathsSeasonal
+  nameWithType: Operators.TopDeathsSeasonal
+  fullName: R6Api.Models.Operators.TopDeathsSeasonal
+  type: Property
+  source:
+    id: TopDeathsSeasonal
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Operators.cs
+    startLine: 194
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nOperators with Most Deaths Seasonal\n"
+  example: []
+  syntax:
+    content: public Dictionary<string, OperatorData> TopDeathsSeasonal { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+    content.vb: Public ReadOnly Property TopDeathsSeasonal As Dictionary(Of String, OperatorData)
+  overload: R6Api.Models.Operators.TopDeathsSeasonal*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: R6Api.Models
+  commentId: N:R6Api.Models
+  name: R6Api.Models
+  nameWithType: R6Api.Models
+  fullName: R6Api.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R6Api.Models.Operators.OpStats*
+  commentId: Overload:R6Api.Models.Operators.OpStats
+  name: OpStats
+  nameWithType: Operators.OpStats
+  fullName: R6Api.Models.Operators.OpStats
+- uid: System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,R6Api.Models.OperatorData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, OperatorData>
+  nameWithType: Dictionary<String, OperatorData>
+  fullName: System.Collections.Generic.Dictionary<System.String, R6Api.Models.OperatorData>
+  nameWithType.vb: Dictionary(Of String, OperatorData)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, R6Api.Models.OperatorData)
+  name.vb: Dictionary(Of String, OperatorData)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R6Api.Models.OperatorData
+    name: OperatorData
+    nameWithType: OperatorData
+    fullName: R6Api.Models.OperatorData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: R6Api.Models.OperatorData
+    name: OperatorData
+    nameWithType: OperatorData
+    fullName: R6Api.Models.OperatorData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: R6Api.Models.Operators.TopPlayedOverall*
+  commentId: Overload:R6Api.Models.Operators.TopPlayedOverall
+  name: TopPlayedOverall
+  nameWithType: Operators.TopPlayedOverall
+  fullName: R6Api.Models.Operators.TopPlayedOverall
+- uid: R6Api.Models.Operators.TopWinsOverall*
+  commentId: Overload:R6Api.Models.Operators.TopWinsOverall
+  name: TopWinsOverall
+  nameWithType: Operators.TopWinsOverall
+  fullName: R6Api.Models.Operators.TopWinsOverall
+- uid: R6Api.Models.Operators.TopLossesOverall*
+  commentId: Overload:R6Api.Models.Operators.TopLossesOverall
+  name: TopLossesOverall
+  nameWithType: Operators.TopLossesOverall
+  fullName: R6Api.Models.Operators.TopLossesOverall
+- uid: R6Api.Models.Operators.TopKillsOverall*
+  commentId: Overload:R6Api.Models.Operators.TopKillsOverall
+  name: TopKillsOverall
+  nameWithType: Operators.TopKillsOverall
+  fullName: R6Api.Models.Operators.TopKillsOverall
+- uid: R6Api.Models.Operators.TopDeathsOverall*
+  commentId: Overload:R6Api.Models.Operators.TopDeathsOverall
+  name: TopDeathsOverall
+  nameWithType: Operators.TopDeathsOverall
+  fullName: R6Api.Models.Operators.TopDeathsOverall
+- uid: R6Api.Models.Operators.TopPlayedSeasonal*
+  commentId: Overload:R6Api.Models.Operators.TopPlayedSeasonal
+  name: TopPlayedSeasonal
+  nameWithType: Operators.TopPlayedSeasonal
+  fullName: R6Api.Models.Operators.TopPlayedSeasonal
+- uid: R6Api.Models.Operators.TopWinsSeasonal*
+  commentId: Overload:R6Api.Models.Operators.TopWinsSeasonal
+  name: TopWinsSeasonal
+  nameWithType: Operators.TopWinsSeasonal
+  fullName: R6Api.Models.Operators.TopWinsSeasonal
+- uid: R6Api.Models.Operators.TopLossesSeasonal*
+  commentId: Overload:R6Api.Models.Operators.TopLossesSeasonal
+  name: TopLossesSeasonal
+  nameWithType: Operators.TopLossesSeasonal
+  fullName: R6Api.Models.Operators.TopLossesSeasonal
+- uid: R6Api.Models.Operators.TopKillsSeasonal*
+  commentId: Overload:R6Api.Models.Operators.TopKillsSeasonal
+  name: TopKillsSeasonal
+  nameWithType: Operators.TopKillsSeasonal
+  fullName: R6Api.Models.Operators.TopKillsSeasonal
+- uid: R6Api.Models.Operators.TopDeathsSeasonal*
+  commentId: Overload:R6Api.Models.Operators.TopDeathsSeasonal
+  name: TopDeathsSeasonal
+  nameWithType: Operators.TopDeathsSeasonal
+  fullName: R6Api.Models.Operators.TopDeathsSeasonal

@@ -1,0 +1,1156 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Models.RankedBase
+  commentId: T:R6Api.Models.RankedBase
+  id: RankedBase
+  parent: R6Api.Models
+  children:
+  - R6Api.Models.RankedBase.AsChamp
+  - R6Api.Models.RankedBase.AsMmr
+  - R6Api.Models.RankedBase.AsRank
+  - R6Api.Models.RankedBase.Champ
+  - R6Api.Models.RankedBase.EuChamp
+  - R6Api.Models.RankedBase.EuMmr
+  - R6Api.Models.RankedBase.EuRank
+  - R6Api.Models.RankedBase.GetRankImg
+  - R6Api.Models.RankedBase.KillDeath
+  - R6Api.Models.RankedBase.Mmr
+  - R6Api.Models.RankedBase.NaChamp
+  - R6Api.Models.RankedBase.NaMmr
+  - R6Api.Models.RankedBase.NaRank
+  - R6Api.Models.RankedBase.Rank
+  langs:
+  - csharp
+  - vb
+  name: RankedBase
+  nameWithType: RankedBase
+  fullName: R6Api.Models.RankedBase
+  type: Class
+  source:
+    id: RankedBase
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 9
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: 'public class RankedBase : IRankedData'
+    content.vb: >-
+      Public Class RankedBase
+          Implements IRankedData
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - R6Api.Models.Ranked.RankedFromId
+  implements:
+  - R6TabApiWrapper.Interfaces.IRankedData
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R6Api.Models.RankedBase.KillDeath
+  commentId: P:R6Api.Models.RankedBase.KillDeath
+  id: KillDeath
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: KillDeath
+  nameWithType: RankedBase.KillDeath
+  fullName: R6Api.Models.RankedBase.KillDeath
+  type: Property
+  source:
+    id: KillDeath
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 13
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: public double KillDeath { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property KillDeath As Double
+  overload: R6Api.Models.RankedBase.KillDeath*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.Mmr
+  commentId: P:R6Api.Models.RankedBase.Mmr
+  id: Mmr
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: Mmr
+  nameWithType: RankedBase.Mmr
+  fullName: R6Api.Models.RankedBase.Mmr
+  type: Property
+  source:
+    id: Mmr
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 20
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("mmr")]
+
+      public int? Mmr { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <JsonProperty("mmr")>
+
+      Public ReadOnly Property Mmr As Integer?
+  overload: R6Api.Models.RankedBase.Mmr*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: mmr
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.Rank
+  commentId: P:R6Api.Models.RankedBase.Rank
+  id: Rank
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: Rank
+  nameWithType: RankedBase.Rank
+  fullName: R6Api.Models.RankedBase.Rank
+  type: Property
+  source:
+    id: Rank
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 22
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("rank")]
+
+      public int Rank { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("rank")>
+
+      Public ReadOnly Property Rank As Integer
+  overload: R6Api.Models.RankedBase.Rank*
+  implements:
+  - R6TabApiWrapper.Interfaces.IRankedData.Rank
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: rank
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.Champ
+  commentId: P:R6Api.Models.RankedBase.Champ
+  id: Champ
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: Champ
+  nameWithType: RankedBase.Champ
+  fullName: R6Api.Models.RankedBase.Champ
+  type: Property
+  source:
+    id: Champ
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 24
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("champ")]
+
+      public int Champ { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("champ")>
+
+      Public ReadOnly Property Champ As Integer
+  overload: R6Api.Models.RankedBase.Champ*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: champ
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.NaMmr
+  commentId: P:R6Api.Models.RankedBase.NaMmr
+  id: NaMmr
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: NaMmr
+  nameWithType: RankedBase.NaMmr
+  fullName: R6Api.Models.RankedBase.NaMmr
+  type: Property
+  source:
+    id: NaMmr
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 26
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("NA_mmr")]
+
+      public int NaMmr { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("NA_mmr")>
+
+      Public ReadOnly Property NaMmr As Integer
+  overload: R6Api.Models.RankedBase.NaMmr*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: NA_mmr
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.NaRank
+  commentId: P:R6Api.Models.RankedBase.NaRank
+  id: NaRank
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: NaRank
+  nameWithType: RankedBase.NaRank
+  fullName: R6Api.Models.RankedBase.NaRank
+  type: Property
+  source:
+    id: NaRank
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 28
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("NA_rank")]
+
+      public int NaRank { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("NA_rank")>
+
+      Public ReadOnly Property NaRank As Integer
+  overload: R6Api.Models.RankedBase.NaRank*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: NA_rank
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.NaChamp
+  commentId: P:R6Api.Models.RankedBase.NaChamp
+  id: NaChamp
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: NaChamp
+  nameWithType: RankedBase.NaChamp
+  fullName: R6Api.Models.RankedBase.NaChamp
+  type: Property
+  source:
+    id: NaChamp
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 30
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("NA_champ")]
+
+      public int NaChamp { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("NA_champ")>
+
+      Public ReadOnly Property NaChamp As Integer
+  overload: R6Api.Models.RankedBase.NaChamp*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: NA_champ
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.EuMmr
+  commentId: P:R6Api.Models.RankedBase.EuMmr
+  id: EuMmr
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: EuMmr
+  nameWithType: RankedBase.EuMmr
+  fullName: R6Api.Models.RankedBase.EuMmr
+  type: Property
+  source:
+    id: EuMmr
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 32
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_mmr")]
+
+      public int EuMmr { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_mmr")>
+
+      Public ReadOnly Property EuMmr As Integer
+  overload: R6Api.Models.RankedBase.EuMmr*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_mmr
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.EuRank
+  commentId: P:R6Api.Models.RankedBase.EuRank
+  id: EuRank
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: EuRank
+  nameWithType: RankedBase.EuRank
+  fullName: R6Api.Models.RankedBase.EuRank
+  type: Property
+  source:
+    id: EuRank
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 34
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_rank")]
+
+      public int EuRank { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_rank")>
+
+      Public ReadOnly Property EuRank As Integer
+  overload: R6Api.Models.RankedBase.EuRank*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_rank
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.EuChamp
+  commentId: P:R6Api.Models.RankedBase.EuChamp
+  id: EuChamp
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: EuChamp
+  nameWithType: RankedBase.EuChamp
+  fullName: R6Api.Models.RankedBase.EuChamp
+  type: Property
+  source:
+    id: EuChamp
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 36
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_champ")]
+
+      public int EuChamp { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_champ")>
+
+      Public ReadOnly Property EuChamp As Integer
+  overload: R6Api.Models.RankedBase.EuChamp*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_champ
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.AsMmr
+  commentId: P:R6Api.Models.RankedBase.AsMmr
+  id: AsMmr
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: AsMmr
+  nameWithType: RankedBase.AsMmr
+  fullName: R6Api.Models.RankedBase.AsMmr
+  type: Property
+  source:
+    id: AsMmr
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 38
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("AS_mmr")]
+
+      public int AsMmr { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("AS_mmr")>
+
+      Public ReadOnly Property AsMmr As Integer
+  overload: R6Api.Models.RankedBase.AsMmr*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AS_mmr
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.AsRank
+  commentId: P:R6Api.Models.RankedBase.AsRank
+  id: AsRank
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: AsRank
+  nameWithType: RankedBase.AsRank
+  fullName: R6Api.Models.RankedBase.AsRank
+  type: Property
+  source:
+    id: AsRank
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 40
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("AS_rank")]
+
+      public int AsRank { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("AS_rank")>
+
+      Public ReadOnly Property AsRank As Integer
+  overload: R6Api.Models.RankedBase.AsRank*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AS_rank
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.AsChamp
+  commentId: P:R6Api.Models.RankedBase.AsChamp
+  id: AsChamp
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: AsChamp
+  nameWithType: RankedBase.AsChamp
+  fullName: R6Api.Models.RankedBase.AsChamp
+  type: Property
+  source:
+    id: AsChamp
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 42
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("AS_champ")]
+
+      public int AsChamp { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("AS_champ")>
+
+      Public ReadOnly Property AsChamp As Integer
+  overload: R6Api.Models.RankedBase.AsChamp*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AS_champ
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedBase.GetRankImg
+  commentId: M:R6Api.Models.RankedBase.GetRankImg
+  id: GetRankImg
+  parent: R6Api.Models.RankedBase
+  langs:
+  - csharp
+  - vb
+  name: GetRankImg()
+  nameWithType: RankedBase.GetRankImg()
+  fullName: R6Api.Models.RankedBase.GetRankImg()
+  type: Method
+  source:
+    id: GetRankImg
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Bases\RankedBase.cs
+    startLine: 44
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: public string GetRankImg()
+    return:
+      type: System.String
+    content.vb: Public Function GetRankImg As String
+  overload: R6Api.Models.RankedBase.GetRankImg*
+  implements:
+  - R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R6Api.Models
+  commentId: N:R6Api.Models
+  name: R6Api.Models
+  nameWithType: R6Api.Models
+  fullName: R6Api.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R6TabApiWrapper.Interfaces.IRankedData
+  commentId: T:R6TabApiWrapper.Interfaces.IRankedData
+  parent: R6TabApiWrapper.Interfaces
+  name: IRankedData
+  nameWithType: IRankedData
+  fullName: R6TabApiWrapper.Interfaces.IRankedData
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R6TabApiWrapper.Interfaces
+  commentId: N:R6TabApiWrapper.Interfaces
+  name: R6TabApiWrapper.Interfaces
+  nameWithType: R6TabApiWrapper.Interfaces
+  fullName: R6TabApiWrapper.Interfaces
+- uid: R6Api.Models.RankedBase.KillDeath*
+  commentId: Overload:R6Api.Models.RankedBase.KillDeath
+  name: KillDeath
+  nameWithType: RankedBase.KillDeath
+  fullName: R6Api.Models.RankedBase.KillDeath
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: R6Api.Models.RankedBase.Mmr*
+  commentId: Overload:R6Api.Models.RankedBase.Mmr
+  name: Mmr
+  nameWithType: RankedBase.Mmr
+  fullName: R6Api.Models.RankedBase.Mmr
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: R6Api.Models.RankedBase.Rank*
+  commentId: Overload:R6Api.Models.RankedBase.Rank
+  name: Rank
+  nameWithType: RankedBase.Rank
+  fullName: R6Api.Models.RankedBase.Rank
+- uid: R6TabApiWrapper.Interfaces.IRankedData.Rank
+  commentId: P:R6TabApiWrapper.Interfaces.IRankedData.Rank
+  parent: R6TabApiWrapper.Interfaces.IRankedData
+  name: Rank
+  nameWithType: IRankedData.Rank
+  fullName: R6TabApiWrapper.Interfaces.IRankedData.Rank
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R6Api.Models.RankedBase.Champ*
+  commentId: Overload:R6Api.Models.RankedBase.Champ
+  name: Champ
+  nameWithType: RankedBase.Champ
+  fullName: R6Api.Models.RankedBase.Champ
+- uid: R6Api.Models.RankedBase.NaMmr*
+  commentId: Overload:R6Api.Models.RankedBase.NaMmr
+  name: NaMmr
+  nameWithType: RankedBase.NaMmr
+  fullName: R6Api.Models.RankedBase.NaMmr
+- uid: R6Api.Models.RankedBase.NaRank*
+  commentId: Overload:R6Api.Models.RankedBase.NaRank
+  name: NaRank
+  nameWithType: RankedBase.NaRank
+  fullName: R6Api.Models.RankedBase.NaRank
+- uid: R6Api.Models.RankedBase.NaChamp*
+  commentId: Overload:R6Api.Models.RankedBase.NaChamp
+  name: NaChamp
+  nameWithType: RankedBase.NaChamp
+  fullName: R6Api.Models.RankedBase.NaChamp
+- uid: R6Api.Models.RankedBase.EuMmr*
+  commentId: Overload:R6Api.Models.RankedBase.EuMmr
+  name: EuMmr
+  nameWithType: RankedBase.EuMmr
+  fullName: R6Api.Models.RankedBase.EuMmr
+- uid: R6Api.Models.RankedBase.EuRank*
+  commentId: Overload:R6Api.Models.RankedBase.EuRank
+  name: EuRank
+  nameWithType: RankedBase.EuRank
+  fullName: R6Api.Models.RankedBase.EuRank
+- uid: R6Api.Models.RankedBase.EuChamp*
+  commentId: Overload:R6Api.Models.RankedBase.EuChamp
+  name: EuChamp
+  nameWithType: RankedBase.EuChamp
+  fullName: R6Api.Models.RankedBase.EuChamp
+- uid: R6Api.Models.RankedBase.AsMmr*
+  commentId: Overload:R6Api.Models.RankedBase.AsMmr
+  name: AsMmr
+  nameWithType: RankedBase.AsMmr
+  fullName: R6Api.Models.RankedBase.AsMmr
+- uid: R6Api.Models.RankedBase.AsRank*
+  commentId: Overload:R6Api.Models.RankedBase.AsRank
+  name: AsRank
+  nameWithType: RankedBase.AsRank
+  fullName: R6Api.Models.RankedBase.AsRank
+- uid: R6Api.Models.RankedBase.AsChamp*
+  commentId: Overload:R6Api.Models.RankedBase.AsChamp
+  name: AsChamp
+  nameWithType: RankedBase.AsChamp
+  fullName: R6Api.Models.RankedBase.AsChamp
+- uid: R6Api.Models.RankedBase.GetRankImg*
+  commentId: Overload:R6Api.Models.RankedBase.GetRankImg
+  name: GetRankImg
+  nameWithType: RankedBase.GetRankImg
+  fullName: R6Api.Models.RankedBase.GetRankImg
+- uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  commentId: M:R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  parent: R6TabApiWrapper.Interfaces.IRankedData
+  name: GetRankImg()
+  nameWithType: IRankedData.GetRankImg()
+  fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg()
+  spec.csharp:
+  - uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+    name: GetRankImg
+    nameWithType: IRankedData.GetRankImg
+    fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+    name: GetRankImg
+    nameWithType: IRankedData.GetRankImg
+    fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

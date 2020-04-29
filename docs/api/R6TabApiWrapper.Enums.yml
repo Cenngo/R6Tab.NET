@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6TabApiWrapper.Enums
+  commentId: N:R6TabApiWrapper.Enums
+  id: R6TabApiWrapper.Enums
+  children:
+  - R6TabApiWrapper.Enums.Region
+  langs:
+  - csharp
+  - vb
+  name: R6TabApiWrapper.Enums
+  nameWithType: R6TabApiWrapper.Enums
+  fullName: R6TabApiWrapper.Enums
+  type: Namespace
+  assemblies:
+  - R6Tab.NET
+references:
+- uid: R6TabApiWrapper.Enums.Region
+  commentId: T:R6TabApiWrapper.Enums.Region
+  parent: R6TabApiWrapper.Enums
+  name: Region
+  nameWithType: Region
+  fullName: R6TabApiWrapper.Enums.Region
+- uid: R6TabApiWrapper.Enums
+  commentId: N:R6TabApiWrapper.Enums
+  name: R6TabApiWrapper.Enums
+  nameWithType: R6TabApiWrapper.Enums
+  fullName: R6TabApiWrapper.Enums

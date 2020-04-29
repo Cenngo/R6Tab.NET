@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6TabApiWrapper.Interfaces
+  commentId: N:R6TabApiWrapper.Interfaces
+  id: R6TabApiWrapper.Interfaces
+  children:
+  - R6TabApiWrapper.Interfaces.IRankedData
+  langs:
+  - csharp
+  - vb
+  name: R6TabApiWrapper.Interfaces
+  nameWithType: R6TabApiWrapper.Interfaces
+  fullName: R6TabApiWrapper.Interfaces
+  type: Namespace
+  assemblies:
+  - R6Tab.NET
+references:
+- uid: R6TabApiWrapper.Interfaces.IRankedData
+  commentId: T:R6TabApiWrapper.Interfaces.IRankedData
+  parent: R6TabApiWrapper.Interfaces
+  name: IRankedData
+  nameWithType: IRankedData
+  fullName: R6TabApiWrapper.Interfaces.IRankedData
+- uid: R6TabApiWrapper.Interfaces
+  commentId: N:R6TabApiWrapper.Interfaces
+  name: R6TabApiWrapper.Interfaces
+  nameWithType: R6TabApiWrapper.Interfaces
+  fullName: R6TabApiWrapper.Interfaces

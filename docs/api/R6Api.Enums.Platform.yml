@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Enums.Platform
+  commentId: T:R6Api.Enums.Platform
+  id: Platform
+  parent: R6Api.Enums
+  children:
+  - R6Api.Enums.Platform.Psn
+  - R6Api.Enums.Platform.Uplay
+  - R6Api.Enums.Platform.Xbl
+  langs:
+  - csharp
+  - vb
+  name: Platform
+  nameWithType: Platform
+  fullName: R6Api.Enums.Platform
+  type: Enum
+  source:
+    id: Platform
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Enums\Platform.cs
+    startLine: 9
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Enums
+  summary: "\nGame Platforms for Rainbow6\n"
+  example: []
+  syntax:
+    content: public enum Platform
+    content.vb: Public Enum Platform
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: R6Api.Enums.Platform.Uplay
+  commentId: F:R6Api.Enums.Platform.Uplay
+  id: Uplay
+  parent: R6Api.Enums.Platform
+  langs:
+  - csharp
+  - vb
+  name: Uplay
+  nameWithType: Platform.Uplay
+  fullName: R6Api.Enums.Platform.Uplay
+  type: Field
+  source:
+    id: Uplay
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Enums\Platform.cs
+    startLine: 11
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Enums
+  syntax:
+    content: Uplay = 0
+    return:
+      type: R6Api.Enums.Platform
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R6Api.Enums.Platform.Psn
+  commentId: F:R6Api.Enums.Platform.Psn
+  id: Psn
+  parent: R6Api.Enums.Platform
+  langs:
+  - csharp
+  - vb
+  name: Psn
+  nameWithType: Platform.Psn
+  fullName: R6Api.Enums.Platform.Psn
+  type: Field
+  source:
+    id: Psn
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Enums\Platform.cs
+    startLine: 12
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Enums
+  syntax:
+    content: Psn = 1
+    return:
+      type: R6Api.Enums.Platform
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: R6Api.Enums.Platform.Xbl
+  commentId: F:R6Api.Enums.Platform.Xbl
+  id: Xbl
+  parent: R6Api.Enums.Platform
+  langs:
+  - csharp
+  - vb
+  name: Xbl
+  nameWithType: Platform.Xbl
+  fullName: R6Api.Enums.Platform.Xbl
+  type: Field
+  source:
+    id: Xbl
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Enums\Platform.cs
+    startLine: 13
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Enums
+  syntax:
+    content: Xbl = 2
+    return:
+      type: R6Api.Enums.Platform
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: R6Api.Enums
+  commentId: N:R6Api.Enums
+  name: R6Api.Enums
+  nameWithType: R6Api.Enums
+  fullName: R6Api.Enums
+- uid: R6Api.Enums.Platform
+  commentId: T:R6Api.Enums.Platform
+  parent: R6Api.Enums
+  name: Platform
+  nameWithType: Platform
+  fullName: R6Api.Enums.Platform

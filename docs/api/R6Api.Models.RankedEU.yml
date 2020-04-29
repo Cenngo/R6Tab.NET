@@ -1,0 +1,1485 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Models.RankedEU
+  commentId: T:R6Api.Models.RankedEU
+  id: RankedEU
+  parent: R6Api.Models
+  children:
+  - R6Api.Models.RankedEU.Abandons
+  - R6Api.Models.RankedEU.ActualMmr
+  - R6Api.Models.RankedEU.Champ
+  - R6Api.Models.RankedEU.DeathPerMatch
+  - R6Api.Models.RankedEU.Deaths
+  - R6Api.Models.RankedEU.GetRankImg
+  - R6Api.Models.RankedEU.KillDeath
+  - R6Api.Models.RankedEU.KillPerMatch
+  - R6Api.Models.RankedEU.Kills
+  - R6Api.Models.RankedEU.Losses
+  - R6Api.Models.RankedEU.Matches
+  - R6Api.Models.RankedEU.MaxMmr
+  - R6Api.Models.RankedEU.MaxRank
+  - R6Api.Models.RankedEU.MaxRankName
+  - R6Api.Models.RankedEU.MmrChange
+  - R6Api.Models.RankedEU.Rank
+  - R6Api.Models.RankedEU.RankName
+  - R6Api.Models.RankedEU.WinLose
+  - R6Api.Models.RankedEU.Wins
+  langs:
+  - csharp
+  - vb
+  name: RankedEU
+  nameWithType: RankedEU
+  fullName: R6Api.Models.RankedEU
+  type: Class
+  source:
+    id: RankedEU
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 11
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nRanked Data for EU Region for Rainbow6\n"
+  example: []
+  syntax:
+    content: 'public class RankedEU : IRegionRanked, IRankedData'
+    content.vb: >-
+      Public Class RankedEU
+          Implements IRegionRanked, IRankedData
+  inheritance:
+  - System.Object
+  implements:
+  - R6Api.Interfaces.IRegionRanked
+  - R6TabApiWrapper.Interfaces.IRankedData
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R6Api.Models.RankedEU.Kills
+  commentId: P:R6Api.Models.RankedEU.Kills
+  id: Kills
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: Kills
+  nameWithType: RankedEU.Kills
+  fullName: R6Api.Models.RankedEU.Kills
+  type: Property
+  source:
+    id: Kills
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 13
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_kills")]
+
+      public int Kills { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_kills")>
+
+      Public ReadOnly Property Kills As Integer
+  overload: R6Api.Models.RankedEU.Kills*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.Kills
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_kills
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.Deaths
+  commentId: P:R6Api.Models.RankedEU.Deaths
+  id: Deaths
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: Deaths
+  nameWithType: RankedEU.Deaths
+  fullName: R6Api.Models.RankedEU.Deaths
+  type: Property
+  source:
+    id: Deaths
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 15
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_deaths")]
+
+      public int Deaths { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_deaths")>
+
+      Public ReadOnly Property Deaths As Integer
+  overload: R6Api.Models.RankedEU.Deaths*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.Deaths
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_deaths
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.Wins
+  commentId: P:R6Api.Models.RankedEU.Wins
+  id: Wins
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: Wins
+  nameWithType: RankedEU.Wins
+  fullName: R6Api.Models.RankedEU.Wins
+  type: Property
+  source:
+    id: Wins
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 17
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_wins")]
+
+      public int Wins { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_wins")>
+
+      Public ReadOnly Property Wins As Integer
+  overload: R6Api.Models.RankedEU.Wins*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.Wins
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_wins
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.Losses
+  commentId: P:R6Api.Models.RankedEU.Losses
+  id: Losses
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: Losses
+  nameWithType: RankedEU.Losses
+  fullName: R6Api.Models.RankedEU.Losses
+  type: Property
+  source:
+    id: Losses
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 19
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_losses")]
+
+      public int Losses { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_losses")>
+
+      Public ReadOnly Property Losses As Integer
+  overload: R6Api.Models.RankedEU.Losses*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.Losses
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_losses
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.Abandons
+  commentId: P:R6Api.Models.RankedEU.Abandons
+  id: Abandons
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: Abandons
+  nameWithType: RankedEU.Abandons
+  fullName: R6Api.Models.RankedEU.Abandons
+  type: Property
+  source:
+    id: Abandons
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 21
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_abandons")]
+
+      public int Abandons { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_abandons")>
+
+      Public ReadOnly Property Abandons As Integer
+  overload: R6Api.Models.RankedEU.Abandons*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.Abandons
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_abandons
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.MaxMmr
+  commentId: P:R6Api.Models.RankedEU.MaxMmr
+  id: MaxMmr
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: MaxMmr
+  nameWithType: RankedEU.MaxMmr
+  fullName: R6Api.Models.RankedEU.MaxMmr
+  type: Property
+  source:
+    id: MaxMmr
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 23
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_maxmmr")]
+
+      public int MaxMmr { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_maxmmr")>
+
+      Public ReadOnly Property MaxMmr As Integer
+  overload: R6Api.Models.RankedEU.MaxMmr*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.MaxMmr
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_maxmmr
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.Champ
+  commentId: P:R6Api.Models.RankedEU.Champ
+  id: Champ
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: Champ
+  nameWithType: RankedEU.Champ
+  fullName: R6Api.Models.RankedEU.Champ
+  type: Property
+  source:
+    id: Champ
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 28
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nChamp Tier of the Player\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("EU_champ")]
+
+      public int Champ { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_champ")>
+
+      Public ReadOnly Property Champ As Integer
+  overload: R6Api.Models.RankedEU.Champ*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.Champ
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_champ
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.MmrChange
+  commentId: P:R6Api.Models.RankedEU.MmrChange
+  id: MmrChange
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: MmrChange
+  nameWithType: RankedEU.MmrChange
+  fullName: R6Api.Models.RankedEU.MmrChange
+  type: Property
+  source:
+    id: MmrChange
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 30
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_mmrchange")]
+
+      public int MmrChange { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_mmrchange")>
+
+      Public ReadOnly Property MmrChange As Integer
+  overload: R6Api.Models.RankedEU.MmrChange*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.MmrChange
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_mmrchange
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.ActualMmr
+  commentId: P:R6Api.Models.RankedEU.ActualMmr
+  id: ActualMmr
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: ActualMmr
+  nameWithType: RankedEU.ActualMmr
+  fullName: R6Api.Models.RankedEU.ActualMmr
+  type: Property
+  source:
+    id: ActualMmr
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 32
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_actualmmr")]
+
+      public int ActualMmr { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_actualmmr")>
+
+      Public ReadOnly Property ActualMmr As Integer
+  overload: R6Api.Models.RankedEU.ActualMmr*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.ActualMmr
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_actualmmr
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.Matches
+  commentId: P:R6Api.Models.RankedEU.Matches
+  id: Matches
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: Matches
+  nameWithType: RankedEU.Matches
+  fullName: R6Api.Models.RankedEU.Matches
+  type: Property
+  source:
+    id: Matches
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 37
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nNumber of  Matches Played\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("EU_matches")]
+
+      public int Matches { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_matches")>
+
+      Public ReadOnly Property Matches As Integer
+  overload: R6Api.Models.RankedEU.Matches*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.Matches
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_matches
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.WinLose
+  commentId: P:R6Api.Models.RankedEU.WinLose
+  id: WinLose
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: WinLose
+  nameWithType: RankedEU.WinLose
+  fullName: R6Api.Models.RankedEU.WinLose
+  type: Property
+  source:
+    id: WinLose
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 45
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nWin/Lose Ratio as Percentage\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public double WinLose { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property WinLose As Double
+  overload: R6Api.Models.RankedEU.WinLose*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.WinLose
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.KillDeath
+  commentId: P:R6Api.Models.RankedEU.KillDeath
+  id: KillDeath
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: KillDeath
+  nameWithType: RankedEU.KillDeath
+  fullName: R6Api.Models.RankedEU.KillDeath
+  type: Property
+  source:
+    id: KillDeath
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 58
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nKill/Death Ratio as Percentage\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public double KillDeath { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property KillDeath As Double
+  overload: R6Api.Models.RankedEU.KillDeath*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.KillDeath
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.Rank
+  commentId: P:R6Api.Models.RankedEU.Rank
+  id: Rank
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: Rank
+  nameWithType: RankedEU.Rank
+  fullName: R6Api.Models.RankedEU.Rank
+  type: Property
+  source:
+    id: Rank
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 66
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_rank")]
+
+      public int Rank { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_rank")>
+
+      Public ReadOnly Property Rank As Integer
+  overload: R6Api.Models.RankedEU.Rank*
+  implements:
+  - R6TabApiWrapper.Interfaces.IRankedData.Rank
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_rank
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.RankName
+  commentId: P:R6Api.Models.RankedEU.RankName
+  id: RankName
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: RankName
+  nameWithType: RankedEU.RankName
+  fullName: R6Api.Models.RankedEU.RankName
+  type: Property
+  source:
+    id: RankName
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 68
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_rankname")]
+
+      public string RankName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("EU_rankname")>
+
+      Public ReadOnly Property RankName As String
+  overload: R6Api.Models.RankedEU.RankName*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.RankName
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_rankname
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.MaxRank
+  commentId: P:R6Api.Models.RankedEU.MaxRank
+  id: MaxRank
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: MaxRank
+  nameWithType: RankedEU.MaxRank
+  fullName: R6Api.Models.RankedEU.MaxRank
+  type: Property
+  source:
+    id: MaxRank
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 70
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_maxrank")]
+
+      public int MaxRank { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("EU_maxrank")>
+
+      Public ReadOnly Property MaxRank As Integer
+  overload: R6Api.Models.RankedEU.MaxRank*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.MaxRank
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_maxrank
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.MaxRankName
+  commentId: P:R6Api.Models.RankedEU.MaxRankName
+  id: MaxRankName
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: MaxRankName
+  nameWithType: RankedEU.MaxRankName
+  fullName: R6Api.Models.RankedEU.MaxRankName
+  type: Property
+  source:
+    id: MaxRankName
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 72
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_maxrankname")]
+
+      public string MaxRankName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("EU_maxrankname")>
+
+      Public ReadOnly Property MaxRankName As String
+  overload: R6Api.Models.RankedEU.MaxRankName*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.MaxRankName
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_maxrankname
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.KillPerMatch
+  commentId: P:R6Api.Models.RankedEU.KillPerMatch
+  id: KillPerMatch
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: KillPerMatch
+  nameWithType: RankedEU.KillPerMatch
+  fullName: R6Api.Models.RankedEU.KillPerMatch
+  type: Property
+  source:
+    id: KillPerMatch
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 74
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_killpermatch")]
+
+      public double KillPerMatch { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonProperty("EU_killpermatch")>
+
+      Public ReadOnly Property KillPerMatch As Double
+  overload: R6Api.Models.RankedEU.KillPerMatch*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.KillPerMatch
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_killpermatch
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.DeathPerMatch
+  commentId: P:R6Api.Models.RankedEU.DeathPerMatch
+  id: DeathPerMatch
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: DeathPerMatch
+  nameWithType: RankedEU.DeathPerMatch
+  fullName: R6Api.Models.RankedEU.DeathPerMatch
+  type: Property
+  source:
+    id: DeathPerMatch
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 76
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("EU_deathspermatch")]
+
+      public double DeathPerMatch { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonProperty("EU_deathspermatch")>
+
+      Public ReadOnly Property DeathPerMatch As Double
+  overload: R6Api.Models.RankedEU.DeathPerMatch*
+  implements:
+  - R6Api.Interfaces.IRegionRanked.DeathPerMatch
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EU_deathspermatch
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.RankedEU.GetRankImg
+  commentId: M:R6Api.Models.RankedEU.GetRankImg
+  id: GetRankImg
+  parent: R6Api.Models.RankedEU
+  langs:
+  - csharp
+  - vb
+  name: GetRankImg()
+  nameWithType: RankedEU.GetRankImg()
+  fullName: R6Api.Models.RankedEU.GetRankImg()
+  type: Method
+  source:
+    id: GetRankImg
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\Ranked\RankedEU.cs
+    startLine: 82
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nGet Rank Banner for the Player&apos;s Current Rank\n"
+  example: []
+  syntax:
+    content: public string GetRankImg()
+    return:
+      type: System.String
+      description: Url of the Banner Img
+    content.vb: Public Function GetRankImg As String
+  overload: R6Api.Models.RankedEU.GetRankImg*
+  implements:
+  - R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: R6Api.Models
+  commentId: N:R6Api.Models
+  name: R6Api.Models
+  nameWithType: R6Api.Models
+  fullName: R6Api.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: R6Api.Interfaces.IRegionRanked
+  commentId: T:R6Api.Interfaces.IRegionRanked
+  parent: R6Api.Interfaces
+  name: IRegionRanked
+  nameWithType: IRegionRanked
+  fullName: R6Api.Interfaces.IRegionRanked
+- uid: R6TabApiWrapper.Interfaces.IRankedData
+  commentId: T:R6TabApiWrapper.Interfaces.IRankedData
+  parent: R6TabApiWrapper.Interfaces
+  name: IRankedData
+  nameWithType: IRankedData
+  fullName: R6TabApiWrapper.Interfaces.IRankedData
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R6Api.Interfaces
+  commentId: N:R6Api.Interfaces
+  name: R6Api.Interfaces
+  nameWithType: R6Api.Interfaces
+  fullName: R6Api.Interfaces
+- uid: R6TabApiWrapper.Interfaces
+  commentId: N:R6TabApiWrapper.Interfaces
+  name: R6TabApiWrapper.Interfaces
+  nameWithType: R6TabApiWrapper.Interfaces
+  fullName: R6TabApiWrapper.Interfaces
+- uid: R6Api.Models.RankedEU.Kills*
+  commentId: Overload:R6Api.Models.RankedEU.Kills
+  name: Kills
+  nameWithType: RankedEU.Kills
+  fullName: R6Api.Models.RankedEU.Kills
+- uid: R6Api.Interfaces.IRegionRanked.Kills
+  commentId: P:R6Api.Interfaces.IRegionRanked.Kills
+  parent: R6Api.Interfaces.IRegionRanked
+  name: Kills
+  nameWithType: IRegionRanked.Kills
+  fullName: R6Api.Interfaces.IRegionRanked.Kills
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R6Api.Models.RankedEU.Deaths*
+  commentId: Overload:R6Api.Models.RankedEU.Deaths
+  name: Deaths
+  nameWithType: RankedEU.Deaths
+  fullName: R6Api.Models.RankedEU.Deaths
+- uid: R6Api.Interfaces.IRegionRanked.Deaths
+  commentId: P:R6Api.Interfaces.IRegionRanked.Deaths
+  parent: R6Api.Interfaces.IRegionRanked
+  name: Deaths
+  nameWithType: IRegionRanked.Deaths
+  fullName: R6Api.Interfaces.IRegionRanked.Deaths
+- uid: R6Api.Models.RankedEU.Wins*
+  commentId: Overload:R6Api.Models.RankedEU.Wins
+  name: Wins
+  nameWithType: RankedEU.Wins
+  fullName: R6Api.Models.RankedEU.Wins
+- uid: R6Api.Interfaces.IRegionRanked.Wins
+  commentId: P:R6Api.Interfaces.IRegionRanked.Wins
+  parent: R6Api.Interfaces.IRegionRanked
+  name: Wins
+  nameWithType: IRegionRanked.Wins
+  fullName: R6Api.Interfaces.IRegionRanked.Wins
+- uid: R6Api.Models.RankedEU.Losses*
+  commentId: Overload:R6Api.Models.RankedEU.Losses
+  name: Losses
+  nameWithType: RankedEU.Losses
+  fullName: R6Api.Models.RankedEU.Losses
+- uid: R6Api.Interfaces.IRegionRanked.Losses
+  commentId: P:R6Api.Interfaces.IRegionRanked.Losses
+  parent: R6Api.Interfaces.IRegionRanked
+  name: Losses
+  nameWithType: IRegionRanked.Losses
+  fullName: R6Api.Interfaces.IRegionRanked.Losses
+- uid: R6Api.Models.RankedEU.Abandons*
+  commentId: Overload:R6Api.Models.RankedEU.Abandons
+  name: Abandons
+  nameWithType: RankedEU.Abandons
+  fullName: R6Api.Models.RankedEU.Abandons
+- uid: R6Api.Interfaces.IRegionRanked.Abandons
+  commentId: P:R6Api.Interfaces.IRegionRanked.Abandons
+  parent: R6Api.Interfaces.IRegionRanked
+  name: Abandons
+  nameWithType: IRegionRanked.Abandons
+  fullName: R6Api.Interfaces.IRegionRanked.Abandons
+- uid: R6Api.Models.RankedEU.MaxMmr*
+  commentId: Overload:R6Api.Models.RankedEU.MaxMmr
+  name: MaxMmr
+  nameWithType: RankedEU.MaxMmr
+  fullName: R6Api.Models.RankedEU.MaxMmr
+- uid: R6Api.Interfaces.IRegionRanked.MaxMmr
+  commentId: P:R6Api.Interfaces.IRegionRanked.MaxMmr
+  parent: R6Api.Interfaces.IRegionRanked
+  name: MaxMmr
+  nameWithType: IRegionRanked.MaxMmr
+  fullName: R6Api.Interfaces.IRegionRanked.MaxMmr
+- uid: R6Api.Models.RankedEU.Champ*
+  commentId: Overload:R6Api.Models.RankedEU.Champ
+  name: Champ
+  nameWithType: RankedEU.Champ
+  fullName: R6Api.Models.RankedEU.Champ
+- uid: R6Api.Interfaces.IRegionRanked.Champ
+  commentId: P:R6Api.Interfaces.IRegionRanked.Champ
+  parent: R6Api.Interfaces.IRegionRanked
+  name: Champ
+  nameWithType: IRegionRanked.Champ
+  fullName: R6Api.Interfaces.IRegionRanked.Champ
+- uid: R6Api.Models.RankedEU.MmrChange*
+  commentId: Overload:R6Api.Models.RankedEU.MmrChange
+  name: MmrChange
+  nameWithType: RankedEU.MmrChange
+  fullName: R6Api.Models.RankedEU.MmrChange
+- uid: R6Api.Interfaces.IRegionRanked.MmrChange
+  commentId: P:R6Api.Interfaces.IRegionRanked.MmrChange
+  parent: R6Api.Interfaces.IRegionRanked
+  name: MmrChange
+  nameWithType: IRegionRanked.MmrChange
+  fullName: R6Api.Interfaces.IRegionRanked.MmrChange
+- uid: R6Api.Models.RankedEU.ActualMmr*
+  commentId: Overload:R6Api.Models.RankedEU.ActualMmr
+  name: ActualMmr
+  nameWithType: RankedEU.ActualMmr
+  fullName: R6Api.Models.RankedEU.ActualMmr
+- uid: R6Api.Interfaces.IRegionRanked.ActualMmr
+  commentId: P:R6Api.Interfaces.IRegionRanked.ActualMmr
+  parent: R6Api.Interfaces.IRegionRanked
+  name: ActualMmr
+  nameWithType: IRegionRanked.ActualMmr
+  fullName: R6Api.Interfaces.IRegionRanked.ActualMmr
+- uid: R6Api.Models.RankedEU.Matches*
+  commentId: Overload:R6Api.Models.RankedEU.Matches
+  name: Matches
+  nameWithType: RankedEU.Matches
+  fullName: R6Api.Models.RankedEU.Matches
+- uid: R6Api.Interfaces.IRegionRanked.Matches
+  commentId: P:R6Api.Interfaces.IRegionRanked.Matches
+  parent: R6Api.Interfaces.IRegionRanked
+  name: Matches
+  nameWithType: IRegionRanked.Matches
+  fullName: R6Api.Interfaces.IRegionRanked.Matches
+- uid: R6Api.Models.RankedEU.WinLose*
+  commentId: Overload:R6Api.Models.RankedEU.WinLose
+  name: WinLose
+  nameWithType: RankedEU.WinLose
+  fullName: R6Api.Models.RankedEU.WinLose
+- uid: R6Api.Interfaces.IRegionRanked.WinLose
+  commentId: P:R6Api.Interfaces.IRegionRanked.WinLose
+  parent: R6Api.Interfaces.IRegionRanked
+  name: WinLose
+  nameWithType: IRegionRanked.WinLose
+  fullName: R6Api.Interfaces.IRegionRanked.WinLose
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: R6Api.Models.RankedEU.KillDeath*
+  commentId: Overload:R6Api.Models.RankedEU.KillDeath
+  name: KillDeath
+  nameWithType: RankedEU.KillDeath
+  fullName: R6Api.Models.RankedEU.KillDeath
+- uid: R6Api.Interfaces.IRegionRanked.KillDeath
+  commentId: P:R6Api.Interfaces.IRegionRanked.KillDeath
+  parent: R6Api.Interfaces.IRegionRanked
+  name: KillDeath
+  nameWithType: IRegionRanked.KillDeath
+  fullName: R6Api.Interfaces.IRegionRanked.KillDeath
+- uid: R6Api.Models.RankedEU.Rank*
+  commentId: Overload:R6Api.Models.RankedEU.Rank
+  name: Rank
+  nameWithType: RankedEU.Rank
+  fullName: R6Api.Models.RankedEU.Rank
+- uid: R6TabApiWrapper.Interfaces.IRankedData.Rank
+  commentId: P:R6TabApiWrapper.Interfaces.IRankedData.Rank
+  parent: R6TabApiWrapper.Interfaces.IRankedData
+  name: Rank
+  nameWithType: IRankedData.Rank
+  fullName: R6TabApiWrapper.Interfaces.IRankedData.Rank
+- uid: R6Api.Models.RankedEU.RankName*
+  commentId: Overload:R6Api.Models.RankedEU.RankName
+  name: RankName
+  nameWithType: RankedEU.RankName
+  fullName: R6Api.Models.RankedEU.RankName
+- uid: R6Api.Interfaces.IRegionRanked.RankName
+  commentId: P:R6Api.Interfaces.IRegionRanked.RankName
+  parent: R6Api.Interfaces.IRegionRanked
+  name: RankName
+  nameWithType: IRegionRanked.RankName
+  fullName: R6Api.Interfaces.IRegionRanked.RankName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: R6Api.Models.RankedEU.MaxRank*
+  commentId: Overload:R6Api.Models.RankedEU.MaxRank
+  name: MaxRank
+  nameWithType: RankedEU.MaxRank
+  fullName: R6Api.Models.RankedEU.MaxRank
+- uid: R6Api.Interfaces.IRegionRanked.MaxRank
+  commentId: P:R6Api.Interfaces.IRegionRanked.MaxRank
+  parent: R6Api.Interfaces.IRegionRanked
+  name: MaxRank
+  nameWithType: IRegionRanked.MaxRank
+  fullName: R6Api.Interfaces.IRegionRanked.MaxRank
+- uid: R6Api.Models.RankedEU.MaxRankName*
+  commentId: Overload:R6Api.Models.RankedEU.MaxRankName
+  name: MaxRankName
+  nameWithType: RankedEU.MaxRankName
+  fullName: R6Api.Models.RankedEU.MaxRankName
+- uid: R6Api.Interfaces.IRegionRanked.MaxRankName
+  commentId: P:R6Api.Interfaces.IRegionRanked.MaxRankName
+  parent: R6Api.Interfaces.IRegionRanked
+  name: MaxRankName
+  nameWithType: IRegionRanked.MaxRankName
+  fullName: R6Api.Interfaces.IRegionRanked.MaxRankName
+- uid: R6Api.Models.RankedEU.KillPerMatch*
+  commentId: Overload:R6Api.Models.RankedEU.KillPerMatch
+  name: KillPerMatch
+  nameWithType: RankedEU.KillPerMatch
+  fullName: R6Api.Models.RankedEU.KillPerMatch
+- uid: R6Api.Interfaces.IRegionRanked.KillPerMatch
+  commentId: P:R6Api.Interfaces.IRegionRanked.KillPerMatch
+  parent: R6Api.Interfaces.IRegionRanked
+  name: KillPerMatch
+  nameWithType: IRegionRanked.KillPerMatch
+  fullName: R6Api.Interfaces.IRegionRanked.KillPerMatch
+- uid: R6Api.Models.RankedEU.DeathPerMatch*
+  commentId: Overload:R6Api.Models.RankedEU.DeathPerMatch
+  name: DeathPerMatch
+  nameWithType: RankedEU.DeathPerMatch
+  fullName: R6Api.Models.RankedEU.DeathPerMatch
+- uid: R6Api.Interfaces.IRegionRanked.DeathPerMatch
+  commentId: P:R6Api.Interfaces.IRegionRanked.DeathPerMatch
+  parent: R6Api.Interfaces.IRegionRanked
+  name: DeathPerMatch
+  nameWithType: IRegionRanked.DeathPerMatch
+  fullName: R6Api.Interfaces.IRegionRanked.DeathPerMatch
+- uid: R6Api.Models.RankedEU.GetRankImg*
+  commentId: Overload:R6Api.Models.RankedEU.GetRankImg
+  name: GetRankImg
+  nameWithType: RankedEU.GetRankImg
+  fullName: R6Api.Models.RankedEU.GetRankImg
+- uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  commentId: M:R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  parent: R6TabApiWrapper.Interfaces.IRankedData
+  name: GetRankImg()
+  nameWithType: IRankedData.GetRankImg()
+  fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg()
+  spec.csharp:
+  - uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+    name: GetRankImg
+    nameWithType: IRankedData.GetRankImg
+    fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+    name: GetRankImg
+    nameWithType: IRankedData.GetRankImg
+    fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

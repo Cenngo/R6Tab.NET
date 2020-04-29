@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Models.Bases
+  commentId: N:R6Api.Models.Bases
+  id: R6Api.Models.Bases
+  children:
+  - R6Api.Models.Bases.PlayerBase
+  langs:
+  - csharp
+  - vb
+  name: R6Api.Models.Bases
+  nameWithType: R6Api.Models.Bases
+  fullName: R6Api.Models.Bases
+  type: Namespace
+  assemblies:
+  - R6Tab.NET
+references:
+- uid: R6Api.Models.Bases.PlayerBase
+  commentId: T:R6Api.Models.Bases.PlayerBase
+  parent: R6Api.Models.Bases
+  name: PlayerBase
+  nameWithType: PlayerBase
+  fullName: R6Api.Models.Bases.PlayerBase
+- uid: R6Api.Models.Bases
+  commentId: N:R6Api.Models.Bases
+  name: R6Api.Models.Bases
+  nameWithType: R6Api.Models.Bases
+  fullName: R6Api.Models.Bases

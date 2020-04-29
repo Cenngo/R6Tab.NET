@@ -1,0 +1,373 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Interfaces.IGamemodeStats
+  commentId: T:R6Api.Interfaces.IGamemodeStats
+  id: IGamemodeStats
+  parent: R6Api.Interfaces
+  children:
+  - R6Api.Interfaces.IGamemodeStats.Deaths
+  - R6Api.Interfaces.IGamemodeStats.HoursPlayed
+  - R6Api.Interfaces.IGamemodeStats.KillDeath
+  - R6Api.Interfaces.IGamemodeStats.Kills
+  - R6Api.Interfaces.IGamemodeStats.MatchesLost
+  - R6Api.Interfaces.IGamemodeStats.MatchesPlayed
+  - R6Api.Interfaces.IGamemodeStats.MatchesWon
+  - R6Api.Interfaces.IGamemodeStats.TimePlayed
+  - R6Api.Interfaces.IGamemodeStats.WinLose
+  langs:
+  - csharp
+  - vb
+  name: IGamemodeStats
+  nameWithType: IGamemodeStats
+  fullName: R6Api.Interfaces.IGamemodeStats
+  type: Interface
+  source:
+    id: IGamemodeStats
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IGamemodeStats.cs
+    startLine: 9
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  summary: "\nGamemode Stat Template for Rainbow6\n"
+  example: []
+  syntax:
+    content: public interface IGamemodeStats
+    content.vb: Public Interface IGamemodeStats
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R6Api.Interfaces.IGamemodeStats.Kills
+  commentId: P:R6Api.Interfaces.IGamemodeStats.Kills
+  id: Kills
+  parent: R6Api.Interfaces.IGamemodeStats
+  langs:
+  - csharp
+  - vb
+  name: Kills
+  nameWithType: IGamemodeStats.Kills
+  fullName: R6Api.Interfaces.IGamemodeStats.Kills
+  type: Property
+  source:
+    id: Kills
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IGamemodeStats.cs
+    startLine: 11
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int Kills { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Kills As Integer
+  overload: R6Api.Interfaces.IGamemodeStats.Kills*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IGamemodeStats.Deaths
+  commentId: P:R6Api.Interfaces.IGamemodeStats.Deaths
+  id: Deaths
+  parent: R6Api.Interfaces.IGamemodeStats
+  langs:
+  - csharp
+  - vb
+  name: Deaths
+  nameWithType: IGamemodeStats.Deaths
+  fullName: R6Api.Interfaces.IGamemodeStats.Deaths
+  type: Property
+  source:
+    id: Deaths
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IGamemodeStats.cs
+    startLine: 12
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int Deaths { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Deaths As Integer
+  overload: R6Api.Interfaces.IGamemodeStats.Deaths*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IGamemodeStats.MatchesWon
+  commentId: P:R6Api.Interfaces.IGamemodeStats.MatchesWon
+  id: MatchesWon
+  parent: R6Api.Interfaces.IGamemodeStats
+  langs:
+  - csharp
+  - vb
+  name: MatchesWon
+  nameWithType: IGamemodeStats.MatchesWon
+  fullName: R6Api.Interfaces.IGamemodeStats.MatchesWon
+  type: Property
+  source:
+    id: MatchesWon
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IGamemodeStats.cs
+    startLine: 13
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int MatchesWon { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MatchesWon As Integer
+  overload: R6Api.Interfaces.IGamemodeStats.MatchesWon*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IGamemodeStats.MatchesLost
+  commentId: P:R6Api.Interfaces.IGamemodeStats.MatchesLost
+  id: MatchesLost
+  parent: R6Api.Interfaces.IGamemodeStats
+  langs:
+  - csharp
+  - vb
+  name: MatchesLost
+  nameWithType: IGamemodeStats.MatchesLost
+  fullName: R6Api.Interfaces.IGamemodeStats.MatchesLost
+  type: Property
+  source:
+    id: MatchesLost
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IGamemodeStats.cs
+    startLine: 14
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int MatchesLost { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MatchesLost As Integer
+  overload: R6Api.Interfaces.IGamemodeStats.MatchesLost*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IGamemodeStats.TimePlayed
+  commentId: P:R6Api.Interfaces.IGamemodeStats.TimePlayed
+  id: TimePlayed
+  parent: R6Api.Interfaces.IGamemodeStats
+  langs:
+  - csharp
+  - vb
+  name: TimePlayed
+  nameWithType: IGamemodeStats.TimePlayed
+  fullName: R6Api.Interfaces.IGamemodeStats.TimePlayed
+  type: Property
+  source:
+    id: TimePlayed
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IGamemodeStats.cs
+    startLine: 15
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int TimePlayed { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TimePlayed As Integer
+  overload: R6Api.Interfaces.IGamemodeStats.TimePlayed*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IGamemodeStats.HoursPlayed
+  commentId: P:R6Api.Interfaces.IGamemodeStats.HoursPlayed
+  id: HoursPlayed
+  parent: R6Api.Interfaces.IGamemodeStats
+  langs:
+  - csharp
+  - vb
+  name: HoursPlayed
+  nameWithType: IGamemodeStats.HoursPlayed
+  fullName: R6Api.Interfaces.IGamemodeStats.HoursPlayed
+  type: Property
+  source:
+    id: HoursPlayed
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IGamemodeStats.cs
+    startLine: 16
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int HoursPlayed { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property HoursPlayed As Integer
+  overload: R6Api.Interfaces.IGamemodeStats.HoursPlayed*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IGamemodeStats.MatchesPlayed
+  commentId: P:R6Api.Interfaces.IGamemodeStats.MatchesPlayed
+  id: MatchesPlayed
+  parent: R6Api.Interfaces.IGamemodeStats
+  langs:
+  - csharp
+  - vb
+  name: MatchesPlayed
+  nameWithType: IGamemodeStats.MatchesPlayed
+  fullName: R6Api.Interfaces.IGamemodeStats.MatchesPlayed
+  type: Property
+  source:
+    id: MatchesPlayed
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IGamemodeStats.cs
+    startLine: 17
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: int MatchesPlayed { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MatchesPlayed As Integer
+  overload: R6Api.Interfaces.IGamemodeStats.MatchesPlayed*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IGamemodeStats.KillDeath
+  commentId: P:R6Api.Interfaces.IGamemodeStats.KillDeath
+  id: KillDeath
+  parent: R6Api.Interfaces.IGamemodeStats
+  langs:
+  - csharp
+  - vb
+  name: KillDeath
+  nameWithType: IGamemodeStats.KillDeath
+  fullName: R6Api.Interfaces.IGamemodeStats.KillDeath
+  type: Property
+  source:
+    id: KillDeath
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IGamemodeStats.cs
+    startLine: 18
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: double KillDeath { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property KillDeath As Double
+  overload: R6Api.Interfaces.IGamemodeStats.KillDeath*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6Api.Interfaces.IGamemodeStats.WinLose
+  commentId: P:R6Api.Interfaces.IGamemodeStats.WinLose
+  id: WinLose
+  parent: R6Api.Interfaces.IGamemodeStats
+  langs:
+  - csharp
+  - vb
+  name: WinLose
+  nameWithType: IGamemodeStats.WinLose
+  fullName: R6Api.Interfaces.IGamemodeStats.WinLose
+  type: Property
+  source:
+    id: WinLose
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IGamemodeStats.cs
+    startLine: 19
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Interfaces
+  syntax:
+    content: double WinLose { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property WinLose As Double
+  overload: R6Api.Interfaces.IGamemodeStats.WinLose*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: R6Api.Interfaces
+  commentId: N:R6Api.Interfaces
+  name: R6Api.Interfaces
+  nameWithType: R6Api.Interfaces
+  fullName: R6Api.Interfaces
+- uid: R6Api.Interfaces.IGamemodeStats.Kills*
+  commentId: Overload:R6Api.Interfaces.IGamemodeStats.Kills
+  name: Kills
+  nameWithType: IGamemodeStats.Kills
+  fullName: R6Api.Interfaces.IGamemodeStats.Kills
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R6Api.Interfaces.IGamemodeStats.Deaths*
+  commentId: Overload:R6Api.Interfaces.IGamemodeStats.Deaths
+  name: Deaths
+  nameWithType: IGamemodeStats.Deaths
+  fullName: R6Api.Interfaces.IGamemodeStats.Deaths
+- uid: R6Api.Interfaces.IGamemodeStats.MatchesWon*
+  commentId: Overload:R6Api.Interfaces.IGamemodeStats.MatchesWon
+  name: MatchesWon
+  nameWithType: IGamemodeStats.MatchesWon
+  fullName: R6Api.Interfaces.IGamemodeStats.MatchesWon
+- uid: R6Api.Interfaces.IGamemodeStats.MatchesLost*
+  commentId: Overload:R6Api.Interfaces.IGamemodeStats.MatchesLost
+  name: MatchesLost
+  nameWithType: IGamemodeStats.MatchesLost
+  fullName: R6Api.Interfaces.IGamemodeStats.MatchesLost
+- uid: R6Api.Interfaces.IGamemodeStats.TimePlayed*
+  commentId: Overload:R6Api.Interfaces.IGamemodeStats.TimePlayed
+  name: TimePlayed
+  nameWithType: IGamemodeStats.TimePlayed
+  fullName: R6Api.Interfaces.IGamemodeStats.TimePlayed
+- uid: R6Api.Interfaces.IGamemodeStats.HoursPlayed*
+  commentId: Overload:R6Api.Interfaces.IGamemodeStats.HoursPlayed
+  name: HoursPlayed
+  nameWithType: IGamemodeStats.HoursPlayed
+  fullName: R6Api.Interfaces.IGamemodeStats.HoursPlayed
+- uid: R6Api.Interfaces.IGamemodeStats.MatchesPlayed*
+  commentId: Overload:R6Api.Interfaces.IGamemodeStats.MatchesPlayed
+  name: MatchesPlayed
+  nameWithType: IGamemodeStats.MatchesPlayed
+  fullName: R6Api.Interfaces.IGamemodeStats.MatchesPlayed
+- uid: R6Api.Interfaces.IGamemodeStats.KillDeath*
+  commentId: Overload:R6Api.Interfaces.IGamemodeStats.KillDeath
+  name: KillDeath
+  nameWithType: IGamemodeStats.KillDeath
+  fullName: R6Api.Interfaces.IGamemodeStats.KillDeath
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: R6Api.Interfaces.IGamemodeStats.WinLose*
+  commentId: Overload:R6Api.Interfaces.IGamemodeStats.WinLose
+  name: WinLose
+  nameWithType: IGamemodeStats.WinLose
+  fullName: R6Api.Interfaces.IGamemodeStats.WinLose

@@ -1,0 +1,123 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6TabApiWrapper.Interfaces.IRankedData
+  commentId: T:R6TabApiWrapper.Interfaces.IRankedData
+  id: IRankedData
+  parent: R6TabApiWrapper.Interfaces
+  children:
+  - R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  - R6TabApiWrapper.Interfaces.IRankedData.Rank
+  langs:
+  - csharp
+  - vb
+  name: IRankedData
+  nameWithType: IRankedData
+  fullName: R6TabApiWrapper.Interfaces.IRankedData
+  type: Interface
+  source:
+    id: IRankedData
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRankedData.cs
+    startLine: 10
+  assemblies:
+  - R6Tab.NET
+  namespace: R6TabApiWrapper.Interfaces
+  summary: "\nRanked Data Template that Contains Rank Info for Rainbow6\n"
+  example: []
+  syntax:
+    content: public interface IRankedData
+    content.vb: Public Interface IRankedData
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: R6TabApiWrapper.Interfaces.IRankedData.Rank
+  commentId: P:R6TabApiWrapper.Interfaces.IRankedData.Rank
+  id: Rank
+  parent: R6TabApiWrapper.Interfaces.IRankedData
+  langs:
+  - csharp
+  - vb
+  name: Rank
+  nameWithType: IRankedData.Rank
+  fullName: R6TabApiWrapper.Interfaces.IRankedData.Rank
+  type: Property
+  source:
+    id: Rank
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRankedData.cs
+    startLine: 12
+  assemblies:
+  - R6Tab.NET
+  namespace: R6TabApiWrapper.Interfaces
+  syntax:
+    content: int Rank { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Rank As Integer
+  overload: R6TabApiWrapper.Interfaces.IRankedData.Rank*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  commentId: M:R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  id: GetRankImg
+  parent: R6TabApiWrapper.Interfaces.IRankedData
+  langs:
+  - csharp
+  - vb
+  name: GetRankImg()
+  nameWithType: IRankedData.GetRankImg()
+  fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg()
+  type: Method
+  source:
+    id: GetRankImg
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Interfaces\IRankedData.cs
+    startLine: 13
+  assemblies:
+  - R6Tab.NET
+  namespace: R6TabApiWrapper.Interfaces
+  syntax:
+    content: string GetRankImg()
+    return:
+      type: System.String
+    content.vb: Function GetRankImg As String
+  overload: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg*
+references:
+- uid: R6TabApiWrapper.Interfaces
+  commentId: N:R6TabApiWrapper.Interfaces
+  name: R6TabApiWrapper.Interfaces
+  nameWithType: R6TabApiWrapper.Interfaces
+  fullName: R6TabApiWrapper.Interfaces
+- uid: R6TabApiWrapper.Interfaces.IRankedData.Rank*
+  commentId: Overload:R6TabApiWrapper.Interfaces.IRankedData.Rank
+  name: Rank
+  nameWithType: IRankedData.Rank
+  fullName: R6TabApiWrapper.Interfaces.IRankedData.Rank
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg*
+  commentId: Overload:R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+  name: GetRankImg
+  nameWithType: IRankedData.GetRankImg
+  fullName: R6TabApiWrapper.Interfaces.IRankedData.GetRankImg
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api
+  commentId: N:R6Api
+  id: R6Api
+  children:
+  - R6Api.R6Client
+  - R6Api.R6Config
+  langs:
+  - csharp
+  - vb
+  name: R6Api
+  nameWithType: R6Api
+  fullName: R6Api
+  type: Namespace
+  assemblies:
+  - R6Tab.NET
+references:
+- uid: R6Api.R6Client
+  commentId: T:R6Api.R6Client
+  name: R6Client
+  nameWithType: R6Client
+  fullName: R6Api.R6Client
+- uid: R6Api.R6Config
+  commentId: T:R6Api.R6Config
+  parent: R6Api
+  name: R6Config
+  nameWithType: R6Config
+  fullName: R6Api.R6Config
+- uid: R6Api
+  commentId: N:R6Api
+  name: R6Api
+  nameWithType: R6Api
+  fullName: R6Api

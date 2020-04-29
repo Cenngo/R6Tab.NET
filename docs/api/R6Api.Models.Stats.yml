@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Models.Stats
+  commentId: N:R6Api.Models.Stats
+  id: R6Api.Models.Stats
+  children:
+  - R6Api.Models.Stats.CasualStats
+  - R6Api.Models.Stats.GeneralStatsPvE
+  - R6Api.Models.Stats.GeneralStatsPvP
+  - R6Api.Models.Stats.RankedStats
+  - R6Api.Models.Stats.StatsBase
+  - R6Api.Models.Stats.StatsFromId
+  langs:
+  - csharp
+  - vb
+  name: R6Api.Models.Stats
+  nameWithType: R6Api.Models.Stats
+  fullName: R6Api.Models.Stats
+  type: Namespace
+  assemblies:
+  - R6Tab.NET
+references:
+- uid: R6Api.Models.Stats.CasualStats
+  commentId: T:R6Api.Models.Stats.CasualStats
+  parent: R6Api.Models.Stats
+  name: CasualStats
+  nameWithType: CasualStats
+  fullName: R6Api.Models.Stats.CasualStats
+- uid: R6Api.Models.Stats.GeneralStatsPvE
+  commentId: T:R6Api.Models.Stats.GeneralStatsPvE
+  parent: R6Api.Models.Stats
+  name: GeneralStatsPvE
+  nameWithType: GeneralStatsPvE
+  fullName: R6Api.Models.Stats.GeneralStatsPvE
+- uid: R6Api.Models.Stats.GeneralStatsPvP
+  commentId: T:R6Api.Models.Stats.GeneralStatsPvP
+  parent: R6Api.Models.Stats
+  name: GeneralStatsPvP
+  nameWithType: GeneralStatsPvP
+  fullName: R6Api.Models.Stats.GeneralStatsPvP
+- uid: R6Api.Models.Stats.RankedStats
+  commentId: T:R6Api.Models.Stats.RankedStats
+  parent: R6Api.Models.Stats
+  name: RankedStats
+  nameWithType: RankedStats
+  fullName: R6Api.Models.Stats.RankedStats
+- uid: R6Api.Models.Stats.StatsBase
+  commentId: T:R6Api.Models.Stats.StatsBase
+  parent: R6Api.Models.Stats
+  name: StatsBase
+  nameWithType: StatsBase
+  fullName: R6Api.Models.Stats.StatsBase
+- uid: R6Api.Models.Stats.StatsFromId
+  commentId: T:R6Api.Models.Stats.StatsFromId
+  parent: R6Api.Models.Stats
+  name: StatsFromId
+  nameWithType: StatsFromId
+  fullName: R6Api.Models.Stats.StatsFromId
+- uid: R6Api.Models.Stats
+  commentId: N:R6Api.Models.Stats
+  name: R6Api.Models.Stats
+  nameWithType: R6Api.Models.Stats
+  fullName: R6Api.Models.Stats

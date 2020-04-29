@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Models.SearchResults
+  commentId: N:R6Api.Models.SearchResults
+  id: R6Api.Models.SearchResults
+  children:
+  - R6Api.Models.SearchResults.DataById
+  - R6Api.Models.SearchResults.DataByName
+  - R6Api.Models.SearchResults.SearchResult
+  langs:
+  - csharp
+  - vb
+  name: R6Api.Models.SearchResults
+  nameWithType: R6Api.Models.SearchResults
+  fullName: R6Api.Models.SearchResults
+  type: Namespace
+  assemblies:
+  - R6Tab.NET
+references:
+- uid: R6Api.Models.SearchResults.SearchResult
+  commentId: T:R6Api.Models.SearchResults.SearchResult
+  parent: R6Api.Models.SearchResults
+  name: SearchResult
+  nameWithType: SearchResult
+  fullName: R6Api.Models.SearchResults.SearchResult
+- uid: R6Api.Models.SearchResults.DataById
+  commentId: T:R6Api.Models.SearchResults.DataById
+  parent: R6Api.Models.SearchResults
+  name: DataById
+  nameWithType: DataById
+  fullName: R6Api.Models.SearchResults.DataById
+- uid: R6Api.Models.SearchResults.DataByName
+  commentId: T:R6Api.Models.SearchResults.DataByName
+  parent: R6Api.Models.SearchResults
+  name: DataByName
+  nameWithType: DataByName
+  fullName: R6Api.Models.SearchResults.DataByName
+- uid: R6Api.Models.SearchResults
+  commentId: N:R6Api.Models.SearchResults
+  name: R6Api.Models.SearchResults
+  nameWithType: R6Api.Models.SearchResults
+  fullName: R6Api.Models.SearchResults

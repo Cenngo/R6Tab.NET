@@ -1,0 +1,695 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6Api.Models.OperatorStats
+  commentId: T:R6Api.Models.OperatorStats
+  id: OperatorStats
+  parent: R6Api.Models
+  children:
+  - R6Api.Models.OperatorStats.Deaths
+  - R6Api.Models.OperatorStats.KD
+  - R6Api.Models.OperatorStats.Kills
+  - R6Api.Models.OperatorStats.Losses
+  - R6Api.Models.OperatorStats.TimePlayed
+  - R6Api.Models.OperatorStats.WinRate
+  - R6Api.Models.OperatorStats.Wins
+  langs:
+  - csharp
+  - vb
+  name: OperatorStats
+  nameWithType: OperatorStats
+  fullName: R6Api.Models.OperatorStats
+  type: Class
+  source:
+    id: OperatorStats
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\OperatorStats.cs
+    startLine: 7
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: public class OperatorStats
+    content.vb: Public Class OperatorStats
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: R6Api.Models.OperatorStats.Wins
+  commentId: P:R6Api.Models.OperatorStats.Wins
+  id: Wins
+  parent: R6Api.Models.OperatorStats
+  langs:
+  - csharp
+  - vb
+  name: Wins
+  nameWithType: OperatorStats.Wins
+  fullName: R6Api.Models.OperatorStats.Wins
+  type: Property
+  source:
+    id: Wins
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\OperatorStats.cs
+    startLine: 9
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("wins")]
+
+      public int Wins { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("wins")>
+
+      Public ReadOnly Property Wins As Integer
+  overload: R6Api.Models.OperatorStats.Wins*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: wins
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.OperatorStats.Losses
+  commentId: P:R6Api.Models.OperatorStats.Losses
+  id: Losses
+  parent: R6Api.Models.OperatorStats
+  langs:
+  - csharp
+  - vb
+  name: Losses
+  nameWithType: OperatorStats.Losses
+  fullName: R6Api.Models.OperatorStats.Losses
+  type: Property
+  source:
+    id: Losses
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\OperatorStats.cs
+    startLine: 11
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("losses")]
+
+      public int Losses { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("losses")>
+
+      Public ReadOnly Property Losses As Integer
+  overload: R6Api.Models.OperatorStats.Losses*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: losses
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.OperatorStats.Kills
+  commentId: P:R6Api.Models.OperatorStats.Kills
+  id: Kills
+  parent: R6Api.Models.OperatorStats
+  langs:
+  - csharp
+  - vb
+  name: Kills
+  nameWithType: OperatorStats.Kills
+  fullName: R6Api.Models.OperatorStats.Kills
+  type: Property
+  source:
+    id: Kills
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\OperatorStats.cs
+    startLine: 13
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("kills")]
+
+      public int Kills { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("kills")>
+
+      Public ReadOnly Property Kills As Integer
+  overload: R6Api.Models.OperatorStats.Kills*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: kills
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.OperatorStats.Deaths
+  commentId: P:R6Api.Models.OperatorStats.Deaths
+  id: Deaths
+  parent: R6Api.Models.OperatorStats
+  langs:
+  - csharp
+  - vb
+  name: Deaths
+  nameWithType: OperatorStats.Deaths
+  fullName: R6Api.Models.OperatorStats.Deaths
+  type: Property
+  source:
+    id: Deaths
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\OperatorStats.cs
+    startLine: 15
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("deaths")]
+
+      public int Deaths { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("deaths")>
+
+      Public ReadOnly Property Deaths As Integer
+  overload: R6Api.Models.OperatorStats.Deaths*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: deaths
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.OperatorStats.TimePlayed
+  commentId: P:R6Api.Models.OperatorStats.TimePlayed
+  id: TimePlayed
+  parent: R6Api.Models.OperatorStats
+  langs:
+  - csharp
+  - vb
+  name: TimePlayed
+  nameWithType: OperatorStats.TimePlayed
+  fullName: R6Api.Models.OperatorStats.TimePlayed
+  type: Property
+  source:
+    id: TimePlayed
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\OperatorStats.cs
+    startLine: 17
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonProperty("timeplayed")]
+
+      public int TimePlayed { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("timeplayed")>
+
+      Public ReadOnly Property TimePlayed As Integer
+  overload: R6Api.Models.OperatorStats.TimePlayed*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: timeplayed
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.OperatorStats.KD
+  commentId: P:R6Api.Models.OperatorStats.KD
+  id: KD
+  parent: R6Api.Models.OperatorStats
+  langs:
+  - csharp
+  - vb
+  name: KD
+  nameWithType: OperatorStats.KD
+  fullName: R6Api.Models.OperatorStats.KD
+  type: Property
+  source:
+    id: KD
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\OperatorStats.cs
+    startLine: 21
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public double KD { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: >-
+      <JsonIgnore>
+
+      Public ReadOnly Property KD As Double
+  overload: R6Api.Models.OperatorStats.KD*
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: R6Api.Models.OperatorStats.WinRate
+  commentId: P:R6Api.Models.OperatorStats.WinRate
+  id: WinRate
+  parent: R6Api.Models.OperatorStats
+  langs:
+  - csharp
+  - vb
+  name: WinRate
+  nameWithType: OperatorStats.WinRate
+  fullName: R6Api.Models.OperatorStats.WinRate
+  type: Property
+  source:
+    id: WinRate
+    path: C:\Users\Cenk\source\repos\R6Tab.NET\R6TabApiWrapper\Models\OperatorStats.cs
+    startLine: 29
+  assemblies:
+  - R6Tab.NET
+  namespace: R6Api.Models
+  summary: "\nWin Rate as Percentage\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonProperty("winrate")]
+
+      public int WinRate { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonProperty("winrate")>
+
+      Public ReadOnly Property WinRate As Integer
+  overload: R6Api.Models.OperatorStats.WinRate*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: winrate
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: R6Api.Models
+  commentId: N:R6Api.Models
+  name: R6Api.Models
+  nameWithType: R6Api.Models
+  fullName: R6Api.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: R6Api.Models.OperatorStats.Wins*
+  commentId: Overload:R6Api.Models.OperatorStats.Wins
+  name: Wins
+  nameWithType: OperatorStats.Wins
+  fullName: R6Api.Models.OperatorStats.Wins
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: R6Api.Models.OperatorStats.Losses*
+  commentId: Overload:R6Api.Models.OperatorStats.Losses
+  name: Losses
+  nameWithType: OperatorStats.Losses
+  fullName: R6Api.Models.OperatorStats.Losses
+- uid: R6Api.Models.OperatorStats.Kills*
+  commentId: Overload:R6Api.Models.OperatorStats.Kills
+  name: Kills
+  nameWithType: OperatorStats.Kills
+  fullName: R6Api.Models.OperatorStats.Kills
+- uid: R6Api.Models.OperatorStats.Deaths*
+  commentId: Overload:R6Api.Models.OperatorStats.Deaths
+  name: Deaths
+  nameWithType: OperatorStats.Deaths
+  fullName: R6Api.Models.OperatorStats.Deaths
+- uid: R6Api.Models.OperatorStats.TimePlayed*
+  commentId: Overload:R6Api.Models.OperatorStats.TimePlayed
+  name: TimePlayed
+  nameWithType: OperatorStats.TimePlayed
+  fullName: R6Api.Models.OperatorStats.TimePlayed
+- uid: R6Api.Models.OperatorStats.KD*
+  commentId: Overload:R6Api.Models.OperatorStats.KD
+  name: KD
+  nameWithType: OperatorStats.KD
+  fullName: R6Api.Models.OperatorStats.KD
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: R6Api.Models.OperatorStats.WinRate*
+  commentId: Overload:R6Api.Models.OperatorStats.WinRate
+  name: WinRate
+  nameWithType: OperatorStats.WinRate
+  fullName: R6Api.Models.OperatorStats.WinRate
