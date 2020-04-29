@@ -1,0 +1,738 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Cenk/Desktop/Doc/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Enums.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Enums.Platform.html",
+          "hash": "Nb8iNejGZHRiArAQdVoMiA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Enums.html",
+          "hash": "0iCsNirn/a4CFVvfm9nCwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Interfaces.IGamemodeStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Interfaces.IGamemodeStats.html",
+          "hash": "a6tZJVLb8puZn40XmvogVw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Interfaces.IPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Interfaces.IPlayer.html",
+          "hash": "d5ggNYxXiqRE0UhFp5djdQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Interfaces.IRegionRanked.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Interfaces.IRegionRanked.html",
+          "hash": "i672FULfKUldksbTwSWNdQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Interfaces.ISearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Interfaces.ISearchResult.html",
+          "hash": "l4gozryBGdB0s7Hd8Drkdg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Interfaces.html",
+          "hash": "+yTPVLcxApBQK34HjA9CoA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Alias.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Alias.html",
+          "hash": "N/ZPs/PyBg5ROyxSozlBpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Api.html",
+          "hash": "W8VhXva/2ueMnDBq20KXMw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Bases.PlayerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Bases.PlayerBase.html",
+          "hash": "FoYtS0a3uRGaJxzfqbOJDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Bases.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Bases.html",
+          "hash": "ou+j6fJM9BGRJMBG48xOcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Custom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Custom.html",
+          "hash": "aiCpCHkFjWa8sU4u7zf50w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.OperatorData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.OperatorData.html",
+          "hash": "e+EsY2ATrnpvyh71uYXalw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.OperatorStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.OperatorStats.html",
+          "hash": "8oZnyKmnP82RZ0E8y3/7Zg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Operators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Operators.html",
+          "hash": "Bv3gaej6O6Nt92xphUXLkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Player.html",
+          "hash": "ePPDvE841tj9G7jUyrwHzw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Premium.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Premium.html",
+          "hash": "KqmBRjLjoqVuJZtXowMkCA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Profile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Profile.html",
+          "hash": "tsdSvHny9aBAegY32q1H9g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Ranked.RankedFromId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Ranked.RankedFromId.html",
+          "hash": "Emm/vuKhCK2SZlADruZ4pw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Ranked.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Ranked.html",
+          "hash": "if0fgbU8W/GXS9UeGIg25g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.RankedAS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.RankedAS.html",
+          "hash": "bOSTDVWTJgLvrJthfWIoZQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.RankedBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.RankedBase.html",
+          "hash": "LdFX4wJQ4NM4/JhAWnTsWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.RankedEU.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.RankedEU.html",
+          "hash": "zlJjuV1l4oVNtusnBVjbmQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.RankedNA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.RankedNA.html",
+          "hash": "+hhgzHGwD9uGlOZLIGnznQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Refresh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Refresh.html",
+          "hash": "8qaocGFbQCbAVTyZblbX5A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.RefreshDetailed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.RefreshDetailed.html",
+          "hash": "ZC87ddVDzeWBkaSy8o/bRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.SearchResults.DataById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.SearchResults.DataById.html",
+          "hash": "pEFdYqC2rBR73kBNmCoaeg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.SearchResults.DataByName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.SearchResults.DataByName.html",
+          "hash": "LCdKzlnAp0huzBnF5V/9UQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.SearchResults.SearchResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.SearchResults.SearchResult.html",
+          "hash": "VfbqAsZnRlzfxAsTJ62n5A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.SearchResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.SearchResults.html",
+          "hash": "o30H6Um6KVnAyzJyrujRtw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.SeasonRanked.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.SeasonRanked.html",
+          "hash": "/EJxXzZE0Ux9TfDMnq+MuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Social.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Social.html",
+          "hash": "oL/LHaOTElpjrTqmeXPOYw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Stats.CasualStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Stats.CasualStats.html",
+          "hash": "iQI8hEs7iKank4KEszvd4Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Stats.GeneralStatsPvE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Stats.GeneralStatsPvE.html",
+          "hash": "52RzG8td3fkt7ufM7xdMPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Stats.GeneralStatsPvP.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Stats.GeneralStatsPvP.html",
+          "hash": "2iwZLNnUmh/HWHapPJYHSw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Stats.RankedStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Stats.RankedStats.html",
+          "hash": "csIP3TBbueVa+JlV49nf2w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Stats.StatsBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Stats.StatsBase.html",
+          "hash": "A2HmCh0cWFcnL3c+mPlfvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Stats.StatsFromId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Stats.StatsFromId.html",
+          "hash": "06FHjiQrEG1kFcmp9pXHAQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.Stats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.Stats.html",
+          "hash": "k7zvPcuPJqwQ5KKKVudBiQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.Models.html",
+          "hash": "AqXW/epZ2Gj8WwmaTcoELw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.R6Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.R6Client.html",
+          "hash": "gFkUgO8y9WaAYjUwORpXHQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.R6Config.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.R6Config.html",
+          "hash": "1d7axidMNtIpfPGhWLJpRg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6Api.html",
+          "hash": "T0I/ZRmNngvM1kELYI8KIQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6TabApiWrapper.Enums.Region.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6TabApiWrapper.Enums.Region.html",
+          "hash": "ZlNgp522YpFdPfXSwpNXAw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6TabApiWrapper.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6TabApiWrapper.Enums.html",
+          "hash": "iD0IFZ6hnjZFrQaD156zXA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6TabApiWrapper.Interfaces.IRankedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6TabApiWrapper.Interfaces.IRankedData.html",
+          "hash": "8KCDbkCKdF3PvAtTpHa7Fg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6TabApiWrapper.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6TabApiWrapper.Interfaces.html",
+          "hash": "JYFOO60Z1gWoi4VJNnWwNA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6TabApiWrapper.Models.LeaderboardPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6TabApiWrapper.Models.LeaderboardPlayer.html",
+          "hash": "aAvc8Ua2BbC0muAFc8z9vw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6TabApiWrapper.Models.SearchResults.LeaderboardData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6TabApiWrapper.Models.SearchResults.LeaderboardData.html",
+          "hash": "Kc1LdTuwJQ72/PFGCXfioQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6TabApiWrapper.Models.SearchResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6TabApiWrapper.Models.SearchResults.html",
+          "hash": "m0Joznpc0wLeoa/6WyNybQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/R6TabApiWrapper.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/R6TabApiWrapper.Models.html",
+          "hash": "xSn5u0aBTHr8p79TjhEvMw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "YW9XJO+ttgopSDx6VVzFPA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "zo/I4YMyRYujR7uzjT8HIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "eDCeVh/qHVuQTxxC4se8/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "SPopeSGtQxqxdwaSzP6gNQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 51,
+          "skipped_file_count": 51
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
