@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6TabApiWrapper.Models
+  commentId: N:R6TabApiWrapper.Models
+  id: R6TabApiWrapper.Models
+  children:
+  - R6TabApiWrapper.Models.LeaderboardPlayer
+  langs:
+  - csharp
+  - vb
+  name: R6TabApiWrapper.Models
+  nameWithType: R6TabApiWrapper.Models
+  fullName: R6TabApiWrapper.Models
+  type: Namespace
+  assemblies:
+  - R6Tab.NET
+references:
+- uid: R6TabApiWrapper.Models.LeaderboardPlayer
+  commentId: T:R6TabApiWrapper.Models.LeaderboardPlayer
+  name: LeaderboardPlayer
+  nameWithType: LeaderboardPlayer
+  fullName: R6TabApiWrapper.Models.LeaderboardPlayer

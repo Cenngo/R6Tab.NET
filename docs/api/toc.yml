@@ -1,0 +1,115 @@
+### YamlMime:TableOfContent
+- uid: R6Api
+  name: R6Api
+  items:
+  - uid: R6Api.R6Client
+    name: R6Client
+  - uid: R6Api.R6Config
+    name: R6Config
+- uid: R6Api.Enums
+  name: R6Api.Enums
+  items:
+  - uid: R6Api.Enums.Platform
+    name: Platform
+- uid: R6Api.Interfaces
+  name: R6Api.Interfaces
+  items:
+  - uid: R6Api.Interfaces.IGamemodeStats
+    name: IGamemodeStats
+  - uid: R6Api.Interfaces.IPlayer
+    name: IPlayer
+  - uid: R6Api.Interfaces.IRegionRanked
+    name: IRegionRanked
+  - uid: R6Api.Interfaces.ISearchResult
+    name: ISearchResult
+- uid: R6Api.Models
+  name: R6Api.Models
+  items:
+  - uid: R6Api.Models.Alias
+    name: Alias
+  - uid: R6Api.Models.Api
+    name: Api
+  - uid: R6Api.Models.Custom
+    name: Custom
+  - uid: R6Api.Models.OperatorData
+    name: OperatorData
+  - uid: R6Api.Models.Operators
+    name: Operators
+  - uid: R6Api.Models.OperatorStats
+    name: OperatorStats
+  - uid: R6Api.Models.Player
+    name: Player
+  - uid: R6Api.Models.Premium
+    name: Premium
+  - uid: R6Api.Models.Profile
+    name: Profile
+  - uid: R6Api.Models.RankedAS
+    name: RankedAS
+  - uid: R6Api.Models.RankedBase
+    name: RankedBase
+  - uid: R6Api.Models.RankedEU
+    name: RankedEU
+  - uid: R6Api.Models.RankedNA
+    name: RankedNA
+  - uid: R6Api.Models.Refresh
+    name: Refresh
+  - uid: R6Api.Models.RefreshDetailed
+    name: RefreshDetailed
+  - uid: R6Api.Models.SeasonRanked
+    name: SeasonRanked
+  - uid: R6Api.Models.Social
+    name: Social
+- uid: R6Api.Models.Bases
+  name: R6Api.Models.Bases
+  items:
+  - uid: R6Api.Models.Bases.PlayerBase
+    name: PlayerBase
+- uid: R6Api.Models.Ranked
+  name: R6Api.Models.Ranked
+  items:
+  - uid: R6Api.Models.Ranked.RankedFromId
+    name: RankedFromId
+- uid: R6Api.Models.SearchResults
+  name: R6Api.Models.SearchResults
+  items:
+  - uid: R6Api.Models.SearchResults.DataById
+    name: DataById
+  - uid: R6Api.Models.SearchResults.DataByName
+    name: DataByName
+  - uid: R6Api.Models.SearchResults.SearchResult
+    name: SearchResult
+- uid: R6Api.Models.Stats
+  name: R6Api.Models.Stats
+  items:
+  - uid: R6Api.Models.Stats.CasualStats
+    name: CasualStats
+  - uid: R6Api.Models.Stats.GeneralStatsPvE
+    name: GeneralStatsPvE
+  - uid: R6Api.Models.Stats.GeneralStatsPvP
+    name: GeneralStatsPvP
+  - uid: R6Api.Models.Stats.RankedStats
+    name: RankedStats
+  - uid: R6Api.Models.Stats.StatsBase
+    name: StatsBase
+  - uid: R6Api.Models.Stats.StatsFromId
+    name: StatsFromId
+- uid: R6TabApiWrapper.Enums
+  name: R6TabApiWrapper.Enums
+  items:
+  - uid: R6TabApiWrapper.Enums.Region
+    name: Region
+- uid: R6TabApiWrapper.Interfaces
+  name: R6TabApiWrapper.Interfaces
+  items:
+  - uid: R6TabApiWrapper.Interfaces.IRankedData
+    name: IRankedData
+- uid: R6TabApiWrapper.Models
+  name: R6TabApiWrapper.Models
+  items:
+  - uid: R6TabApiWrapper.Models.LeaderboardPlayer
+    name: LeaderboardPlayer
+- uid: R6TabApiWrapper.Models.SearchResults
+  name: R6TabApiWrapper.Models.SearchResults
+  items:
+  - uid: R6TabApiWrapper.Models.SearchResults.LeaderboardData
+    name: LeaderboardData

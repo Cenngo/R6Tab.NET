@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: R6TabApiWrapper.Models.SearchResults
+  commentId: N:R6TabApiWrapper.Models.SearchResults
+  id: R6TabApiWrapper.Models.SearchResults
+  children:
+  - R6TabApiWrapper.Models.SearchResults.LeaderboardData
+  langs:
+  - csharp
+  - vb
+  name: R6TabApiWrapper.Models.SearchResults
+  nameWithType: R6TabApiWrapper.Models.SearchResults
+  fullName: R6TabApiWrapper.Models.SearchResults
+  type: Namespace
+  assemblies:
+  - R6Tab.NET
+references:
+- uid: R6TabApiWrapper.Models.SearchResults.LeaderboardData
+  commentId: T:R6TabApiWrapper.Models.SearchResults.LeaderboardData
+  parent: R6TabApiWrapper.Models.SearchResults
+  name: LeaderboardData
+  nameWithType: LeaderboardData
+  fullName: R6TabApiWrapper.Models.SearchResults.LeaderboardData
+- uid: R6TabApiWrapper.Models.SearchResults
+  commentId: N:R6TabApiWrapper.Models.SearchResults
+  name: R6TabApiWrapper.Models.SearchResults
+  nameWithType: R6TabApiWrapper.Models.SearchResults
+  fullName: R6TabApiWrapper.Models.SearchResults
