@@ -288,6 +288,142 @@
             </summary>
             <returns>Url of the Banner Img</returns>
         </member>
+        <member name="P:R6Api.Models.SeasonRanked.NaMmr">
+            <summary>
+            Mmr in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.NaChamp">
+            <summary>
+            Champ Rank in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.NaWins">
+            <summary>
+            Wins in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.NaLosses">
+            <summary>
+            Losses in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.NaAbandons">
+            <summary>
+            Abandons in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.NaKills">
+            <summary>
+            Kills in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.NaDeaths">
+            <summary>
+            Deaths in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.EuMmr">
+            <summary>
+            Mmr in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.EuChamp">
+            <summary>
+            Champ Rank in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.EuWins">
+            <summary>
+            Wins in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.EuLosses">
+            <summary>
+            Losses in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.EuAbandons">
+            <summary>
+            Abandons in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.EuKills">
+            <summary>
+            Kills in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.EuDeaths">
+            <summary>
+            Deaths in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.AsMmr">
+            <summary>
+            Mmr in Asia Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.AsChamp">
+            <summary>
+            Champ Rank in Asia Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.AsWins">
+            <summary>
+            Wins in Asia Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.AsLosses">
+            <summary>
+            Losses in Asia Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.AsAbandons">
+            <summary>
+            Abandons in Asia Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.AsKills">
+            <summary>
+            Kills in Asia Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.AsDeaths">
+            <summary>
+            deaths in Asia Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.SeasonName">
+            <summary>
+            Name of the Season
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.Champ">
+            <summary>
+            Champ Rank Achieved in the Season
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.MaxMmr">
+            <summary>
+            Max Mmr Achieved in the Season
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.MaxRank">
+            <summary>
+            Max Rank Achieved in the Season
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SeasonRanked.MaxRankName">
+            <summary>
+            Name of the Max Rank Achieved in the Season
+            </summary>
+        </member>
+        <member name="M:R6Api.Models.SeasonRanked.GetMaxRankImg">
+            <summary>
+            Get Image Url of the Max Rank Banner
+            </summary>
+            <returns>Url of the Banner</returns>
+        </member>
         <member name="P:R6Api.Models.Stats.CasualStats.KillDeath">
             <summary>
             Kill/Death Ratio as Percentage
@@ -363,19 +499,79 @@
             GeneralPvE Gamemode Stats of the  Player
             </summary>
         </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.PlantBombMatchesWon">
+            <summary>
+            Plant Bomb Game Mode Wins
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.PlantBombMathcesLost">
+            <summary>
+            Plant Bomb Game Mode Losses
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.SecureAreaMatchesWon">
+            <summary>
+            Secure Area Game Mode Wins
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.SecureAreaMatchesLost">
+            <summary>
+            Secure Area Game Mode Losses
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.RescueHostageMatchesWon">
+            <summary>
+            Rescue Hostage Game Mode Wins
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.RescueHostageMatchesLost">
+            <summary>
+            Rescue Hostage Game Mode Losses
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.PlantBombMatches">
+            <summary>
+            Count of Matches Played in Plant Bomb Game Mode
+            </summary>
+        </member>
         <member name="P:R6Api.Models.Stats.StatsFromId.PlantBombMatchesWl">
             <summary>
-            Win/Lose Ratio as Percentage
+            Win/Lose Rate of Matches Played in Plant Bomb Game Mode
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.SecureAreaMatches">
+            <summary>
+            Count of Matches Played in Secure Area Game Mode
             </summary>
         </member>
         <member name="P:R6Api.Models.Stats.StatsFromId.SecureAreaMatchesWl">
             <summary>
-            Win/Lose Ratio as Percentage
+            Win/Lose Rate of Matches Played in Secure Area Game Mode
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.RescueHostageMatches">
+            <summary>
+            Count of Matches Played in Rescue Hostage Game Mode
             </summary>
         </member>
         <member name="P:R6Api.Models.Stats.StatsFromId.RescueHostageMatchesWl">
             <summary>
-            Win/Lose Ratio as Percentage
+            Win/Lose Rate of Matches Played in Rescue Hostage Game Mode
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.TabMmr">
+            <summary>
+            R6Tab MMR of the User 
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.TabRank">
+            <summary>
+            R6Tab Rank of The User
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.StatsFromId.TabRankName">
+            <summary>
+            Rank Name of User's R6Tab Rank
             </summary>
         </member>
         <member name="T:R6Api.R6Client">
@@ -396,6 +592,11 @@
             <param name="userId">UserId of the Player</param>
             <param name="time">Optional Time Stamp to Avoid Caching</param>
             <returns>DataById under normal operation OR Error Message</returns>
+            <example>
+            <code>
+            	DataById result = client.ParseById(9bd44bde-9c48-48ae-9c2b-4e11e4b16083); 	
+            </code>
+            </example>
         </member>
         <member name="M:R6Api.R6Client.ParseByName(System.String,R6Api.Enums.Platform,System.Nullable{System.DateTimeOffset})">
             <summary>
@@ -405,6 +606,11 @@
             <param name="platform">Platform of the User</param>
             <param name="time">Optional Time Stamp to Avoid Caching</param>
             <returns>DataByName under normal operation OR Error Message</returns>
+            <example>
+            <code>
+            	DataByName result = client.ParseByName("baiier", Platform.Uplay);
+            </code>
+            </example>
         </member>
         <member name="M:R6Api.R6Client.UpdatePlayer(System.String)">
             <summary>
@@ -412,6 +618,11 @@
             </summary>
             <param name="userId">UserId of the Player</param>
             <returns>DataById under normal operation OR Error Message</returns>
+            <example>
+            <code>
+            	var result = client.UpdatePlayer(9bd44bde-9c48-48ae-9c2b-4e11e4b16083);
+            </code>
+            </example>
         </member>
         <member name="M:R6Api.R6Client.GetLeaderboard(R6Api.Enums.Platform,R6TabApiWrapper.Enums.Region,System.Nullable{System.DateTimeOffset})">
             <summary>
@@ -421,6 +632,11 @@
             <param name="region">Region of the Leaderboard</param>
             <param name="time">Optional Time Stamp to Avoid Caching</param>
             <returns>LeaderboardData under normal operation OR Error Message</returns>
+            <example>
+            <code>
+            	var leaderboard = client.GetLeaderboard(Platform.Uplay, Region.All);
+            </code>
+            </example>
         </member>
         <member name="F:R6Api.R6Config.AutoCacheAvoidance">
             <summary>
