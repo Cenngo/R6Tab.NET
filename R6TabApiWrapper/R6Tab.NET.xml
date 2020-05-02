@@ -9,6 +9,21 @@
             Game Platforms for Rainbow6
             </summary>
         </member>
+        <member name="F:R6Api.Enums.Platform.Uplay">
+            <summary>
+            PC / Uplay
+            </summary>
+        </member>
+        <member name="F:R6Api.Enums.Platform.Psn">
+            <summary>
+            Playstation Network
+            </summary>
+        </member>
+        <member name="F:R6Api.Enums.Platform.Xbl">
+            <summary>
+            XBox Live
+            </summary>
+        </member>
         <member name="T:R6Api.Interfaces.IGamemodeStats">
             <summary>
             Gamemode Stat Template for Rainbow6
@@ -19,9 +34,115 @@
             Player Template With a User Id for Rainbow6
             </summary>
         </member>
+        <member name="P:R6Api.Interfaces.IPlayer.User">
+            <summary>
+            User Id of Player
+            </summary>
+        </member>
+        <member name="M:R6Api.Interfaces.IPlayer.GetAvatar">
+            <summary>
+            Retrieve User Avatar
+            </summary>
+            <returns>Url String of User Profile Image</returns>
+        </member>
         <member name="T:R6Api.Interfaces.IRegionRanked">
             <summary>
             Regional Ranked Data Template for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.Kills">
+            <summary>
+            Number of Ranked Kills
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.Deaths">
+            <summary>
+            Number of Ranked Deaths
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.Wins">
+            <summary>
+            Number of Ranked Match Wins
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.Losses">
+            <summary>
+            Number of Ranked Match Losses
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.Abandons">
+            <summary>
+            Total Match Abandon Count
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.MaxMmr">
+            <summary>
+            Max Mmr Reached
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.Champ">
+            <summary>
+            Champ Rank of Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.MmrChange">
+            <summary>
+            Last Mmr Change of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.ActualMmr">
+            <summary>
+            Actual Mmr of Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.Matches">
+            <summary>
+            Number of Matches Played
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.WinLose">
+            <summary>
+            Win/Lose Rate of Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.KillDeath">
+            <summary>
+            Kill/Death Ratio of Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.RankName">
+            <summary>
+            Name of the Player's Current Rank
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.MaxRank">
+            <summary>
+            Max Ranked Reached by Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.MaxRankName">
+            <summary>
+            Name of the Max Rank
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.KillPerMatch">
+            <summary>
+            Kill Per Match Ratio
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRegionRanked.DeathPerMatch">
+            <summary>
+            Death Per Match Ratio
+            </summary>
+        </member>
+        <member name="T:R6Api.Interfaces.ISearchResult">
+            <summary>
+            R6.Tab Api Response
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.ISearchResult.Status">
+            <summary>
+            Http Status Code of Api Response
             </summary>
         </member>
         <member name="T:R6Api.Models.Alias">
@@ -30,15 +151,86 @@
             </summary>
         </member>
         <member name="P:R6Api.Models.Bases.PlayerBase.User">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Bases.PlayerBase.Name">
             <summary>
-            UserId of the Player
+            Username of Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Bases.PlayerBase.Platform">
+            <summary>
+            Platform the User Profile is Registered to
             </summary>
         </member>
         <member name="M:R6Api.Models.Bases.PlayerBase.GetAvatar">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.KillDeath">
             <summary>
-            Get Profile Picture of Player
+            Kill/Death Ratio of Player
             </summary>
-            <returns>Url of User Avatar</returns>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.Mmr">
+            <summary>
+            Current Mmr of Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.Rank">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.Champ">
+            <summary>
+            Champ Rank of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.NaMmr">
+            <summary>
+            Player Mmr in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.NaRank">
+            <summary>
+            Player Rank in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.NaChamp">
+            <summary>
+            Player Champ Rank in North America Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.EuMmr">
+            <summary>
+            Player Mmr in Europe Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.EuRank">
+            <summary>
+            Player Rank in Europe Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.EuChamp">
+            <summary>
+            Player Champ Rank in Europe Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.AsMmr">
+            <summary>
+            Player Mmr in Asia Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.AsRank">
+            <summary>
+            Player Rank in Asia Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.RankedBase.AsChamp">
+            <summary>
+            Player Champ Rank in Asia Region
+            </summary>
+        </member>
+        <member name="M:R6Api.Models.RankedBase.GetRankImg">
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.SearchResults.SearchResult.Authorized">
             <summary>
@@ -46,9 +238,7 @@
             </summary>
         </member>
         <member name="P:R6Api.Models.SearchResults.SearchResult.Status">
-            <summary>
-            Http Request Status Code
-            </summary>
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.SearchResults.SearchResult.ErrorMessage">
             <summary>
@@ -58,6 +248,11 @@
         <member name="P:R6Api.Models.SearchResults.SearchResult.Message">
             <summary>
             Further Information About Request
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.SearchResults.SearchResult.Contact">
+            <summary>
+            Contact Address for Support
             </summary>
         </member>
         <member name="T:R6Api.Models.SearchResults.DataById">
@@ -110,6 +305,26 @@
             Custom R6Tab Data
             </summary>
         </member>
+        <member name="P:R6Api.Models.OperatorData.Id">
+            <summary>
+            Unique Id of the Operator
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorData.Type">
+            <summary>
+            Type of the Operator (Attacker / Defender)
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorData.OverallStats">
+            <summary>
+            Overall Stats for the Operator
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorData.SeasonalStats">
+            <summary>
+            Seasonal Stats for the Operator
+            </summary>
+        </member>
         <member name="P:R6Api.Models.Operators.TopPlayedOverall">
             <summary>
             Operators with Most Play Time Overall
@@ -160,9 +375,39 @@
             Operators with Most Deaths Seasonal
             </summary>
         </member>
+        <member name="P:R6Api.Models.OperatorStats.Wins">
+            <summary>
+            Number of Wins Achieved with the Operator
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorStats.Losses">
+            <summary>
+            Number of Losses Achieved with the Operator
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorStats.Kills">
+            <summary>
+            Number of Kills Achieved with the Operator
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorStats.Deaths">
+            <summary>
+            Number of Deaths Achieved with the Operator
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorStats.TimePlayed">
+            <summary>
+            Time Played with the Operator
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.OperatorStats.KD">
+            <summary>
+            Kill/Death Ratio Achieved with the Operator
+            </summary>
+        </member>
         <member name="P:R6Api.Models.OperatorStats.WinRate">
             <summary>
-            Win Rate as Percentage
+            Win/Lose Rate Achieved with the Operator
             </summary>
         </member>
         <member name="T:R6Api.Models.RankedAS">
@@ -170,25 +415,59 @@
             Ranked Data for AS Region for Rainbow6
             </summary>
         </member>
+        <member name="P:R6Api.Models.RankedAS.Kills">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.Deaths">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.Wins">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.Losses">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.Abandons">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.MaxMmr">
+            <inheritdoc/>
+        </member>
         <member name="P:R6Api.Models.RankedAS.Champ">
-            <summary>
-            Champ Tier of the Player
-            </summary>
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.MmrChange">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.ActualMmr">
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.RankedAS.Matches">
-            <summary>
-            Number of  Matches Played
-            </summary>
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.RankedAS.WinLose">
-            <summary>
-            Win/Lose Ratio as Percentage
-            </summary>
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.RankedAS.KillDeath">
-            <summary>
-            Kill/Death Ratio as Percentage
-            </summary>
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.Rank">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.RankName">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.MaxRank">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.MaxRankName">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.KillPerMatch">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedAS.DeathPerMatch">
+            <inheritdoc/>
         </member>
         <member name="M:R6Api.Models.RankedAS.GetRankImg">
             <summary>
@@ -201,25 +480,59 @@
             Ranked Data for EU Region for Rainbow6
             </summary>
         </member>
+        <member name="P:R6Api.Models.RankedEU.Kills">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.Deaths">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.Wins">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.Losses">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.Abandons">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.MaxMmr">
+            <inheritdoc/>
+        </member>
         <member name="P:R6Api.Models.RankedEU.Champ">
-            <summary>
-            Champ Tier of the Player
-            </summary>
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.MmrChange">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.ActualMmr">
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.RankedEU.Matches">
-            <summary>
-            Number of  Matches Played
-            </summary>
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.RankedEU.WinLose">
-            <summary>
-            Win/Lose Ratio as Percentage
-            </summary>
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.RankedEU.KillDeath">
-            <summary>
-            Kill/Death Ratio as Percentage
-            </summary>
+            <inheritdoc/>>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.Rank">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.RankName">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.MaxRank">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.MaxRankName">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.KillPerMatch">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedEU.DeathPerMatch">
+            <inheritdoc/>
         </member>
         <member name="M:R6Api.Models.RankedEU.GetRankImg">
             <summary>
@@ -247,14 +560,84 @@
             Ranked Data for NA Region
             </summary>
         </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.AllKills">
+            <summary>
+            Total Number of Kills Across Regions
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.AllDeaths">
+            <summary>
+            Total Number of Deaths Across Regions
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.AllWins">
+            <summary>
+            Total Number of Wins Across Regions
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.AllLosses">
+            <summary>
+            Total Number of Losses Across Regions
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.AllAbandons">
+            <summary>
+            Total Number of Abandons Across Regions
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.MaxMmr">
+            <summary>
+            Max Mmr Achieved in Any Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.RankName">
+            <summary>
+            Name of the Rank in the Active Region of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.MaxRankName">
+            <summary>
+            Name of the Max Rank Achieved in Any Region
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.TopRegion">
+            <summary>
+            Top Region of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.ActualMmr">
+            <summary>
+            Actual Mmr in the Active Region of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.AllMatches">
+            <summary>
+            Total Number of Matches Played Across Regions
+            </summary>
+        </member>
         <member name="P:R6Api.Models.Ranked.RankedFromId.AllKillDeath">
             <summary>
-            Kill/Death Ratio as Percentage
+            General Kill/Death Ratio Covering All Region Kills / Deaths
             </summary>
         </member>
         <member name="P:R6Api.Models.Ranked.RankedFromId.AllWinLose">
             <summary>
-            Win/Lose Ratio as Percentage
+            General Kill/Death Percentage Covering All Region Wins / Losses
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.KillPerMatch">
+            <summary>
+            General Kill per Match Ratio
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.DeathPerMatch">
+            <summary>
+            General Death per Match Ratio
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Ranked.RankedFromId.RankColor">
+            <summary>
+            Color of the Rank Banner
             </summary>
         </member>
         <member name="T:R6Api.Models.RankedNA">
@@ -262,25 +645,59 @@
             Ranked Data for NA Region for Rainbow6
             </summary>
         </member>
+        <member name="P:R6Api.Models.RankedNA.Kills">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.Deaths">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.Wins">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.Losses">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.Abandons">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.MaxMmr">
+            <inheritdoc/>
+        </member>
         <member name="P:R6Api.Models.RankedNA.Champ">
-            <summary>
-            Champ Tier of the Player
-            </summary>
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.MmrChange">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.ActualMmr">
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.RankedNA.Matches">
-            <summary>
-            Number of  Matches Played
-            </summary>
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.RankedNA.WinLose">
-            <summary>
-            Win/Lose Ratio as Percentage
-            </summary>
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.RankedNA.KillDeath">
-            <summary>
-            Kill/Death Ratio as Percentage
-            </summary>
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.Rank">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.RankName">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.MaxRank">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.MaxRankName">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.KillPerMatch">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.RankedNA.DeathPerMatch">
+            <inheritdoc/>
         </member>
         <member name="M:R6Api.Models.RankedNA.GetRankImg">
             <summary>
@@ -424,55 +841,173 @@
             </summary>
             <returns>Url of the Banner</returns>
         </member>
+        <member name="P:R6Api.Models.Stats.CasualStats.Kills">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.CasualStats.Deaths">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.CasualStats.MatchesWon">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.CasualStats.MatchesLost">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.CasualStats.TimePlayed">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.CasualStats.HoursPlayed">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.CasualStats.MatchesPlayed">
+            <inheritdoc/>
+        </member>
         <member name="P:R6Api.Models.Stats.CasualStats.KillDeath">
-            <summary>
-            Kill/Death Ratio as Percentage
-            </summary>
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.Stats.CasualStats.WinLose">
-            <summary>
-            Win/Lose Ratio as Percentage
-            </summary>
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.Kills">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.Deaths">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.MatchesWon">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.MatchesLost">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.TimePlayed">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.HoursPlayed">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.MatchesPlayed">
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.Stats.GeneralStatsPvE.KillDeath">
-            <summary>
-            Kill/Death Ratio as Percentage
-            </summary>
+            <inheritdoc/>>
         </member>
         <member name="P:R6Api.Models.Stats.GeneralStatsPvE.WinLose">
-            <summary>
-            Win/Lose Ratio as Percentage
-            </summary>
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.Stats.GeneralStatsPvE.HeadShotRate">
             <summary>
             Headshot Ratio as Percentage
             </summary>
         </member>
-        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.KillDeath">
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.KillAssists">
             <summary>
-            Kill/Death Ratio as Percentage
+            Number of Kill Assists
             </summary>
         </member>
-        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.WinLose">
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.MeleeKills">
             <summary>
-            Win/Lose Ratio as Percentage
+            Number of Melee Kills
             </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.Revives">
+            <summary>
+            Number of Revives
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.PenetrationKills">
+            <summary>
+            Number of Penetration Kills
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvE.Headshots">
+            <summary>
+            Number of Headshots
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.Kills">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.Deaths">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.MatchesWon">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.MatchesLost">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.TimePlayed">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.HoursPlayed">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.MatchesPlayed">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.KillDeath">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.WinLose">
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.Stats.GeneralStatsPvP.HeadShotRate">
             <summary>
             Headshot Ratio as Percentage
             </summary>
         </member>
-        <member name="P:R6Api.Models.Stats.RankedStats.KillDeath">
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.KillAssists">
             <summary>
-            Kill/Death Ratio as Percentage
+            Number of Kill Assists
             </summary>
         </member>
-        <member name="P:R6Api.Models.Stats.RankedStats.WinLose">
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.MeleeKills">
             <summary>
-            Win/Loses Ratio as Percentage
+            Number of Melee Kills
             </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.Revives">
+            <summary>
+            Number of Revives
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.PenetrationKills">
+            <summary>
+            Number of Penetration Kills
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.GeneralStatsPvP.Headshots">
+            <summary>
+            Number of Headshots
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.Kills">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.Deaths">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.MatchesWon">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.MatchesLost">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.TimePlayed">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.HoursPlayed">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.MatchesPlayed">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.KillDeath">
+            <inheritdoc/>
+        </member>
+        <member name="P:R6Api.Models.Stats.RankedStats.WinLose">
+            <inheritdoc/>
         </member>
         <member name="P:R6Api.Models.Stats.StatsBase.Level">
             <summary>
@@ -661,6 +1196,32 @@
         <member name="T:R6TabApiWrapper.Interfaces.IRankedData">
             <summary>
             Ranked Data Template that Contains Rank Info for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6TabApiWrapper.Interfaces.IRankedData.Rank">
+            <summary>
+            Rank of Player
+            </summary>
+        </member>
+        <member name="M:R6TabApiWrapper.Interfaces.IRankedData.GetRankImg">
+            <summary>
+            Retrieve Rank Banner
+            </summary>
+            <returns>Url String of Players Rank Banner</returns>
+        </member>
+        <member name="P:R6TabApiWrapper.Models.LeaderboardPlayer.Ranked">
+            <summary>
+            Ranked Stats of the Player
+            </summary>
+        </member>
+        <member name="P:R6TabApiWrapper.Models.LeaderboardPlayer.Stats">
+            <summary>
+            General Stats of the Player
+            </summary>
+        </member>
+        <member name="P:R6TabApiWrapper.Models.LeaderboardPlayer.Profile">
+            <summary>
+            Profile of the Player
             </summary>
         </member>
         <member name="P:R6TabApiWrapper.Models.SearchResults.LeaderboardData.Region">

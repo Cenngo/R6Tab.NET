@@ -10,7 +10,14 @@ namespace R6TabApiWrapper.Interfaces
 	/// </summary>
 	public interface IRankedData
 	{
+		/// <summary>
+		/// Rank of Player
+		/// </summary>
 		int Rank { get; }
+		/// <summary>
+		/// Retrieve Rank Banner
+		/// </summary>
+		/// <returns>Url String of Players Rank Banner</returns>
 		string GetRankImg ();
 	}
 }

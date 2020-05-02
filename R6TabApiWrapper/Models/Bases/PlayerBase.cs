@@ -9,24 +9,25 @@ namespace R6Api.Models.Bases
 {
 	public class PlayerBase : IPlayer
 	{
-		/// <summary>
-		/// UserId of the Player
-		/// </summary>
+		/// <inheritdoc/>
 		[JsonProperty("p_user")]
 		public string User { get; internal set; }
+		/// <summary>
+		/// Username of Player
+		/// </summary>
 		[JsonProperty("p_name")]
 		public string Name { get; internal set; }
 		[JsonProperty("p_platform")]
 		internal string _platform { get; set; }
+		/// <summary>
+		/// Platform the User Profile is Registered to
+		/// </summary>
 		[JsonIgnore]
 		public Platform Platform { get
 			{
 				return (Platform)(Enum.Parse(typeof(Platform), _platform, true));
 		} }
-		/// <summary>
-		/// Get Profile Picture of Player
-		/// </summary>
-		/// <returns>Url of User Avatar</returns>
+		/// <inheritdoc/>
 		public string GetAvatar()
 		{
 			return $"https://ubisoft-avatars.akamaized.net/{User}/default_146_146.png";

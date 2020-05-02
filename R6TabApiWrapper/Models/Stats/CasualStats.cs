@@ -8,25 +8,30 @@ namespace R6Api.Models.Stats
 {
 	public class CasualStats : IGamemodeStats
 	{
+		/// <inheritdoc/>
 		[JsonProperty("casualpvp_kills")]
 		public int Kills { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("casualpvp_death")]
 		public int Deaths { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("casualpvp_matchwon")]
 		public int MatchesWon { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("casualpvp_matchlost")]
 		public int MatchesLost { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("casualpvp_timeplayed")]
 		public int TimePlayed { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("casualpvp_hoursplayed")]
 		public int HoursPlayed { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("casualpvp_matches")]
 		public int MatchesPlayed { get; internal set; }
 		[JsonProperty("casualpvp_kd")]
 		internal string _kd { get; set; }
-		/// <summary>
-		/// Kill/Death Ratio as Percentage
-		/// </summary>
+		/// <inheritdoc/>
 		[JsonIgnore]
 		public double KillDeath
 		{
@@ -37,9 +42,7 @@ namespace R6Api.Models.Stats
 		}
 		[JsonProperty("casualpvp_wl")]
 		internal string _winLose { get; set; }
-		/// <summary>
-		/// Win/Lose Ratio as Percentage
-		/// </summary>
+		/// <inheritdoc/>
 		[JsonIgnore]
 		public double WinLose { get
 			{
