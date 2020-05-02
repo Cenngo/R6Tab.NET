@@ -15,9 +15,7 @@ namespace R6Api.Models.SearchResults
         public bool Authorized { get; internal set; } = true;
         [JsonProperty("API")]
         public Api Api { get; internal set; }
-        /// <summary>
-        /// Http Request Status Code
-        /// </summary>
+        /// <inheritdoc/>
         [JsonProperty("status")]
         public int Status { get; internal set; }
         /// <summary>
@@ -30,6 +28,9 @@ namespace R6Api.Models.SearchResults
         /// </summary>
         [JsonProperty("message")]
         public string Message { get; internal set; }
+        /// <summary>
+        /// Contact Address for Support
+        /// </summary>
         [JsonProperty("contact")]
         public string Contact { get; internal set; }
     }

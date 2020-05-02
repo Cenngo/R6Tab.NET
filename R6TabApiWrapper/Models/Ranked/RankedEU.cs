@@ -11,38 +11,40 @@ namespace R6Api.Models
 	/// </summary>
 	public class RankedEU : IRegionRanked
 	{
+		/// <inheritdoc/>
 		[JsonProperty("EU_kills")]
 		public int Kills { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_deaths")]
 		public int Deaths { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_wins")]
 		public int Wins { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_losses")]
 		public int Losses { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_abandons")]
 		public int Abandons { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_maxmmr")]
 		public int MaxMmr { get; internal set; }
-		/// <summary>
-		/// Champ Tier of the Player
-		/// </summary>
+		/// <inheritdoc/>
 		[JsonProperty("EU_champ")]
 		public int Champ { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_mmrchange")]
 		public int MmrChange { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_actualmmr")]
 		public int ActualMmr { get; internal set; }
-		/// <summary>
-		/// Number of  Matches Played
-		/// </summary>
+		/// <inheritdoc/>
 		[JsonProperty("EU_matches")]
 		public int Matches { get; internal set; }
 		[JsonProperty("EU_wl")]
 		internal string _winLose { get; set; }
 
-		/// <summary>
-		/// Win/Lose Ratio as Percentage
-		/// </summary>
+		/// <inheritdoc/>
 		[JsonIgnore]
 		public double WinLose
 		{
@@ -53,9 +55,7 @@ namespace R6Api.Models
 		}
 		[JsonProperty("EU_kd")]
 		internal string _kd { get; set; }
-		/// <summary>
-		/// Kill/Death Ratio as Percentage
-		/// </summary>
+		/// <inheritdoc/>>
 		[JsonIgnore]
 		public double KillDeath
 		{
@@ -64,16 +64,22 @@ namespace R6Api.Models
 				return Convert.ToDouble(_kd);
 			}
 		}
+		/// <inheritdoc/>
 		[JsonProperty("EU_rank")]
 		public int Rank { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_rankname")]
 		public string RankName { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_maxrank")]
 		public int MaxRank { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_maxrankname")]
 		public string MaxRankName { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_killpermatch")]
 		public double KillPerMatch { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("EU_deathspermatch")]
 		public double DeathPerMatch { get; internal set; }
 		/// <summary>

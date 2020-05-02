@@ -8,25 +8,30 @@ namespace R6Api.Models.Stats
 {
 	public class GeneralStatsPvE : IGamemodeStats
 	{
+		/// <inheritdoc/>
 		[JsonProperty("generalpve_kills")]
 		public int Kills { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("generalpve_death")]
 		public int Deaths { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("generalpve_matchwon")]
 		public int MatchesWon { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("generalpve_matchlost")]
 		public int MatchesLost { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("generalpve_timeplayed")]
 		public int TimePlayed { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("generalpve_hoursplayed")]
 		public int HoursPlayed { get; internal set; }
+		/// <inheritdoc/>
 		[JsonProperty("generalpve_matches")]
 		public int MatchesPlayed { get; internal set; }
 		[JsonProperty("generalpve_kd")]
-		public string _kd { get; internal set; }
-		/// <summary>
-		/// Kill/Death Ratio as Percentage
-		/// </summary>
+		private string _kd { get; set; }
+		/// <inheritdoc/>>
 		[JsonIgnore]
 		public double KillDeath
 		{
@@ -37,9 +42,7 @@ namespace R6Api.Models.Stats
 		}
 		[JsonProperty("generalpve_wl")]
 		internal string _winLose { get; set; }
-		/// <summary>
-		/// Win/Lose Ratio as Percentage
-		/// </summary>
+		/// <inheritdoc/>
 		[JsonIgnore]
 		public double WinLose
 		{
@@ -61,14 +64,29 @@ namespace R6Api.Models.Stats
 				return Convert.ToDouble(_hsRate.Remove(_winLose.Length - 1));
 			}
 		}
+		/// <summary>
+		/// Number of Kill Assists
+		/// </summary>
 		[JsonProperty("generalpve_killassists")]
 		public int KillAssists { get; internal set; }
+		/// <summary>
+		/// Number of Melee Kills
+		/// </summary>
 		[JsonProperty("generalpve_meleekills")]
 		public int MeleeKills { get; internal set; }
+		/// <summary>
+		/// Number of Revives
+		/// </summary>
 		[JsonProperty("generalpve_revive")]
 		public int Revives { get; internal set; }
+		/// <summary>
+		/// Number of Penetration Kills
+		/// </summary>
 		[JsonProperty("generalpve_penetrationkills")]
 		public int PenetrationKills { get; internal set; }
+		/// <summary>
+		/// Number of Headshots
+		/// </summary>
 		[JsonProperty("generalpve_headshot")]
 		public int Headshots { get; internal set; }
 	}

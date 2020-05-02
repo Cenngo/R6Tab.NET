@@ -349,7 +349,7 @@ $(function () {
       renderBreadcrumb();
       showSearch();
     }
-    
+
     function showSearch() {
       if ($('#search-results').length !== 0) {
           $('#search').show();
@@ -436,7 +436,7 @@ $(function () {
     function registerTocEvents() {
       var tocFilterInput = $('#toc_filter_input');
       var tocFilterClearButton = $('#toc_filter_clear');
-        
+
       $('.toc .nav > li > .expand-stub').click(function (e) {
         $(e.target).parent().toggleClass(expanded);
       });
@@ -470,7 +470,7 @@ $(function () {
           parent.removeClass(show);
           parent.removeClass(filtered);
         })
-        
+
         // Get leaf nodes
         $('#toc li>a').filter(function (i, e) {
           return $(e).siblings().length === 0
@@ -511,7 +511,7 @@ $(function () {
           return false;
         }
       });
-      
+
       // toc filter clear button
       tocFilterClearButton.hide();
       tocFilterClearButton.on("click", function(e){

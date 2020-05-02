@@ -348,3 +348,8 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/R6TabApiWrapper/api
+/R6TabApiWrapper/articles
+/R6TabApiWrapper/docfx.json
+/R6TabApiWrapper/index.md
+/R6TabApiWrapper/toc.yml

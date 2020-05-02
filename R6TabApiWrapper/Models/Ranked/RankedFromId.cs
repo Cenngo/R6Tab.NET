@@ -26,32 +26,65 @@ namespace R6Api.Models.Ranked
 		/// </summary>
 		[JsonIgnore]
 		public RankedNA NA { get; internal set; }
+		/// <summary>
+		/// Total Number of Kills Across Regions
+		/// </summary>
 		[JsonProperty("allkills")]
 		public int AllKills { get; internal set; }
+		/// <summary>
+		/// Total Number of Deaths Across Regions
+		/// </summary>
 		[JsonProperty("alldeaths")]
 		public int AllDeaths { get; internal set; }
+		/// <summary>
+		/// Total Number of Wins Across Regions
+		/// </summary>
 		[JsonProperty("allwins")]
 		public int AllWins { get; internal set; }
+		/// <summary>
+		/// Total Number of Losses Across Regions
+		/// </summary>
 		[JsonProperty("alllosses")]
 		public int AllLosses { get; internal set; }
+		/// <summary>
+		/// Total Number of Abandons Across Regions
+		/// </summary>
 		[JsonProperty("allabandons")]
 		public int AllAbandons { get; internal set; }
+		/// <summary>
+		/// Max Mmr Achieved in Any Region
+		/// </summary>
 		[JsonProperty("maxmmr")]
 		public int MaxMmr { get; internal set; }
+		/// <summary>
+		/// Name of the Rank in the Active Region of the Player
+		/// </summary>
 		[JsonProperty("rankname")]
 		public string RankName { get; internal set; }
+		/// <summary>
+		/// Name of the Max Rank Achieved in Any Region
+		/// </summary>
 		[JsonProperty("maxrankname")]
 		public string MaxRankName { get; internal set; }
+		/// <summary>
+		/// Top Region of the Player
+		/// </summary>
 		[JsonProperty("topregion")]
 		public string TopRegion { get; internal set; }
+		/// <summary>
+		/// Actual Mmr in the Active Region of the Player
+		/// </summary>
 		[JsonProperty("actualmmr")]
 		public int ActualMmr { get; internal set; }
+		/// <summary>
+		/// Total Number of Matches Played Across Regions
+		/// </summary>
 		[JsonProperty("allmatches")]
 		public int AllMatches { get; internal set; }
 		[JsonProperty("allkd")]
 		internal string _allkd { get; set; }
 		/// <summary>
-		/// Kill/Death Ratio as Percentage
+		/// General Kill/Death Ratio Covering All Region Kills / Deaths
 		/// </summary>
 		[JsonIgnore]
 		public double AllKillDeath
@@ -64,7 +97,7 @@ namespace R6Api.Models.Ranked
 		[JsonProperty("allwl")]
 		internal string _allWl { get; set; }
 		/// <summary>
-		/// Win/Lose Ratio as Percentage
+		/// General Kill/Death Percentage Covering All Region Wins / Losses
 		/// </summary>
 		[JsonIgnore]
 		public double AllWinLose
@@ -74,10 +107,19 @@ namespace R6Api.Models.Ranked
 				return Convert.ToDouble(_allWl.Remove(_allWl.Length - 1));
 			}
 		}
+		/// <summary>
+		/// General Kill per Match Ratio
+		/// </summary>
 		[JsonProperty("killpermatch")]
 		public double KillPerMatch { get; internal set; }
+		/// <summary>
+		/// General Death per Match Ratio
+		/// </summary>
 		[JsonProperty("deathspermatch")]
 		public double DeathPerMatch { get; internal set; }
+		/// <summary>
+		/// Color of the Rank Banner
+		/// </summary>
 		public Color RankColor
 		{
 			get
