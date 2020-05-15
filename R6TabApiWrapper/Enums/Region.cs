@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace R6TabApiWrapper.Enums
+﻿namespace R6Api.Enums
 {
-	/// <summary>
-	/// Leaderboard Regions for Rainbow6
-	/// </summary>
-	public enum Region
-	{
-		America,
-		Europe,
-		Asia,
-		All
-	}
+    /// <summary>
+    /// Leaderboard Regions for Rainbow6
+    /// </summary>
+    public enum Region
+    {
+        America,
+        Europe,
+        Asia,
+        All
+    }
 }

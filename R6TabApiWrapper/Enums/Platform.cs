@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace R6Api.Enums
+﻿namespace R6Api.Enums
 {
-	/// <summary>
-	/// Game Platforms for Rainbow6
-	/// </summary>
-	public enum Platform
-	{
-		/// <summary>
-		/// PC / Uplay
-		/// </summary>
-		Uplay,
-		/// <summary>
-		/// Playstation Network
-		/// </summary>
-		Psn,
-		/// <summary>
-		/// XBox Live
-		/// </summary>
-		Xbl
-	}
+    /// <summary>
+    /// Game Platforms for Rainbow6
+    /// </summary>
+    public enum Platform
+    {
+        /// <summary>
+        /// PC / Uplay
+        /// </summary>
+        Uplay,
+        /// <summary>
+        /// Playstation Network
+        /// </summary>
+        Psn,
+        /// <summary>
+        /// XBox Live
+        /// </summary>
+        Xbl
+    }
 }

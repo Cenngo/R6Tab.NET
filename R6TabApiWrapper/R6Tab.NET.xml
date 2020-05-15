@@ -24,6 +24,11 @@
             XBox Live
             </summary>
         </member>
+        <member name="T:R6Api.Enums.Region">
+            <summary>
+            Leaderboard Regions for Rainbow6
+            </summary>
+        </member>
         <member name="T:R6Api.Interfaces.IGamemodeStats">
             <summary>
             Gamemode Stat Template for Rainbow6
@@ -44,6 +49,22 @@
             Retrieve User Avatar
             </summary>
             <returns>Url String of User Profile Image</returns>
+        </member>
+        <member name="T:R6Api.Interfaces.IRankedData">
+            <summary>
+            Ranked Data Template that Contains Rank Info for Rainbow6
+            </summary>
+        </member>
+        <member name="P:R6Api.Interfaces.IRankedData.Rank">
+            <summary>
+            Rank of Player
+            </summary>
+        </member>
+        <member name="M:R6Api.Interfaces.IRankedData.GetRankImg">
+            <summary>
+            Retrieve Rank Banner
+            </summary>
+            <returns>Url String of Players Rank Banner</returns>
         </member>
         <member name="T:R6Api.Interfaces.IRegionRanked">
             <summary>
@@ -300,9 +321,29 @@
             Found Matches for the Searched Name
             </summary>
         </member>
+        <member name="P:R6Api.Models.SearchResults.LeaderboardData.Region">
+            <summary>
+            Region of the Leaderboard
+            </summary>
+        </member>
         <member name="T:R6Api.Models.Custom">
             <summary>
             Custom R6Tab Data
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.LeaderboardPlayer.Ranked">
+            <summary>
+            Ranked Stats of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.LeaderboardPlayer.Stats">
+            <summary>
+            General Stats of the Player
+            </summary>
+        </member>
+        <member name="P:R6Api.Models.LeaderboardPlayer.Profile">
+            <summary>
+            Profile of the Player
             </summary>
         </member>
         <member name="P:R6Api.Models.OperatorData.Id">
@@ -323,6 +364,11 @@
         <member name="P:R6Api.Models.OperatorData.SeasonalStats">
             <summary>
             Seasonal Stats for the Operator
+            </summary>
+        </member>
+        <member name="T:R6Api.Models.Operators">
+            <summary>
+            Every Property in this class is in the form of a Dictionary where key value is the name of the operator, with a capital first letter. 
             </summary>
         </member>
         <member name="P:R6Api.Models.Operators.TopPlayedOverall">
@@ -1159,7 +1205,7 @@
             </code>
             </example>
         </member>
-        <member name="M:R6Api.R6Client.GetLeaderboard(R6Api.Enums.Platform,R6TabApiWrapper.Enums.Region,System.Nullable{System.DateTimeOffset})">
+        <member name="M:R6Api.R6Client.GetLeaderboard(R6Api.Enums.Platform,R6Api.Enums.Region,System.Nullable{System.DateTimeOffset})">
             <summary>
             Get Leaderboard of a Region and Platform (updated every hour)
             </summary>
@@ -1186,47 +1232,6 @@
         <member name="F:R6Api.R6Config.ApiKey">
             <summary>
             Api Key from Tabwire. Contact https://tabstats.com/contact for a key.
-            </summary>
-        </member>
-        <member name="T:R6TabApiWrapper.Enums.Region">
-            <summary>
-            Leaderboard Regions for Rainbow6
-            </summary>
-        </member>
-        <member name="T:R6TabApiWrapper.Interfaces.IRankedData">
-            <summary>
-            Ranked Data Template that Contains Rank Info for Rainbow6
-            </summary>
-        </member>
-        <member name="P:R6TabApiWrapper.Interfaces.IRankedData.Rank">
-            <summary>
-            Rank of Player
-            </summary>
-        </member>
-        <member name="M:R6TabApiWrapper.Interfaces.IRankedData.GetRankImg">
-            <summary>
-            Retrieve Rank Banner
-            </summary>
-            <returns>Url String of Players Rank Banner</returns>
-        </member>
-        <member name="P:R6TabApiWrapper.Models.LeaderboardPlayer.Ranked">
-            <summary>
-            Ranked Stats of the Player
-            </summary>
-        </member>
-        <member name="P:R6TabApiWrapper.Models.LeaderboardPlayer.Stats">
-            <summary>
-            General Stats of the Player
-            </summary>
-        </member>
-        <member name="P:R6TabApiWrapper.Models.LeaderboardPlayer.Profile">
-            <summary>
-            Profile of the Player
-            </summary>
-        </member>
-        <member name="P:R6TabApiWrapper.Models.SearchResults.LeaderboardData.Region">
-            <summary>
-            Region of the Leaderboard
             </summary>
         </member>
     </members>
