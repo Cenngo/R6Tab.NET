@@ -7,8 +7,8 @@
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Cenngo/R6Tab.NET</PackageProjectUrl>
     <RepositoryType>Public</RepositoryType>
-    <PackageReleaseNotes>General Overhaul to the Operator Data Retrieval and Changes to Accommodate new Api Key Requirements</PackageReleaseNotes>
-    <Version>0.4.0</Version>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <Version>0.4.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyName>R6Tab.NET</AssemblyName>
     <RootNamespace>R6Api</RootNamespace>
