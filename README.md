@@ -27,7 +27,7 @@ var client = new R6Client(config);
 var result = client.ParseByName("baiier", Platform.Uplay);
 
 //Parse by Id
-var result = client.ParseById(9bd44bde-9c48-48ae-9c2b-4e11e4b16083);
+var result = client.ParseById("9bd44bde-9c48-48ae-9c2b-4e11e4b16083");
 
 ///Getting Leaderboard
 var leaderboard = client.GetLeaderboard(Platform.Uplay, Region.All);
