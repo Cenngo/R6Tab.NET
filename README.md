@@ -33,7 +33,7 @@ var result = client.ParseById("9bd44bde-9c48-48ae-9c2b-4e11e4b16083");
 var leaderboard = client.GetLeaderboard(Platform.Uplay, Region.All);
 
 //Update Player Info 
-var result = client.UpdatePlayer(9bd44bde-9c48-48ae-9c2b-4e11e4b16083);
+var result = client.UpdatePlayer("9bd44bde-9c48-48ae-9c2b-4e11e4b16083");
 ```
 
 ## In Progress
