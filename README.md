@@ -26,6 +26,10 @@ var client = new R6Client(config);
 //Parsing By Name
 var result = client.ParseByName("baiier", Platform.Uplay);
 
+//Getting the Best Match from Username
+var result = client.ParseByName("baiier", Platform.Uplay);
+var player = result.FoundPlayers.Values.ElementAt(1);
+
 //Parse by Id
 var result = client.ParseById("9bd44bde-9c48-48ae-9c2b-4e11e4b16083");
 
