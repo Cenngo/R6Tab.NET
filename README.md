@@ -40,6 +40,10 @@ var leaderboard = client.GetLeaderboard(Platform.Uplay, Region.All);
 var result = client.UpdatePlayer("9bd44bde-9c48-48ae-9c2b-4e11e4b16083");
 ```
 
+After the unfication of ranks accross regions, the overall ranked stats are currently stored in the NA sub-stats which renders EU and AS unnecessary.
+
+Please use the NA stats to retrieve th overall ranked stats. Until the new version is released.
+
 ## In Progress
 - [x] Decode Operator Ids
 - [x] Get Top Operators in Each Category (Wins/Losses/Kills/Deaths/Play Time)
