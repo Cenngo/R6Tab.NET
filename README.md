@@ -1,3 +1,7 @@
+```diff
+- Tabwire closed the API to the public. They are no longer giving away API keys.
+```
+
 # R6TabApiWrapper
 Api Wrapper for R6Tab Api
 
